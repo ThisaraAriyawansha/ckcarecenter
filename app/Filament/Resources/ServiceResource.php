@@ -9,6 +9,7 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class ServiceResource extends Resource
@@ -67,10 +68,9 @@ class ServiceResource extends Resource
                             ->label('Service Image')
                             ->image()
                             ->imageEditor()
-                            ->directory('')
                             ->disk('services_public')
                             ->preserveFilenames(false)
-                            ->maxSize(2048) // 2MB
+                            ->maxSize(2048)
                             ->imageResizeTargetWidth(600)
                             ->imageResizeTargetHeight(400)
                             ->getUploadedFileNameForStorageUsing(function ($file): string {
@@ -89,10 +89,15 @@ class ServiceResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\ImageColumn::make('image_path')
-                    ->disk('services_public')
                     ->label('Image')
                     ->circular()
-                    ->size(60),
+                    ->size(60)
+                    ->getStateUsing(function ($record): string {
+                        if (!$record->image_path || str_starts_with($record->image_path, 'assets/')) {
+                            return asset('assets/image/services/service_card_1_6.jpg');
+                        }
+                        return Storage::disk('services_public')->url($record->image_path);
+                    }),
 
                 Tables\Columns\TextColumn::make('title')
                     ->searchable()

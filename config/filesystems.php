@@ -75,8 +75,8 @@ return [
         ],
         'services_public' => [
             'driver'     => 'local',
-            'root'       => storage_path('app/public/services_img'),
-            'url'        => env('APP_URL') . '/storage/services_img',
+            'root'       => public_path('services_img'),
+            'url'        => env('APP_URL') . '/services_img',
             'visibility' => 'public',
             'throw'      => false,
         ],

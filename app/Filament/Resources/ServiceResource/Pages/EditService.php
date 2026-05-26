@@ -16,4 +16,12 @@ class EditService extends EditRecord
             Actions\DeleteAction::make(),
         ];
     }
+
+    protected function mutateFormDataBeforeSave(array $data): array
+    {
+        if (empty($data['image_path'])) {
+            $data['image_path'] = 'assets/image/services/service_card_1_6.jpg';
+        }
+        return $data;
+    }
 }
