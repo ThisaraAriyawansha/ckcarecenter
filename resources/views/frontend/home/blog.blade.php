@@ -1,54 +1,106 @@
-<section class="bg-smoke2 space overflow-hidden" id="blog-sec">
-    <div class="container">
-        <div class="title-area text-center">
-            <span class="sub-title style2 text-anim" data-cue="slideInUp">Articles & Tips</span>
-            <h2 class="sec-title text-anim" data-cue="slideInUp">Latest Articles & Blog</h2>
-        </div>
-        
-        @if($blogs->count() > 0)
-        <div class="row gy-40 justify-content-center">
-            @foreach($blogs as $blog)
-            <div class="col-xl-4 col-lg-6" data-cue="slideInUp">
-                <div class="blog-card">
-                    <div class="blog-img">
-                        <a href="{{ blog_url($blog) }}">
-                            <img src="{{ image_url($blog->image_path, 'blog') }}" alt="{{ $blog->title }}">
-                        </a>
+        <div class="section">
+            <div class="r-container d-flex flex-column gap-4">
+                <div class="d-flex flex-column gap-3 align-items-center justify-content-center text-center mx-auto scrollanimation animated zoomIn"
+                    style="max-width: 650px;">
+                    <div class="d-flex flex-row gap-2 align-items-center">
+                        <img src="{{ asset('assets/image/cuida_medicine-outline.png') }}" class="img-fluid" alt="">
+                        <h6 class="accent-color m-0">Latest Article</h6>
                     </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span><i class="fas fa-user"></i>{{ $blog->name }}</span>
-                            <span><i class="fas fa-calendar"></i>{{ format_date($blog->date) }}</span>
+                    <h3>News and Updates For You</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                        mattis, pulvinar dapibus leo.
+                    </p>
+                </div>
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div class="col mb-3 scrollanimation animated fadeInLeft">
+                        <div class="card d-flex flex-column gap-3 h-100">
+                            <div class="position-relative overflow-hidden rounded-3 h-100">
+                                <img src="{{ asset('assets/image/dummy-img-900x600.jpg') }}" alt="image" class="img-fluid h-100">
+                                <div class="blog-overlay"></div>
+                                <div class="position-absolute bottom-0 left-0 text-white p-5">
+                                    <div class="d-flex flex-row gap-2 justify-content-between align-items-end">
+                                        <div class="d-flex flex-column gap-3">
+                                            <div class="px-4 py-2 border border-light rounded-pill w-max-content">
+                                                <span class="text-white">News</span>
+                                            </div>
+                                            <h5>Medication Adherence: Innovative Programs Helping Patients Stay on Track
+                                            </h5>
+                                        </div>
+                                        <a href="" class="icon-box link">
+                                            <i class="rtmicon rtmicon-arrow-right" style="font-size: 30px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="box-title">
-                            <a href="{{ blog_url($blog) }}">
-                                {{ $blog->title }}
-                            </a>
-                        </h3>
-                        <p class="blog-excerpt mt-2 mb-3">
-                            {{ excerpt($blog->description, 120) }}
-                        </p>
-                        <div class="btn-wrap">
-                            <a href="{{ blog_url($blog) }}" class="link-btn th-btn-icon">
-                                Read More
-                            </a>
+                    </div>
+                    <div class="col mb-3 scrollanimation animated fadeInRight">
+                        <div class="card d-flex flex-column gap-3 h-100">
+                            <div class="position-relative overflow-hidden rounded-3 h-100">
+                                <img src="{{ asset('assets/image/dummy-img-900x600.jpg') }}" alt="image" class="img-fluid h-100">
+                                <div class="blog-overlay"></div>
+                                <div class="position-absolute bottom-0 left-0 text-white p-5">
+                                    <div class="d-flex flex-row gap-2 justify-content-between align-items-end">
+                                        <div class="d-flex flex-column gap-3">
+                                            <div class="px-4 py-2 border border-light rounded-pill w-max-content">
+                                                <span class="text-white">News</span>
+                                            </div>
+                                            <h5>Innovations in Pain Management: Alternatives to Opioids in Modern
+                                                Pharmacy</h5>
+                                        </div>
+                                        <a href="" class="icon-box link">
+                                            <i class="rtmicon rtmicon-arrow-right" style="font-size: 30px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3 scrollanimation animated fadeInLeft">
+                        <div class="card d-flex flex-column gap-3 h-100">
+                            <div class="position-relative overflow-hidden rounded-3 h-100">
+                                <img src="{{ asset('assets/image/dummy-img-900x600.jpg') }}" alt="image" class="img-fluid h-100">
+                                <div class="blog-overlay"></div>
+                                <div class="position-absolute bottom-0 left-0 text-white p-5">
+                                    <div class="d-flex flex-row gap-2 justify-content-between align-items-end">
+                                        <div class="d-flex flex-column gap-3">
+                                            <div class="px-4 py-2 border border-light rounded-pill w-max-content">
+                                                <span class="text-white">News</span>
+                                            </div>
+                                            <h5>Health Tech: How Devices Are Shaping Medication Monitoring and
+                                                Management</h5>
+                                        </div>
+                                        <a href="" class="icon-box link">
+                                            <i class="rtmicon rtmicon-arrow-right" style="font-size: 30px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3 scrollanimation animated fadeInRight">
+                        <div class="card d-flex flex-column gap-3 h-100">
+                            <div class="position-relative overflow-hidden rounded-3 h-100">
+                                <img src="{{ asset('assets/image/dummy-img-900x600.jpg') }}" alt="image" class="img-fluid h-100">
+                                <div class="blog-overlay"></div>
+                                <div class="position-absolute bottom-0 left-0 text-white p-5">
+                                    <div class="d-flex flex-row gap-2 justify-content-between align-items-end">
+                                        <div class="d-flex flex-column gap-3">
+                                            <div class="px-4 py-2 border border-light rounded-pill w-max-content">
+                                                <span class="text-white">News</span>
+                                            </div>
+                                            <h5>Blockchain in Healthcare: Ensuring Secure Patient Data & Medication
+                                                Tracking</h5>
+                                        </div>
+                                        <a href="" class="icon-box link">
+                                            <i class="rtmicon rtmicon-arrow-right" style="font-size: 30px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            @endforeach
         </div>
-        
-        <div class="text-center mt-50">
-            <a href="{{ route('blog') }}" class="th-btn style-border3">View All Blogs</a>
-        </div>
-        
-        @else
-        <div class="text-center py-5">
-            <div class="alert alert-info">
-                <p>No blog posts available at the moment.</p>
-            </div>
-        </div>
-        @endif
-    </div>
-</section>

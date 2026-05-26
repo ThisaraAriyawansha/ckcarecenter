@@ -10,7 +10,7 @@
 @section('meta_keywords', $blog->meta_keywords ?: ($blog->tags->pluck('name')->implode(', ') ?: 'care365, elderly care, retirement home'))
 
 {{-- OG Image - Uses blog image if available --}}
-@section('og_image', $blog->image_path ? asset('blog_img/' . $blog->image_path) : asset('assets/img/logo.png'))
+@section('og_image', $blog->image_path ? image_url($blog->image_path, 'blog') : asset('assets/img/logo.png'))
 
 @section('og_type', 'article')
 

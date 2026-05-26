@@ -3,7 +3,7 @@
                 <div class="container mt-min-60">
                     <div class="row">
                         <div class="col-lg-12">
-                            <img src="{{ asset('blog_img/' . $blog->image_path) }}" class="w-100 rounded-1" alt="" loading="lazy">
+                            <img src="{{ image_url($blog->image_path, 'blog') }}" class="w-100 rounded-1" alt="" loading="lazy">
                         </div>
                     </div>
                 </div>

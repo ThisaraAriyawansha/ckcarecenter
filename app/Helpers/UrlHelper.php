@@ -3,6 +3,7 @@
 namespace App\Helpers;
 
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class UrlHelper
@@ -54,15 +55,18 @@ class UrlHelper
             return asset($path);
         }
         
-        // For specific folders
-        $folders = [
-            'blog' => 'blog_img/',
-            'service' => 'services_img/',
-            'testimonial' => 'testimonials_img/',
+        // Use the appropriate storage disk for each type
+        $disks = [
+            'blog'        => 'blog_public',
+            'service'     => 'services_public',
+            'testimonial' => 'testimonial_public',
         ];
-        
-        $folder = $folders[$type] ?? 'uploads/';
-        return asset($folder . $path);
+
+        if (isset($disks[$type])) {
+            return Storage::disk($disks[$type])->url($path);
+        }
+
+        return asset('uploads/' . $path);
     }
     
     /**
