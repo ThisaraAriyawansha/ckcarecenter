@@ -4,7 +4,7 @@
                 <div class="row row-cols-xl-2 row-cols-1 align-items-center">
                     <div class="col col-xl-8 mb-3">
                         <div class="d-flex flex-column gap-5">
-                            <img src="{{ asset('assets/image/logo-white.png') }}" alt="" class="img-fluid" width="350">
+                            <img src="{{ asset('assets/image/logo/logo3.webp') }}" alt="" class="img-fluid" width="350" style="filter: brightness(0) invert(1);">
                             <p class="text-white" style="max-width: 550px;">
                                 At our pharmaacy, we are dedicated to providing top-notch healthcare solutions with a
                                 focus on quality, safety, and personalized care.
