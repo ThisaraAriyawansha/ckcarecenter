@@ -24,15 +24,9 @@
                                     <li><a class="dropdown-item" href="#">Team</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Services
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ route('services') }}">Services</a></li>
-                                    <li><a class="dropdown-item" href="#">Service Details</a></li>
-                                </ul>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{{ route('services') }}">Services</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
