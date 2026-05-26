@@ -26,10 +26,12 @@
      @include('frontend.home.counter')
      @include('frontend.home.cta')
      @include('frontend.home.services')
+     @include('frontend.home.testimonial')
+
     {{-- @include('frontend.home.carehome') --}}
     {{-- @include('frontend.home.packages') --}}
 
-    {{-- @include('frontend.home.testimonial') --}}
+   
     {{-- @include('frontend.home.videoarea') --}}
     @include('frontend.home.temp')
 

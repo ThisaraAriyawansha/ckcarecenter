@@ -1,111 +1,103 @@
-<section class="border-top" id="testimonials">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-lg-6 offset-lg-3 text-center">
-                <div class="subtitle wow fadeInUp mb-3">Testimonials</div>
-                <h2 class="mb-4 wow fadeInUp" data-wow-delay=".2s">Our Happy Customers</h2>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            @if($testimonials->count() > 0)
-                <div class="owl-carousel owl-theme wow fadeInUp" id="testimonial-carousel">
-                    @foreach($testimonials as $testimonial)
-                        <div class="item">
-                            <div class="relative p-2">
-                                <div class="relative">
-                                    @if($testimonial->image_path)
-                                        <img class="relative z-2 w-80px mb-3 rounded-1" alt="{{ $testimonial->name }}" src="{{ asset('testimonial_img/' . $testimonial->image_path) }}" width="80" height="80" loading="lazy">
-                                    @else
-                                        <div class="relative z-2 w-80px h-80px mb-3 rounded-1 bg-light d-flex align-items-center justify-content-center">
-                                            <i class="fa fa-user text-muted fa-2x"></i>
+        <!-- Section Testimonials -->
+        <div class="section mt-5 position-relative overflow-visible">
+            <div class="px-xl-5 rounded-3" style="background-image: url({{ asset('assets/image/BG_testi.png') }});">
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div class="col mb-3 scrollanimation animated fadeInLeft">
+                        <div class="d-flex flex-column gap-3 p-5 bg-accent-primary rounded-3 shadow floating-testi">
+                            <div class="d-flex flex-column gap-3">
+                                <div class="d-flex flex-row gap-2 align-items-center">
+                                    <img src="{{ asset('assets/image/cuida_medicine-outline.png') }}" class="img-fluid" alt="">
+                                    <h6 class="accent-color m-0">Testimonials</h6>
+                                </div>
+                                <h3>Let's Hear What They Say About Us</h3>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="swiper swiperTestimonials">
+                                    <div class="swiper-wrapper">
+                                        @forelse($testimonials as $testimonial)
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-container">
+                                                <div class="d-flex flex-column gap-3">
+                                                    <div class="flex-row">
+                                                        @for($i = 1; $i <= 5; $i++)
+                                                            @if($i <= $testimonial->rating)
+                                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                            @else
+                                                                <i class="fa-solid fa-star" style="color: var(--text-color-1);"></i>
+                                                            @endif
+                                                        @endfor
+                                                    </div>
+                                                    <span class="font-2 fst-italic">"{{ $testimonial->message }}"</span>
+                                                </div>
+                                                <div class="d-flex flex-xl-row flex-column gap-2 justify-content-between">
+                                                    <div class="d-flex flex-row gap-3 align-items-center">
+                                                        <div class="customer-item">
+                                                            @php
+                                                                $imgSrc = ($testimonial->image_path && \Illuminate\Support\Facades\Storage::disk('testimonial_public')->exists($testimonial->image_path))
+                                                                    ? \Illuminate\Support\Facades\Storage::disk('testimonial_public')->url($testimonial->image_path)
+                                                                    : asset('assets/image/testimonials/test_img.png');
+                                                            @endphp
+                                                            <img src="{{ $imgSrc }}"
+                                                                class="img-fluid border-light" alt="{{ $testimonial->name }}">
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h4 class="text-color fw-semibold">{{ $testimonial->name }}</h4>
+                                                            <span class="font-2 text-color">{{ $testimonial->position }}</span>
+                                                        </div>
+                                                    </div>
+                                                    <i class="rtmicon rtmicon-blockquote text-color" style="font-size: 82px;"></i>
+                                                </div>
+                                            </div>
                                         </div>
-                                    @endif
+                                        @empty
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-container">
+                                                <p class="font-2 fst-italic">No testimonials available yet.</p>
+                                            </div>
+                                        </div>
+                                        @endforelse
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
                                 </div>
-                                <div class="mt-4 text-dark fw-600">
-                                    {{ $testimonial->name }}
-                                    @if($testimonial->position)
-                                        <span>{{ $testimonial->position }}</span>
-                                    @else
-                                        <span>Customer</span>
-                                    @endif
-                                </div>
-                                <div class="de-rating-ext mb-3">
-                                    <span class="d-stars">
-                                        @for($i = 1; $i <= 5; $i++)
-                                            @if($i <= $testimonial->rating)
-                                                <i class="fa fa-star text-warning"></i>
-                                            @else
-                                                <i class="fa fa-star text-light"></i>
-                                            @endif
-                                        @endfor
-                                    </span>
-                                </div>
-                                <p class="mb-0">"{{ $testimonial->message }}"</p>
                             </div>
                         </div>
-                    @endforeach
-                </div>
-            @else
-                <!-- No testimonials message -->
-                <div class="col-12 text-center py-5">
-                    <div class="d-inline-block p-4 rounded-3 bg-light">
-                        <i class="fa fa-comments fa-3x text-muted mb-3"></i>
-                        <h4 class="mb-3">No Testimonials Yet</h4>
-                        <p class="mb-0 text-muted">Check back soon to see what our customers are saying!</p>
+                    </div>
+                    <div class="col scrollanimation animated fadeInRight">
+                        <div class="h-100 position-relative">
+                            <div class="floating-top w-100">
+                                <img src="{{ asset('assets/image/testimonials/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.avif') }}" alt="Healthcare professional" class="img-fluid w-100">
+                            </div>
+                            <div class="floating-bottom-1" style="z-index: 4;">
+                                <div class="d-flex flex-column align-items-center justify-content-center gap-3 bg-accent-primary p-4 rounded-3">
+                                    <div class="d-flex flex-row customer-container">
+                                        <div class="customer-item">
+                                            <img src="{{ asset('assets/image/team1.jpg') }}" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="customer-item">
+                                            <img src="{{ asset('assets/image/team2.jpg') }}" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="customer-item">
+                                            <img src="{{ asset('assets/image/team3.jpg') }}" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="customer-item bg-white border-0">
+                                            <span class="text-center fs-4">1k+</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column gap-2 align-items-center">
+                                        <div class="flex-row">
+                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                            <i class="fa-solid fa-star" style="color: var(--text-color-1);"></i>
+                                        </div>
+                                        <h4>(1.5k+ Reviews)</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            @endif
+            </div>
         </div>
-    </div>
-</section>
-
-<!-- Keep these CDNs (important: jQuery first, then Owl) -->
-@push('scripts')
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-<script>
-$(document).ready(function(){
-    var owl = $('#testimonial-carousel');
-
-    // Safety: destroy any previous broken instance first
-    if (owl.hasClass('owl-loaded')) {
-        owl.trigger('destroy.owl.carousel');
-        owl.removeClass('owl-loaded owl-drag owl-grab');
-        owl.find('.owl-stage-outer').children().unwrap();
-        owl.find('.owl-stage').children().unwrap();
-        owl.find('.owl-item').children().unwrap();
-        owl.find('.owl-dots, .owl-nav').remove();
-    }
-
-    owl.owlCarousel({
-        loop: true,                     // important for continuous autoplay
-        margin: 20,
-        nav: false,                      // keep your left/right arrows
-        dots: true,                     // ← this enables the bottom dots (pagination)
-        dotsEach: true,                 // shows one dot per item (clean look)
-        autoplay: true,                 // enable auto slide
-        autoplayTimeout: 5000,          // 5 seconds between slides (change if you want longer/shorter)
-        autoplayHoverPause: true,       // pause when mouse over (good UX)
-        autoplaySpeed: 800,             // transition speed (smooth but not too slow)
-        smartSpeed: 1000,               // main animation smoothness
-        slideTransition: 'ease',        // 'ease' or 'linear' — 'ease' feels more natural/professional
-        navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-        responsive: {
-            0:    { items: 1 },
-            768:  { items: 2 },
-            1024: { items: 4 }
-        }
-    });
-
-    // Force autoplay start after short delay (fixes 90% of "autoplay not starting" cases)
-    setTimeout(function() {
-        if (owl.find('.owl-item').length > 1) {  // only if there are multiple slides
-            owl.trigger('play.owl.autoplay', [5000]);  // match your timeout
-        }
-    }, 300);  // 300ms delay helps when images/content load slowly
-});
-</script>
-@endpush

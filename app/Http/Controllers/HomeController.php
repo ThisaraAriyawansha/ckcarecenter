@@ -19,6 +19,7 @@ class HomeController extends Controller
     {   
         $testimonials = Testimonial::where('is_public', true)
                                 ->inRandomOrder()
+                                ->take(4)
                                 ->get();
         
         // Get public services
