@@ -1,55 +1,45 @@
-<div class="space overflow-hidden">
-    <div class="container">
-        <div class="row gy-40 gx-60">
-            <div class="col-xxl-7 col-xl-7">
-                <div class="title-area">
-                    <span class="sub-title style2 text-anim" data-cue="slideInUp">quick answers</span>
-                    <h2 class="sec-title text-anim2" data-cue="slideInLeft">Frequently Ask Questions</h2>
+        <!-- FAQs -->
+        <div class="section">
+            <div class="r-container d-flex flex-column gap-4 align-items-center">
+                <div class="d-flex flex-column gap-3 text-center mx-auto align-items-center scrollanimation animated zoomIn"
+                    style="max-width: 650px;">
+                    <div class="d-flex flex-row gap-2 align-items-center">
+                        <h6 class="accent-color m-0">FAQs</h6>
+                    </div>
+                    <h3>Frequently Asked Questions</h3>
+                    <p>This FAQ section addresses common questions regarding private nursing and home care services, it
+                        covers essential topics</p>
                 </div>
-                
-                @if($faqs->count() > 0)
-                <div class="faq-wrap1 pe-xl-4">
-                    <div class="accordion" id="faqAccordion">
-                        @foreach($faqs as $index => $faq)
-                        <div class="accordion-card" data-cue="slideInUp">
-                            <div class="accordion-header" id="collapse-item-{{ $index + 1 }}">
-                                <button class="accordion-button {{ $index == 0 ? '' : 'collapsed' }}" 
-                                        type="button" 
-                                        data-bs-toggle="collapse" 
-                                        data-bs-target="#collapse-{{ $index + 1 }}" 
-                                        aria-expanded="{{ $index == 0 ? 'true' : 'false' }}" 
-                                        aria-controls="collapse-{{ $index + 1 }}">
-                                    <span class="count">{{ $index + 1 }}.</span> {{ $faq->question }}
+                <div class="d-flex flex-column gap-4 w-100 scrollanimation animated fadeInUp">
+                    <div class="accordion mt-3 d-flex flex-column gap-4" id="faqAccordion1">
+                        @forelse($faqs as $index => $faq)
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button {{ $index > 0 ? 'collapsed' : '' }}" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faq{{ $faq->id }}"
+                                    aria-expanded="{{ $index === 0 ? 'true' : 'false' }}"
+                                    aria-controls="faq{{ $faq->id }}">
+                                    {{ str_pad($index + 1, 2, '0', STR_PAD_LEFT) }} {{ $faq->question }}
                                 </button>
-                            </div>
-                            <div id="collapse-{{ $index + 1 }}" 
-                                 class="accordion-collapse collapse {{ $index == 0 ? 'show' : '' }}" 
-                                 aria-labelledby="collapse-item-{{ $index + 1 }}" 
-                                 data-bs-parent="#faqAccordion">
+                            </h2>
+                            <div id="faq{{ $faq->id }}"
+                                class="accordion-collapse collapse {{ $index === 0 ? 'show' : '' }}"
+                                data-bs-parent="#faqAccordion1">
                                 <div class="accordion-body">
-                                    <p class="faq-text">{{ $faq->answer }}</p>
+                                    {{ $faq->answer }}
                                 </div>
                             </div>
                         </div>
-                        @endforeach
-                    </div>
-                    
-                    <div class="text-center mt-4">
-                        <a href="{{ route('faq') }}" class="th-btn style-border3">View All FAQs</a>
+                        @empty
+                        <p class="text-center text-muted">No FAQs available at the moment.</p>
+                        @endforelse
                     </div>
                 </div>
-                @else
-                <div class="alert alert-info">
-                    <p>No frequently asked questions available at the moment.</p>
-                </div>
-                @endif
-
-            </div>
-            <div class="col-xxl-5 col-xl-5 align-self-center" data-cue="slideInUp">
-                <div class="faq-img-box1 global-img" data-cue="slideInUp">
-                    <img src="assets/img/Home-img/galary-img6.png" alt="faq_img">
+                <div class="w-max-content">
+                    <a href="{{ route('faq') }}" class="btn btn-accent rounded-pill d-flex flex-row gap-2 px-5 py-3">
+                        <span>View All</span>
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
-</div>

@@ -31,10 +31,10 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    Pages
+                                    More
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('faq') }}">FAQs</a></li>
                                     <li><a class="dropdown-item" href="member.html">Membership</a></li>
                                     <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
                                     <li><a class="dropdown-item" href="404.html">404 Error</a></li>

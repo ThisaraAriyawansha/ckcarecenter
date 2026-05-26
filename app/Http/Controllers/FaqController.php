@@ -12,8 +12,8 @@ class FaqController extends Controller
     public function index(): View
     {
         // Get all FAQs where visibility is true
-        $faqs = Faq::where('visibility', true)
-                   ->orderBy('created_at', 'desc')
+        $faqs = Faq::where('visibility', 'public')
+                   ->orderBy('created_at', 'asc')
                    ->get();
 
         $testimonials = Testimonial::where('is_public', true)

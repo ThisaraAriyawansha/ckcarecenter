@@ -6,7 +6,6 @@
                         <div class="d-flex flex-column gap-3 p-5 bg-accent-primary rounded-3 shadow floating-testi">
                             <div class="d-flex flex-column gap-3">
                                 <div class="d-flex flex-row gap-2 align-items-center">
-                                    <img src="{{ asset('assets/image/cuida_medicine-outline.png') }}" class="img-fluid" alt="">
                                     <h6 class="accent-color m-0">Testimonials</h6>
                                 </div>
                                 <h3>Let's Hear What They Say About Us</h3>

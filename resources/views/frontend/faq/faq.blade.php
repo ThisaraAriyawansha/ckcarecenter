@@ -1,59 +1,78 @@
-<section id="FAQ">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-lg-6 offset-lg-3 text-center">                            
-                <div class="subtitle wow fadeInUp mb-3">Questions</div>
-                <h2 class="wow fadeInUp" data-wow-delay=".2s">Frequently Asked Questions</h2>
-            </div>
-        </div>
-
-        <div class="row g-4 justify-content-center">
-            <div class="col-lg-8">
-                <div class="accordion s2 wow fadeInUp">
-
-                    @if($faqs->isEmpty())
-                        <div class="text-center py-5">
-                            <p>No frequently asked questions available at the moment.</p>
-                        </div>
-                    @else
-                        @foreach($faqs as $index => $faq)
-                            <div class="accordion-section">
-                                <!-- Title / Question -->
-                                <div class="accordion-section-title" 
-                                     data-tab="#accordion-{{ $index + 1 }}">
-                                    {{ $faq->question }}
-                                </div>
-
-                                <!-- Content / Answer -->
-                                <div class="accordion-section-content" 
-                                     id="accordion-{{ $index + 1 }}">
-                                    <p class="mb-0">{!! nl2br(e($faq->answer)) !!}</p>
-                                </div>
-                            </div>
-                        @endforeach
-                    @endif
-
+<div class="section">
+            <div class="r-container d-flex flex-column gap-4 align-items-center">
+                <div class="d-flex flex-column gap-3 text-center mx-auto align-items-center scrollanimation animated zoomIn"
+                    style="max-width: 650px;">
+                    <div class="d-flex flex-row gap-2 align-items-center">
+                        <img src="image/cuida_medicine-outline.png" class="img-fluid" alt="">
+                        <h6 class="accent-color m-0">FAQs</h6>
+                    </div>
+                    <h3>Frequently Asked Questions</h3>
+                    <p>This FAQ section addresses common questions regarding private nursing and home care services, it
+                        covers essential topics</p>
                 </div>
-                
 
-                
+                @if($faqs->isNotEmpty())
+                @php
+                    $leftFaqs  = $faqs->slice(0, ceil($faqs->count() / 2));
+                    $rightFaqs = $faqs->slice(ceil($faqs->count() / 2));
+                @endphp
+                <div class="row row-cols-xl-2 row-cols-1 w-100">
+                    <div class="col mb-3">
+                        <div class="d-flex flex-column gap-4 w-100 scrollanimation animated fadeInUp">
+                            <div class="accordion mt-3 d-flex flex-column gap-4" id="faqAccordionLeft">
+                                @foreach($leftFaqs as $faq)
+                                @php $faqId = 'faq-left-' . $loop->index; @endphp
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button {{ $loop->first ? '' : 'collapsed' }}" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#{{ $faqId }}"
+                                            aria-expanded="{{ $loop->first ? 'true' : 'false' }}"
+                                            aria-controls="{{ $faqId }}">
+                                            {{ str_pad($loop->iteration, 2, '0', STR_PAD_LEFT) }}. {{ $faq->question }}
+                                        </button>
+                                    </h2>
+                                    <div id="{{ $faqId }}" class="accordion-collapse collapse {{ $loop->first ? 'show' : '' }}"
+                                        data-bs-parent="#faqAccordionLeft">
+                                        <div class="accordion-body">
+                                            {{ $faq->answer }}
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+
+                    @if($rightFaqs->isNotEmpty())
+                    <div class="col mb-3">
+                        <div class="d-flex flex-column gap-4 w-100 scrollanimation animated fadeInUp">
+                            <div class="accordion mt-3 d-flex flex-column gap-4" id="faqAccordionRight">
+                                @foreach($rightFaqs as $faq)
+                                @php $faqId = 'faq-right-' . $loop->index; $offset = $leftFaqs->count(); @endphp
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button {{ $loop->first ? '' : 'collapsed' }}" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#{{ $faqId }}"
+                                            aria-expanded="{{ $loop->first ? 'true' : 'false' }}"
+                                            aria-controls="{{ $faqId }}">
+                                            {{ str_pad($offset + $loop->iteration, 2, '0', STR_PAD_LEFT) }}. {{ $faq->question }}
+                                        </button>
+                                    </h2>
+                                    <div id="{{ $faqId }}" class="accordion-collapse collapse {{ $loop->first ? 'show' : '' }}"
+                                        data-bs-parent="#faqAccordionRight">
+                                        <div class="accordion-body">
+                                            {{ $faq->answer }}
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+                    @endif
+                </div>
+                @else
+                <p class="text-muted text-center">No FAQs available at the moment.</p>
+                @endif
             </div>
         </div>
-    </div>
-    <div style="text-align: center; background: #ffffff;   margin-top: 100px;">
-        <h3 style="font-size: 26px; font-weight: 600; color: #0F172A; margin: 0 0 12px 0;">
-            Still Have Questions?
-        </h3>
-        <p style="font-size: 15px; color: #64748B; margin: 0 0 25px 0;  margin-left: auto; margin-right: auto; line-height: 1.6;">
-            We’re here to help. Reach out to us for more details about admissions, care services, 
-            and how we can support your loved one.
-        </p>
-        <a class="btn-main bg-color-2  mb-3 wow fadeInUp"
-        data-wow-delay=".6s"
-        href="https://wa.me/94779191818"
-        target="_blank">
-            Request Admission Information
-        </a>
-    </div>
-
-</section>

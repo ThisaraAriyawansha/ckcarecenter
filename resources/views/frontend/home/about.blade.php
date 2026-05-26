@@ -94,7 +94,6 @@
                 <div class="d-flex flex-column gap-3 align-items-center justify-content-center mx-auto text-center scrollanimation animated zoomIn"
                     style="max-width: 620px;">
                     <div class="d-flex flex-row gap-2 align-items-center">
-                        <img src="{{ asset('assets/image/cuida_medicine-outline.png') }}" class="img-fluid" alt="">
                         <h6 class="accent-color m-0">Who We Are</h6>
                     </div>
                     <h3>Compassionate Home Nursing &amp; Care for Your Loved Ones</h3>

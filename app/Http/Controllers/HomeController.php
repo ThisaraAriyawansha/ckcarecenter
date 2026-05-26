@@ -36,11 +36,17 @@ class HomeController extends Controller
                           ->orderBy('created_at', 'asc')
                           ->get();
 
+        $faqs = Faq::where('visibility', 'public')
+                   ->orderBy('created_at', 'asc')
+                   ->take(6)
+                   ->get();
+
         return view('frontend.home.index', compact(
             'testimonials',
             'services',
             'carehomes',
-            'teamMembers'
+            'teamMembers',
+            'faqs'
         ));
     }
 

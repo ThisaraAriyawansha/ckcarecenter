@@ -42,7 +42,6 @@
                     <div class="col mb-3">
                         <div class="d-flex flex-column gap-3 scrollanimation animated fadeInRight">
                             <div class="d-flex flex-row gap-2 align-items-center">
-                                <img src="{{ asset('assets/image/cuida_medicine-outline.png') }}" class="img-fluid" alt="">
                                 <h6 class="accent-color m-0">Why Choose Us</h6>
                             </div>
                             <h3>Trusted Home Nursing & Care You Can Count On</h3>
