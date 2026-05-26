@@ -27,7 +27,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
-            ->brandLogo(asset('logo/care365.svg'))
+            ->brandLogo(asset('logo/logo_2.png'))
             ->brandLogoHeight('3rem')
             ->colors([
                 'primary' => Color::Sky,

@@ -18,6 +18,7 @@ class RoleSeeder extends Seeder
             'admin',
             'manager',
             'career',
+            'nurse',
             'chef',
             'user',
         ];
@@ -26,6 +27,6 @@ class RoleSeeder extends Seeder
             Role::firstOrCreate(['name' => $role, 'guard_name' => 'web']);
         }
 
-        $this->command->info('5 roles created: Admin, Manager, Career, Chef, User');
+        $this->command->info('6 roles created: Admin, Manager, Career, Nurse, Chef, User');
     }
 }
