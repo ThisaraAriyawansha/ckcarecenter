@@ -85,13 +85,13 @@
 /* ---------------------------- */
 :root {
     --primary: #F4F4F4;
-    --text-color: #004551;
+    --text-color: #1C3F6E;
     --text-color-2: #5A5A5A;
     --background-color: #FEFEFE;
-    --accent-color: #FF9700;
+    --accent-color: #E6007E;
     --accent-color-2: #8E8E8E;
-    --accent-color-3: #D9EAED;
-    --accent-color-4: #C8E1E5;
+    --accent-color-3: #D6E4F0;
+    --accent-color-4: #B8D4E8;
     --font-1: "Raleway", sans-serif;
     --font-2: "Nunito", sans-serif;
     --font-3: "Inter", sans-serif;
