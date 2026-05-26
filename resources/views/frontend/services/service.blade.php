@@ -86,7 +86,7 @@
                 </div>
 
                 @if($services->count() > 0)
-                    <div class="row row-cols-1 row-cols-md-3 g-3 scrollanimation animated fadeInUp">
+                    <div class="row row-cols-1 row-cols-md-3 g-3">
                         @foreach($services as $service)
                             @php
                                 $imgSrc = !$service->image_path || str_starts_with($service->image_path, 'assets/')
