@@ -43,7 +43,7 @@ class HomeController extends Controller
 
         $blogs = Blog::where('is_public', true)
                     ->orderBy('date', 'desc')
-                    ->take(4)
+                    ->take(2)
                     ->get();
 
         return view('frontend.home.index', compact(
