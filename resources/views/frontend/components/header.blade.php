@@ -3,7 +3,7 @@
             <nav class="navbar navbar-expand-xl">
                 <div class="container-fluid ps-3">
                     <div class="logo-container">
-                        <a class="navbar-brand" href="#"><img src="{{ asset('assets/image/logo/logo_2.webp') }}" alt="" class="img-fluid"></a>
+                        <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset('assets/image/logo/logo3.webp') }}" alt="" class="img-fluid" ></a>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,7 +12,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-4 gap-1">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Homepage</a>
+                                <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -20,8 +20,8 @@
                                     About
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
-                                    <li><a class="dropdown-item" href="team.html">Team</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('about') }}">About Us</a></li>
+                                    <li><a class="dropdown-item" href="#">Team</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -30,8 +30,8 @@
                                     Services
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="services.html">Services</a></li>
-                                    <li><a class="dropdown-item" href="service_detail.html">Service Details</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services') }}">Services</a></li>
+                                    <li><a class="dropdown-item" href="#">Service Details</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
