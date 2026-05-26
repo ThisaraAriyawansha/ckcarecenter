@@ -17,5 +17,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 65002
           local_path: './*'
-          remote_path: './domains/care36t5.com/public_html'
+          remote_path: './domains/test.com/public_html'
           sftp_only: true
