@@ -29,11 +29,11 @@
      @include('frontend.home.testimonial')
      @include('frontend.home.team')
      @include('frontend.home.faq')
+    @include('frontend.home.carehome')
 
      {{-- @include('frontend.home.blog') --}}
      {{-- @include('frontend.home.contact') --}}
 
-    {{-- @include('frontend.home.carehome') --}}
     {{-- @include('frontend.home.packages') --}}
 
    
