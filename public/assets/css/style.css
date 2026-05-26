@@ -632,6 +632,7 @@ img {
 
 .swiperTestimonials {
     overflow: visible;
+    padding-bottom: 40px;
 }
 
 .swiperTestimonials2 {
@@ -2662,6 +2663,10 @@ a {
 
     .border-testimonial {
         border-right: none;
+    }
+
+    .testimonial-container {
+        height: auto;
     }
 
     .service-container {

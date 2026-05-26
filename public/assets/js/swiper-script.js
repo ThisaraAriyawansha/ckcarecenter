@@ -43,6 +43,7 @@ $(function () {
         spaceBetween: 10,
         loop: false,
         grabCursor: true,
+        autoHeight: true,
         breakpoints: {
             // when window width is >= 360px
             360: {

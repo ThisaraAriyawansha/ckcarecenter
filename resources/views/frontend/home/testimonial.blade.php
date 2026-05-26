@@ -3,7 +3,7 @@
             <div class="px-xl-5 rounded-3" style="background-image: url({{ asset('assets/image/BG_testi.png') }});">
                 <div class="row row-cols-xl-2 row-cols-1">
                     <div class="col mb-3 scrollanimation animated fadeInLeft">
-                        <div class="d-flex flex-column gap-3 p-5 bg-accent-primary rounded-3 shadow floating-testi">
+                        <div class="d-flex flex-column gap-3 p-3 p-xl-5 bg-accent-primary rounded-3 shadow floating-testi">
                             <div class="d-flex flex-column gap-3">
                                 <div class="d-flex flex-row gap-2 align-items-center">
                                     <h6 class="accent-color m-0">Testimonials</h6>
