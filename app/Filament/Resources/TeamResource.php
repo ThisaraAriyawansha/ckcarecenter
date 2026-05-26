@@ -56,8 +56,8 @@ class TeamResource extends Resource
                                 '4:3',
                                 '16:9',
                             ])
-                            ->disk('team_img')          // Custom disk
-                            ->directory('/')            // Root of public/team_img
+                            ->disk('team_img')
+                            ->directory('/')
                             ->preserveFilenames()
                             ->maxSize(5120)             // 5MB
                             ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/webp'])
@@ -82,7 +82,7 @@ class TeamResource extends Resource
                     ->height(60)
                     ->width(60)
                     ->rounded()
-                    ->defaultImageUrl(asset('images/placeholder-avatar.jpg')) // optional placeholder
+                    ->defaultImageUrl(asset('assets/image/team/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.avif'))
                     ->label('Photo'),
 
                 TextColumn::make('name')

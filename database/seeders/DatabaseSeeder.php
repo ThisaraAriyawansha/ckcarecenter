@@ -36,6 +36,7 @@ class DatabaseSeeder extends Seeder
             ExpenseSeeder::class,
 
             // Public website data
+            TeamSeeder::class,
             ServiceSeeder::class,
             TestimonialSeeder::class,
             FaqSeeder::class,

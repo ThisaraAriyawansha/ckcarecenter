@@ -11,33 +11,36 @@ use App\Models\Gallery;
 use App\Models\SuccessStory;
 use App\Models\Package;
 use App\Models\CareHome;
+use App\Models\Team;
 
 
 class HomeController extends Controller
 {
     public function index()
-    {   
+    {
         $testimonials = Testimonial::where('is_public', true)
                                 ->inRandomOrder()
                                 ->take(4)
                                 ->get();
-        
-        // Get public services
+
         $services = Service::where('is_public', true)
                           ->orderBy('created_at', 'desc')
                           ->take(6)
                           ->get();
 
-        // Get all public Care Homes
         $carehomes = CareHome::where('is_public', true)
                             ->orderBy('created_at', 'desc')
                             ->get();
-        
-        // Return view with all data
+
+        $teamMembers = Team::where('active', true)
+                          ->orderBy('created_at', 'asc')
+                          ->get();
+
         return view('frontend.home.index', compact(
-            'testimonials', 
+            'testimonials',
             'services',
-            'carehomes'
+            'carehomes',
+            'teamMembers'
         ));
     }
 

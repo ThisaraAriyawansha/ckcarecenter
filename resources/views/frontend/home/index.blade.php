@@ -27,7 +27,8 @@
      @include('frontend.home.cta')
      @include('frontend.home.services')
      @include('frontend.home.testimonial')
-
+     @include('frontend.home.team')
+     
     {{-- @include('frontend.home.carehome') --}}
     {{-- @include('frontend.home.packages') --}}
 
