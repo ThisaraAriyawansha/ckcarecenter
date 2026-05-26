@@ -1,60 +1,130 @@
-<section class="relative overflow-hidden border-top">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-lg-6 offset-lg-3 text-center">
-                <div class="subtitle wow fadeInUp mb-3">Our Services</div>
-                <h2 class="mb-4 wow fadeInUp" data-wow-delay=".2s">Safe And Secure Elderly Care</h2>
+        <style>
+            .hs-card {
+                display: block;
+                position: relative;
+                border-radius: 16px;
+                overflow: hidden;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            .hs-card img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.45s ease;
+                display: block;
+            }
+
+            .hs-card:hover img {
+                transform: scale(1.07);
+            }
+
+            .hs-card .hs-overlay {
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(to top, rgba(0, 30, 40, 0.78) 0%, rgba(0, 30, 40, 0.15) 55%, transparent 100%);
+                transition: background 0.35s ease;
+            }
+
+            .hs-card:hover .hs-overlay {
+                background: linear-gradient(to top, rgba(0, 30, 40, 0.88) 0%, rgba(0, 30, 40, 0.45) 70%, rgba(0, 30, 40, 0.15) 100%);
+            }
+
+            .hs-card .hs-title {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 20px 20px 18px;
+                color: #fff;
+                font-size: 1rem;
+                font-weight: 600;
+                z-index: 2;
+                transition: transform 0.35s ease;
+            }
+
+            .hs-card:hover .hs-title {
+                transform: translateY(-6px);
+            }
+
+            .hs-card .hs-readmore {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, calc(-50% + 10px));
+                opacity: 0;
+                transition: opacity 0.3s ease, transform 0.35s ease;
+                z-index: 3;
+                white-space: nowrap;
+            }
+
+            .hs-card:hover .hs-readmore {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+
+            .hs-img-wrap {
+                aspect-ratio: 4 / 3;
+            }
+        </style>
+
+        <!-- Section Services -->
+        <div class="section">
+            <div class="r-container d-flex flex-column gap-4">
+
+                <!-- Section Header -->
+                <div class="d-flex flex-column gap-3 text-center mx-auto align-items-center scrollanimation animated zoomIn"
+                    style="max-width: 620px;">
+                    <div class="d-flex flex-row gap-2 align-items-center">
+                        <img src="{{ asset('assets/image/cuida_medicine-outline.png') }}" class="img-fluid" alt="">
+                        <h6 class="accent-color m-0">Our Services</h6>
+                    </div>
+                    <h3>Compassionate Care, Tailored for Every Need</h3>
+                    <p>From personal nursing to specialised home care, we provide a full range of services designed to
+                        support your loved ones with dignity and warmth.</p>
+                </div>
+
+                @if($services->count() > 0)
+                    <div class="row row-cols-1 row-cols-md-3 g-3 scrollanimation animated fadeInUp">
+                        @foreach($services->take(6) as $service)
+                            @php
+                                $imgSrc = !$service->image_path || str_starts_with($service->image_path, 'assets/')
+                                    ? asset($service->image_path ?? 'assets/image/services/service_card_1_2.jpg')
+                                    : Storage::disk('services_public')->url($service->image_path);
+                            @endphp
+                            <div class="col">
+                                <a href="{{ url('/' . $service->title_slug) }}" class="hs-card">
+                                    <div class="hs-img-wrap">
+                                        <img src="{{ $imgSrc }}"
+                                             alt="{{ $service->title }}"
+                                             loading="lazy"
+                                             onerror="this.onerror=null;this.src='{{ asset('assets/image/services/service_card_1_2.jpg') }}'">
+                                    </div>
+                                    <div class="hs-overlay"></div>
+                                    <div class="hs-title">{{ $service->title }}</div>
+                                    <div class="hs-readmore">
+                                        <span class="btn btn-accent rounded-pill px-4 py-2" style="font-size: 0.875rem;">Read More</span>
+                                    </div>
+                                </a>
+                            </div>
+                        @endforeach
+                    </div>
+                @else
+                    <div class="text-center py-5">
+                        <i class="rtmicon rtmicon-medical-checkup accent-color" style="font-size: 72px;"></i>
+                        <p class="font-2 mt-3">Our services will be available shortly. Please check back soon.</p>
+                    </div>
+                @endif
+
+                {{-- View All button --}}
+                <div class="w-max-content mx-auto scrollanimation animated fadeInUp">
+                    <a href="{{ route('services') }}"
+                        class="btn rounded-pill d-flex flex-row gap-2 px-3 py-2"
+                        style="background-color: transparent; color: #1C3F6E; border: 2px solid #1C3F6E; font-size: 0.85rem;">
+                        <span>View All Services</span>
+                    </a>
+                </div>
+
             </div>
         </div>
-        <div class="row g-4">
-            @forelse ($services as $service)
-                <div class="col-lg-4 col-sm-6 d-flex">
-                    <div class="relative mb-3 p-3 w-100 rounded-1 shadow-soft d-flex flex-column">
-                        <a href="{{ url('/' . $service->title_slug) }}" 
-                           class="d-block hover mb-3">
-                            <div class="relative overflow-hidden rounded-1 shadow-soft">
-                                <!-- "Read More" overlay -->
-                                <div class="absolute z-2 start-0 w-100 abs-middle fs-36 text-white text-center">
-                                    <span class="btn-main hover-op-1">Read More</span>
-                                </div>
-
-                                <!-- Dynamic service image with fixed aspect ratio -->
-                                <div class="ratio ratio-16x9">
-                                    <img src="{{ asset('services_img/' . pathinfo($service->image_path, PATHINFO_FILENAME) . '.webp') }}" 
-                                         class="img-fluid hover-scale-1-2" 
-                                         style="object-fit: cover; width: 100%; height: 100%;"
-                                         width="640" height="360"
-                                         alt="{{ $service->title }}" loading="lazy">
-                                </div>
-                            </div>
-                        </a>
-
-                        <h4 class="mb-2 service-title" style="
-                            display: -webkit-box;
-                            -webkit-line-clamp: 2;
-                            -webkit-box-orient: vertical;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
-                            line-height: 1.4;">
-                            {{ Str::limit($service->title, 35) }} <!-- Adjust character limit -->
-                        </h4>
-                        <p class="mb-0" 
-                           style="display: -webkit-box; 
-                                  -webkit-line-clamp: 3; 
-                                  -webkit-box-orient: vertical; 
-                                  overflow: hidden; 
-                                  text-overflow: ellipsis; 
-                                  line-height: 1.6; 
-                                  white-space: normal;">
-                            {{ $service->description }}
-                        </p>
-                    </div>
-                </div>
-            @empty
-                <div class="col-12 text-center py-5">
-                    <p class="lead">No services available at the moment.</p>
-                </div>
-            @endforelse
-        </div>
-    </div>
-</section>

@@ -27,7 +27,7 @@ class HomeController extends Controller
                           ->take(6)
                           ->get();
 
-                // Get all public Care Homes
+        // Get all public Care Homes
         $carehomes = CareHome::where('is_public', true)
                             ->orderBy('created_at', 'desc')
                             ->get();
