@@ -40,7 +40,7 @@ class TestimonialSeeder extends Seeder
                 'name' => 'Srimani Alwis',
                 'position' => 'Lawyer',
                 'rating' => 5,
-                'message' => 'Thanks to Care 365s digital platform, I\'ve gained invaluable insights into elder care options. From informative website with interactive tools, it\'s empowered me to make informed decisions with confidence, ensuring the best possible outcome for my loved one.',
+                'message' => 'Thanks to C & K Home Nursing and Care Center\'s digital platform, I\'ve gained invaluable insights into elder care options. From informative website with interactive tools, it\'s empowered me to make informed decisions with confidence, ensuring the best possible outcome for my loved one.',
                 'image_path' => 'default_testimonial_img.png',
                 'is_public' => true,
             ],

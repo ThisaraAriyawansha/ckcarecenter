@@ -29,7 +29,7 @@ class WhoweareSeeder extends Seeder
             ],
             [
                 'title' => 'Our Mission',
-                'description' => 'At Care365, we are committed to redefining care by blending contemporary living standards with personalized digital services. Through constant innovation and dedication, we strive to exceed expectations, fostering holistic well-being and creating lasting memories as the premier care provider in Sri Lanka.',
+                'description' => 'At C & K Home Nursing and Care Center, we are committed to redefining care by blending contemporary living standards with personalized digital services. Through constant innovation and dedication, we strive to exceed expectations, fostering holistic well-being and creating lasting memories as the premier care provider in Sri Lanka.',
                 'image_path' => 'whoweare_20260123084315_IVyKPISN.jpg',
                 'display_order' => 999,
                 'is_public' => true,

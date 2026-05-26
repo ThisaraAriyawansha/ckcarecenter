@@ -18,86 +18,116 @@ class UserSeeder extends Seeder
             return;
         }
 
-        // Create Admin users
+        // Admin User
         $admin = User::firstOrCreate(
-            ['email' => 'admin@care365.com'],
+            ['email' => 'admin@ckhomecare.com'],
             [
-                'name' => 'Admin User',
+                'name' => 'C & K Administrator',
                 'password' => Hash::make('password'),
                 'branch_id' => $branches->first()->id,
             ]
         );
+
         $admin->syncRoles(['admin']);
 
-        // Create Managers for each branch
-        $managerNames = ['John Silva', 'Sarah Fernando', 'Michael Perera', 'Emma Jayawardena'];
+        // Branch Managers
+        $managerNames = [
+            'Kasun Silva',
+            'Nadeesha Fernando',
+            'Ravindu Perera',
+            'Tharushi Jayawardena'
+        ];
+
         foreach ($branches->take(4) as $index => $branch) {
+
             $manager = User::firstOrCreate(
-                ['email' => strtolower(str_replace(' ', '.', $managerNames[$index])) . '@care365.com'],
+                ['email' => strtolower(str_replace(' ', '.', $managerNames[$index])) . '@ckhomecare.com'],
                 [
                     'name' => $managerNames[$index],
                     'password' => Hash::make('password'),
                     'branch_id' => $branch->id,
                 ]
             );
+
             $manager->syncRoles(['manager']);
         }
 
-        // Create Career staff
-        $careerNames = [
-            'Nimal Bandara', 'Kumari Dissanayake', 'Sunil Gunawardena',
-            'Priya Wickramasinghe', 'Ajith Rajapaksa', 'Champa Senanayake'
+        // Care Staff
+        $careStaffNames = [
+            'Amila Bandara',
+            'Sanduni Wickramasinghe',
+            'Chathura Gunawardena',
+            'Dinithi Rajapaksha',
+            'Saman Kumara',
+            'Ishani Senanayake'
         ];
-        foreach ($careerNames as $index => $name) {
-            $career = User::firstOrCreate(
-                ['email' => strtolower(str_replace(' ', '.', $name)) . '@care365.com'],
+
+        foreach ($careStaffNames as $name) {
+
+            $staff = User::firstOrCreate(
+                ['email' => strtolower(str_replace(' ', '.', $name)) . '@ckhomecare.com'],
                 [
                     'name' => $name,
                     'password' => Hash::make('password'),
                     'branch_id' => $branches->random()->id,
                 ]
             );
-            $career->syncRoles(['career']);
+
+            $staff->syncRoles(['career']);
         }
 
-        // Create Chef users
-        $chefNames = ['Chef Ravi', 'Chef Malini', 'Chef Asanka'];
-        foreach ($chefNames as $index => $name) {
-            $chef = User::firstOrCreate(
-                ['email' => strtolower(str_replace(' ', '.', $name)) . '@care365.com'],
+        // Nurses
+        $nurseNames = [
+            'Nurse Malini',
+            'Nurse Roshan',
+            'Nurse Dilani'
+        ];
+
+        foreach ($nurseNames as $name) {
+
+            $nurse = User::firstOrCreate(
+                ['email' => strtolower(str_replace(' ', '.', $name)) . '@ckhomecare.com'],
                 [
                     'name' => $name,
                     'password' => Hash::make('password'),
                     'branch_id' => $branches->random()->id,
                 ]
             );
-            $chef->syncRoles(['chef']);
+
+            $nurse->syncRoles(['nurse']);
         }
 
-        // Create regular Users (Guardians)
-        $guardianNames = [
-            'Robert Silva', 'Lisa Fernando', 'David Perera', 'Maria Jayasinghe',
-            'James Rodrigo', 'Anna Wickremaratne', 'Thomas De Silva', 'Sophie Gunasekara'
+        // Guardians / Clients
+        $clientNames = [
+            'Ruwan Silva',
+            'Dilani Perera',
+            'Niroshan Fernando',
+            'Sachini Jayasinghe',
+            'Malith Rodrigo',
+            'Nethmi Wickramaratne'
         ];
-        foreach ($guardianNames as $name) {
+
+        foreach ($clientNames as $name) {
+
             $user = User::firstOrCreate(
-                ['email' => strtolower(str_replace(' ', '.', $name)) . '@care365.com'],
+                ['email' => strtolower(str_replace(' ', '.', $name)) . '@ckhomecare.com'],
                 [
                     'name' => $name,
                     'password' => Hash::make('password'),
                     'branch_id' => $branches->random()->id,
                 ]
             );
+
             $user->syncRoles(['user']);
         }
 
-        $this->command->info('Test users created successfully!');
+        $this->command->info('C & K Home Nursing and Care Center users created successfully!');
         $this->command->info('');
-        $this->command->info('Login credentials (all passwords: password):');
-        $this->command->info('Admin: admin@care365.com');
-        $this->command->info('Manager: john.silva@care365.com');
-        $this->command->info('Career: nimal.bandara@care365.com');
-        $this->command->info('Chef: chef.ravi@care365.com');
-        $this->command->info('User: robert.silva@care365.com');
+        $this->command->info('Login credentials (all passwords: password)');
+        $this->command->info('Admin: admin@ckhomecare.com');
+        $this->command->info('Manager: kasun.silva@ckhomecare.com');
+        $this->command->info('Care Staff: amila.bandara@ckhomecare.com');
+        $this->command->info('Nurse: nurse.malini@ckhomecare.com');
+        $this->command->info('User: ruwan.silva@ckhomecare.com');
     }
 }

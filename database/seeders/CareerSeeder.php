@@ -36,7 +36,7 @@ class CareerSeeder extends Seeder
         $careers = [
             [
                 'full_name' => 'Nimal Perera',
-                'email' => 'nimal.perera@care365.lk',
+                'email' => 'nimal.perera@ckhomecare.lk',
                 'phone' => '+94 77 123 4567',
                 'employee_id' => 'CR-001',
                 'job_title' => 'Senior Care Assistant',
@@ -64,7 +64,7 @@ class CareerSeeder extends Seeder
             ],
             [
                 'full_name' => 'Sanduni Silva',
-                'email' => 'sanduni.silva@care365.lk',
+                'email' => 'sanduni.silva@ckhomecare.lk',
                 'phone' => '+94 71 234 5678',
                 'employee_id' => 'CR-002',
                 'job_title' => 'Care Assistant',
@@ -92,7 +92,7 @@ class CareerSeeder extends Seeder
             ],
             [
                 'full_name' => 'Kamal Fernando',
-                'email' => 'kamal.fernando@care365.lk',
+                'email' => 'kamal.fernando@ckhomecare.lk',
                 'phone' => '+94 76 345 6789',
                 'employee_id' => 'CR-003',
                 'job_title' => 'Care Assistant',
@@ -120,7 +120,7 @@ class CareerSeeder extends Seeder
             ],
             [
                 'full_name' => 'Priyanka Jayawardena',
-                'email' => 'priyanka.j@care365.lk',
+                'email' => 'priyanka.j@ckhomecare.lk',
                 'phone' => '+94 70 456 7890',
                 'employee_id' => 'CR-004',
                 'job_title' => 'Senior Care Assistant',
@@ -148,7 +148,7 @@ class CareerSeeder extends Seeder
             ],
             [
                 'full_name' => 'Chaminda Rajapaksha',
-                'email' => 'chaminda.r@care365.lk',
+                'email' => 'chaminda.r@ckhomecare.lk',
                 'phone' => '+94 75 567 8901',
                 'employee_id' => 'CR-005',
                 'job_title' => 'Care Assistant',
@@ -176,7 +176,7 @@ class CareerSeeder extends Seeder
             ],
             [
                 'full_name' => 'Thisara Bandara',
-                'email' => 'thisara.b@care365.lk',
+                'email' => 'thisara.b@ckhomecare.lk',
                 'phone' => '+94 72 678 9012',
                 'employee_id' => 'CR-006',
                 'job_title' => 'Care Assistant',
@@ -204,7 +204,7 @@ class CareerSeeder extends Seeder
             ],
             [
                 'full_name' => 'Hashini Wijesinghe',
-                'email' => 'hashini.w@care365.lk',
+                'email' => 'hashini.w@ckhomecare.lk',
                 'phone' => '+94 77 789 0123',
                 'employee_id' => 'CR-007',
                 'job_title' => 'Senior Care Assistant',
@@ -232,7 +232,7 @@ class CareerSeeder extends Seeder
             ],
             [
                 'full_name' => 'Lakshan Mendis',
-                'email' => 'lakshan.m@care365.lk',
+                'email' => 'lakshan.m@ckhomecare.lk',
                 'phone' => '+94 71 890 1234',
                 'employee_id' => 'CR-008',
                 'job_title' => 'Care Assistant',

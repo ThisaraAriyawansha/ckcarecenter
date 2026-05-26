@@ -11,7 +11,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->command->info('🌱 Starting Care365 Database Seeding...');
+        $this->command->info('🌱 Starting C & K Home Nursing and Care Center Database Seeding...');
         $this->command->newLine();
 
         // Order is important - seed in dependency order
@@ -61,11 +61,11 @@ class DatabaseSeeder extends Seeder
         $this->command->info('   - Website: Services, Testimonials, FAQs, Gallery, Care Homes, Blogs, Contact Messages, Enquiries');
         $this->command->newLine();
         $this->command->info('🔑 Login Credentials (password: password):');
-        $this->command->info('   Admin:   admin@care365.com');
-        $this->command->info('   Manager: john.silva@care365.com');
-        $this->command->info('   Career:  nimal.bandara@care365.com');
-        $this->command->info('   Chef:    chef.ravi@care365.com');
-        $this->command->info('   User:    robert.silva@care365.com');
+        $this->command->info('   Admin:   admin@ckhomecare.com');
+        $this->command->info('   Manager: kasun.silva@ckhomecare.com');
+        $this->command->info('   Career:  amila.bandara@ckhomecare.com');
+        $this->command->info('   Nurse:   nurse.malini@ckhomecare.com');
+        $this->command->info('   User:    ruwan.silva@ckhomecare.com');
         $this->command->newLine();
     }
 }

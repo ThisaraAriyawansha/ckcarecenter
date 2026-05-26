@@ -16,10 +16,10 @@ class FaqSeeder extends Seeder
 
         $faqs = [
 
-            // ── New Care365-specific FAQs (added) ──
+            // ── New C & K Home Nursing and Care Center-specific FAQs (added) ──
             [
-                'question' => 'What type of care does Care365 provide?',
-                'answer' => 'Care365 provides residential elder care with 24/7 caregiver and nursing support. Our services include medical supervision, daily personal assistance, medication management, meals, housekeeping, and recreational activities.',
+                'question' => 'What type of care does C & K Home Nursing and Care Center provide?',
+                'answer' => 'C & K Home Nursing and Care Center provides residential elder care with 24/7 caregiver and nursing support. Our services include medical supervision, daily personal assistance, medication management, meals, housekeeping, and recreational activities.',
                 'visibility' => 'public',
             ],
             [

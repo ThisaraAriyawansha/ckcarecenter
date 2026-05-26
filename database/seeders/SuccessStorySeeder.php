@@ -15,9 +15,9 @@ class SuccessStorySeeder extends Seeder
         $stories = [
             [
                 'id' => 1,
-                'title' => 'A Peaceful Life at Care 365',
+                'title' => 'A Peaceful Life at C & K Home Nursing and Care Center',
                 'image' => '01KFMF6Z2EN9AKEMSGEJQVKXDP.png',
-                'image_alt' => 'Senior resident enjoying a peaceful day at Care 365',
+                'image_alt' => 'Senior resident enjoying a peaceful day at C & K Home Nursing and Care Center',
                 'layout_type' => 'single',
                 'sort_order' => 1,
                 'is_active' => true,
@@ -61,7 +61,7 @@ class SuccessStorySeeder extends Seeder
                 'id' => 5,
                 'title' => 'Comfortable & Safe Environment',
                 'image' => '01KFMFB72BZ9ESJS6JG2MRVVFF.jpg',
-                'image_alt' => 'Comfortable senior living room at Care 365',
+                'image_alt' => 'Comfortable senior living room at C & K Home Nursing and Care Center',
                 'layout_type' => 'paired_right',
                 'sort_order' => 5,
                 'is_active' => true,

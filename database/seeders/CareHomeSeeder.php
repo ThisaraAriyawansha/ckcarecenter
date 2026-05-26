@@ -34,7 +34,7 @@ class CareHomeSeeder extends Seeder
                 'title' => 'Care Home | Kandy',
                 'subtitle' => 'Constructions in Progress',
                 'location' => 'Kandy',
-                'description' => 'Exciting times are ahead as Care365 prepares to open our Kandy branch with modern facilities and premium care.',
+                'description' => 'Exciting times are ahead as C & K Home Nursing and Care Center prepares to open our Kandy branch with modern facilities and premium care.',
                 'image_path' => 'carehome_20260120060400_PcE8q9tN.jpg',
                 'contact_no' => '+94776604040',
                 'badge_text' => 'Constructions in Progress',
