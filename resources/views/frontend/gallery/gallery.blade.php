@@ -4,7 +4,7 @@
         @if($galleries->isNotEmpty())
             <div class="gallery-filter-wrap mb-5" style="padding: 30px 0;">
                 <div class="text-center">
-                    <button class="filter-btn active" data-filter="all" style="background: white; color: #1e40af; border: 2px solid #1e40af; padding: 10px 28px; margin: 5px; cursor: pointer; border-radius: 6px; font-weight: 500; transition: all 0.3s ease; font-size: 14px;">All Images</button>
+                    <button class="filter-btn active" data-filter="all" style="background: white; color: #1C3F6E; border: 2px solid #1C3F6E; padding: 10px 28px; margin: 5px; cursor: pointer; border-radius: 6px; font-weight: 500; transition: all 0.3s ease; font-size: 14px;">All Images</button>
                     @foreach($categories as $category)
                         <button class="filter-btn" data-filter="{{ Str::slug($category) }}" style="background: white; border: 2px solid #e5e7eb; color: #6b7280; padding: 10px 28px; margin: 5px; cursor: pointer; border-radius: 6px; font-weight: 500; transition: all 0.3s ease; font-size: 14px;">
                             {{ $category }}
@@ -17,23 +17,28 @@
         {{-- Gallery Grid --}}
         <div class="gallery-grid" id="galleryGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; margin-bottom: 50px;">
             @forelse($galleries as $index => $gallery)
+                @php
+                    $normalizedPath = str_replace('\\', '/', ltrim($gallery->image_path, '\\/'));
+                    $imageUrl = str_contains($normalizedPath, '/')
+                        ? asset($normalizedPath)
+                        : \Storage::disk('gallery_public')->url($normalizedPath);
+                @endphp
                 <div class="gallery-item" data-category="{{ Str::slug($gallery->category_name) }}" style="opacity: 1; transform: scale(1); transition: all 0.3s ease;">
                     <div class="gallery-card" style="position: relative; overflow: hidden; border-radius: 8px; background: white; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); cursor: pointer; border: 1px solid #f3f4f6;">
                         <div class="gallery-img" style="position: relative; overflow: hidden;">
                             <img
-                                src="{{ \Storage::disk('gallery_public')->url($gallery->image_path) }}"
+                                src="{{ $imageUrl }}"
                                 alt="{{ $gallery->category_name ?? 'Gallery Image' }}"
                                 loading="lazy"
                                 style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.4s ease;"
                                 onerror="this.onerror=null; this.src='{{ asset('images/no-image-available.jpg') }}'; this.alt='Image not available';"
-                                onclick="openLightbox('{{ \Storage::disk('gallery_public')->url($gallery->image_path) }}', '{{ $gallery->category_name ?? 'Gallery Image' }}')"
+                                onclick="openLightbox('{{ $imageUrl }}', '{{ $gallery->category_name ?? 'Gallery Image' }}')"
                             >
-                            @if(\Storage::disk('gallery_public')->exists($gallery->image_path))
-                                <div class="icon-btnn" onclick="openLightbox('{{ \Storage::disk('gallery_public')->url($gallery->image_path) }}', '{{ $gallery->category_name ?? 'Gallery Image' }}')" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; opacity: 0; transition: all 0.3s ease; z-index: 3; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-                                    <i class="fa-regular fa-magnifying-glass" style="font-size: 18px; color: #1e40af;"></i>
-                                </div>
-                            @endif
-                            <div class="gallery-category-label" style="position: absolute; top: 12px; left: 12px; background: white; color: #1e40af; padding: 6px 14px; border-radius: 6px; font-size: 11px; font-weight: 600; z-index: 2; box-shadow: 0 2px 6px rgba(0,0,0,0.1); text-transform: uppercase; letter-spacing: 0.5px;">{{ $gallery->category_name ?? 'Uncategorized' }}</div>
+                            <div class="gallery-overlay" style="position: absolute; inset: 0; background: rgba(28, 63, 110, 0.45); opacity: 0; transition: opacity 0.3s ease; z-index: 2;"></div>
+                            <div class="icon-btnn" onclick="openLightbox('{{ $imageUrl }}', '{{ $gallery->category_name ?? 'Gallery Image' }}')" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; opacity: 0; transition: all 0.3s ease; z-index: 4; box-shadow: 0 4px 16px rgba(0,0,0,0.3); cursor: pointer;">
+                                <i class="fa-solid fa-magnifying-glass-plus" style="font-size: 20px; color: #1C3F6E;"></i>
+                            </div>
+                            <div class="gallery-category-label" style="position: absolute; top: 12px; left: 12px; background: white; color: #1C3F6E; padding: 6px 14px; border-radius: 6px; font-size: 11px; font-weight: 600; z-index: 5; box-shadow: 0 2px 6px rgba(0,0,0,0.1); text-transform: uppercase; letter-spacing: 0.5px;">{{ $gallery->category_name ?? 'Uncategorized' }}</div>
                         </div>
                     </div>
                 </div>
@@ -69,6 +74,10 @@
     transform: scale(1.05);
 }
 
+.gallery-card:hover .gallery-overlay {
+    opacity: 1 !important;
+}
+
 .gallery-card:hover .icon-btnn {
     opacity: 1 !important;
 }
@@ -79,15 +88,15 @@
 
 .filter-btn:hover {
     background: #f9fafb !important;
-    border-color: #1e40af !important;
-    color: #1e40af !important;
+    border-color: #1C3F6E !important;
+    color: #1C3F6E !important;
     transform: translateY(-1px);
 }
 
 .filter-btn.active {
-    background: #1e40af !important;
+    background: #1C3F6E !important;
     color: white !important;
-    border-color: #1e40af !important;
+    border-color: #1C3F6E !important;
 }
 
 #lightboxModal {
@@ -96,7 +105,7 @@
 
 #lightboxModal button:hover {
     background: #f3f4f6 !important;
-    color: #1e40af !important;
+    color: #1C3F6E !important;
     transform: scale(1.1);
 }
 
