@@ -3,7 +3,7 @@
             <nav class="navbar navbar-expand-xl">
                 <div class="container-fluid ps-3">
                     <div class="logo-container">
-                        <a class="navbar-brand" href="#"><img src="{{ asset('assets/image/logo.png') }}" alt="" class="img-fluid"></a>
+                        <a class="navbar-brand" href="#"><img src="{{ asset('assets/image/logo/logo_2.webp') }}" alt="" class="img-fluid"></a>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
