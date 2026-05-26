@@ -78,16 +78,16 @@
                     style="max-width: 620px;">
                     <div class="d-flex flex-row gap-2 align-items-center">
                         <img src="{{ asset('assets/image/cuida_medicine-outline.png') }}" class="img-fluid" alt="">
-                        <h6 class="accent-color m-0">Our Services</h6>
+                        <h6 class="accent-color m-0">Our Care Services</h6>
                     </div>
-                    <h3>Compassionate Care, Tailored for Every Need</h3>
-                    <p>From personal nursing to specialised home care, we provide a full range of services designed to
-                        support your loved ones with dignity and warmth.</p>
+                    <h3>Browse All Our Care Services</h3>
+                    <p>Explore our complete range of professional care services, each thoughtfully designed to support
+                        your loved ones with comfort, dignity, and expert attention.</p>
                 </div>
 
                 @if($services->count() > 0)
                     <div class="row row-cols-1 row-cols-md-3 g-3 scrollanimation animated fadeInUp">
-                        @foreach($services->take(6) as $service)
+                        @foreach($services as $service)
                             @php
                                 $imgSrc = !$service->image_path || str_starts_with($service->image_path, 'assets/')
                                     ? asset($service->image_path ?? 'assets/image/services/service_card_1_2.jpg')
@@ -110,21 +110,17 @@
                             </div>
                         @endforeach
                     </div>
+
+                    {{-- Pagination --}}
+                    <div class="mt-4">
+                        {{ $services->links('vendor.pagination.services-custom') }}
+                    </div>
                 @else
                     <div class="text-center py-5">
                         <i class="rtmicon rtmicon-medical-checkup accent-color" style="font-size: 72px;"></i>
                         <p class="font-2 mt-3">Our services will be available shortly. Please check back soon.</p>
                     </div>
                 @endif
-
-                {{-- View All button --}}
-                <div class="w-max-content mx-auto scrollanimation animated fadeInUp">
-                    <a href="{{ route('services') }}"
-                        class="btn rounded-pill d-flex flex-row gap-2 px-3 py-2"
-                        style="background-color: transparent; color: #1C3F6E; border: 2px solid #1C3F6E; font-size: 0.85rem;">
-                        <span>View All Services</span>
-                    </a>
-                </div>
 
             </div>
         </div>
