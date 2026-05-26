@@ -75,10 +75,10 @@ class UrlHelper
     public static function placeholderImage($type = 'blog')
     {
         $placeholders = [
-            'blog' => 'assets/img/blog/blog-placeholder.jpg',
+            'blog' => 'assets/image/blog/blog_20260120084845_cZMzvwCu.jpg',
             'service' => 'assets/img/Home-img/service-placeholder.jpg',
             'testimonial' => 'assets/img/testimonial/avatar-placeholder.jpg',
-            'default' => 'assets/img/placeholder.jpg',
+            'default' => 'assets/image/blog/blog_20260120084845_cZMzvwCu.jpg',
         ];
         
         $path = $placeholders[$type] ?? $placeholders['default'];

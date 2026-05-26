@@ -41,12 +41,18 @@ class HomeController extends Controller
                    ->take(6)
                    ->get();
 
+        $blogs = Blog::where('is_public', true)
+                    ->orderBy('date', 'desc')
+                    ->take(4)
+                    ->get();
+
         return view('frontend.home.index', compact(
             'testimonials',
             'services',
             'carehomes',
             'teamMembers',
-            'faqs'
+            'faqs',
+            'blogs'
         ));
     }
 

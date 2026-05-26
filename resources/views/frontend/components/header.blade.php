@@ -35,20 +35,18 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="{{ route('faq') }}">FAQs</a></li>
-                                    <li><a class="dropdown-item" href="member.html">Membership</a></li>
-                                    <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
-                                    <li><a class="dropdown-item" href="404.html">404 Error</a></li>
-                                    <li><a class="dropdown-item" href="location.html">Detail Location</a></li>
-                                    <li><a class="dropdown-item" href="blog.html">Last Article</a></li>
-                                    <li><a class="dropdown-item" href="single_blog.html">Single Post</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('blog') }}">Last Article</a></li>
+                                    <li><a class="dropdown-item" href="#">Membership</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('testimonial') }}">Testimonials</a></li>
+                                    
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact Us</a>
+                                <a class="nav-link" href="{{ route('contact') }}">Contact Us</a>
                             </li>
                         </ul>
                         <div class="mb-xl-0 mb-3">
-                            <a href="contact.html"
+                            <a href="{{ route('contact') }}"
                                 class="btn btn-accent-outline d-flex flex-row rounded-pill gap-2 px-4 py-2">
                                 <span>Get Started</span>
                             </a>

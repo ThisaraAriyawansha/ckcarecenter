@@ -1,48 +1,59 @@
-<section class="pb-5 pb-md-4">
-    <div class="container">
-        <div class="row g-4">
+<div class="section">
+            <div class="r-container d-flex flex-column gap-4">
+                <div class="d-flex flex-column gap-3 align-items-center justify-content-center text-center mx-auto scrollanimation animated zoomIn"
+                    style="max-width: 650px;">
+                    <div class="d-flex flex-row gap-2 align-items-center">
+                        <h6 class="accent-color m-0">Latest Article</h6>
+                    </div>
+                    <h3>Care Tips, News & Expert Insights</h3>
+                    <p>
+                        Stay informed with the latest articles on elderly care, senior living, and health &amp; wellness
+                        to help you make the best decisions for your loved ones.
+                    </p>
+                </div>
 
-            @forelse ($blogs as $blog)
-                <div class="col-lg-4 col-md-6">
-                    <div class="relative">
-                        <div class="post-image rounded-1 mb-2" style="height: 250px; overflow: hidden; position: relative;">
-                            <div class="abs start-0 top-0 bg-color-2 text-dark p-3 pb-2 m-3 text-center fw-600 rounded-1">
-                                <div class="fs-36 mb-0">{{ $blog->date->format('d') }}</div>
-                                <span>{{ $blog->date->format('M') }}</span>
+                @if($blogs->count() > 0)
+                <div class="row row-cols-xl-2 row-cols-1">
+                    @foreach($blogs as $index => $blog)
+                    <div class="col mb-3 scrollanimation animated {{ $index % 2 === 0 ? 'fadeInLeft' : 'fadeInRight' }}">
+                        <div class="card d-flex flex-column gap-3 h-100">
+                            <div class="position-relative overflow-hidden rounded-3 h-100">
+                                <img src="{{ image_url($blog->image_path, 'blog') }}"
+                                     alt="{{ $blog->title }}"
+                                     class="img-fluid h-100"
+                                     onerror="this.onerror=null;this.src='{{ asset('assets/image/blog/blog_20260120084845_cZMzvwCu.jpg') }}'">
+                                <div class="blog-overlay"></div>
+                                <div class="position-absolute bottom-0 left-0 text-white p-5">
+                                    <div class="d-flex flex-row gap-2 justify-content-between align-items-end">
+                                        <div class="d-flex flex-column gap-3">
+                                            <div class="px-4 py-2 border border-light rounded-pill w-max-content">
+                                                <span class="text-white">
+                                                    {{ $blog->category ? $blog->category->name : 'News' }}
+                                                </span>
+                                            </div>
+                                            <h5>{{ $blog->title }}</h5>
+                                        </div>
+                                        <a href="{{ url('/' . $blog->title_slug) }}" class="icon-box link">
+                                            <i class="rtmicon rtmicon-arrow-right" style="font-size: 30px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <img 
-                                alt="{{ $blog->title }}" 
-                                loading="lazy"
-                                src="{{ image_url($blog->image_path, 'blog') }}" 
-                                class="lazy w-100 h-100"
-                                style="object-fit: cover;"
-                            >
-                        </div>
-                        <div class="pt-2 h-100">
-                            <h4>
-                                <a class="text-dark" href="{{ url('/' . $blog->title_slug) }}">
-                                    {{ $blog->title }}
-                                </a>
-                            </h4>
-                            <p class="mb-3">
-                                {{ Str::limit(strip_tags($blog->description), 110) }}
-
-                            </p>
                         </div>
                     </div>
+                    @endforeach
                 </div>
-            @empty
-                <div class="col-12 text-center py-5">
-                    <p>No public blog posts available right now.</p>
-                </div>
-            @endforelse
 
-            <!-- pagination begin -->
-            <div class="col-lg-12 pt-4">
-                {{ $blogs->links('vendor.pagination.custom') }}
+                {{-- Pagination --}}
+                <div class="mt-4">
+                    {{ $blogs->links('vendor.pagination.blog-custom') }}
+                </div>
+
+                @else
+                <div class="text-center py-5">
+                    <p class="text-muted">No articles available at the moment. Please check back soon.</p>
+                </div>
+                @endif
+
             </div>
-            <!-- pagination end -->
-
         </div>
-    </div>
-</section>
