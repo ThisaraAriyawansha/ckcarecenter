@@ -1,90 +1,66 @@
-<header class="header-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="de-flex sm-pt10">
-                            <div class="de-flex-col">
-                                <!-- logo begin -->
-                                <div id="logo">
-                                    <a href="{{ route('home') }}" aria-label="Care365 Home">
-                                        <img class="logo-main" src="assets/img/logo.webp" alt="Care365 Logo" 
-                                            style="max-height: 60px; width: auto; height: auto;" width="82" height="60" loading="lazy">
-                                        <img class="logo-scroll" src="assets/img/logo.webp" alt="Care365 Logo" 
-                                            style="max-height: 60px; width: auto; height: auto;" width="82" height="60" loading="lazy">
-                                        <img class="logo-mobile" src="assets/img/logo.webp" alt="Care365 Logo" 
-                                            style="max-height: 60px; width: auto; height: auto;" width="82" height="60" loading="lazy">
-                                    </a>
-                                </div>
-                                <!-- logo close -->
-                            </div>
-                            <div class="de-flex-col header-col-mid">
-                                <ul id="mainmenu">
-                                    <li><a class="menu-item {{ request()->routeIs('home') ? 'active' : '' }}" href="{{ route('home') }}">Home</a></li>
-                                    <li><a class="menu-item {{ request()->routeIs('about') ? 'active' : '' }}" href="{{ route('about') }}">About Care365</a>
-                                        <ul>
-                                            <li><a class="menu-item" href="{{ route('about') }}#who-we-are" class="scroll-link">Vision|Mission</a></li>
-                                            <li><a class="menu-item" href="{{ route('about') }}#Why-Choose-Care365" class="scroll-link">Why Choose Care365 </a></li>
-                                            <li><a class="menu-item" href="{{ route('about') }}#Care-Team " class="scroll-link">Management & Care Team  </a></li>
-
-                                        </ul>
-                                    </li>
-                                    <li><a class="menu-item {{ request()->routeIs('services') ? 'active' : '' }}" href="{{ route('services') }}">Care Services</a>
-                                        <ul>
-                                            <li><a class="menu-item" href="{{ route('services') }}" class="scroll-link">Our Services</a></li>
-                                            <li><a class="menu-item" href="{{ route('services') }}#Meal-Plan" class="scroll-link">Meals & Nutrition</a></li>
-                                        </ul>
-                                    </li>  
-                                    <li><a class="menu-item {{ request()->routeIs('wecare') ? 'active' : '' }}" href="{{ route('wecare') }}">Care Options</a>
-                                        <ul>
-                                            <li><a class="menu-item" href="{{ route('wecare') }}#Packages" class="scroll-link">Packages & Pricing</a></li>
-                                            <li><a class="menu-item" href="{{ route('wecare') }}#Admissions-Process" class="scroll-link">Admissions Process</a></li>
-                                            <li><a class="menu-item" href="{{ route('wecare') }}#homes" class="scroll-link">Our Homes (Locations)</a></li>
-                                        </ul>
-                                    </li>    
-                                    <li><a class="menu-item {{ request()->routeIs('digitalwellbeing') ? 'active' : '' }}" href="{{ route('digitalwellbeing') }}">Explore</a>
-                                        <ul>
-                                            <li><a class="menu-item" href="{{ route('gallery') }}" class="scroll-link">Gallery</a></li>
-                                            <li><a class="menu-item" href="{{ route('digitalwellbeing') }}#News-Center" class="scroll-link">News & Updates</a></li>
-                                            <li><a class="menu-item" href="{{ route('faq') }}" class="scroll-link">FAQ</a></li>
-                                            <li><a class="menu-item" href="{{ route('digitalwellbeing') }}#Calander" class="scroll-link">Calander</a></li>
-                                        </ul>
-                                    </li>                                                                    
-
-                                    <li><a class="menu-item {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact</a></li>
-
+<header class="sticky-top bg-accent-primary">
+        <div class="r-container">
+            <nav class="navbar navbar-expand-xl">
+                <div class="container-fluid ps-3">
+                    <div class="logo-container">
+                        <a class="navbar-brand" href="#"><img src="{{ asset('assets/image/logo.png') }}" alt="" class="img-fluid"></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars-staggered accent-color-2"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-4 gap-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Homepage</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    About
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                    <li><a class="dropdown-item" href="team.html">Team</a></li>
                                 </ul>
-                            </div>
-                            <div class="de-flex-col">
-                                <div class="menu_side_area">
-                                    <div class="h-phone xs-hide">
-                                        <span>Need Help?</span>
-                                        <h5>(+94)77 660 40 40</h5>
-                                    </div>    
-                                    <a href="https://wa.me/94779191818" target="_blank" class="btn-main">Book Service Now</a>
-                                    <span id="menu-btn"></span>
-                                </div>
-                            </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="services.html">Services</a></li>
+                                    <li><a class="dropdown-item" href="service_detail.html">Service Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
+                                    <li><a class="dropdown-item" href="member.html">Membership</a></li>
+                                    <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
+                                    <li><a class="dropdown-item" href="404.html">404 Error</a></li>
+                                    <li><a class="dropdown-item" href="location.html">Detail Location</a></li>
+                                    <li><a class="dropdown-item" href="blog.html">Last Article</a></li>
+                                    <li><a class="dropdown-item" href="single_blog.html">Single Post</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="mb-xl-0 mb-3">
+                            <a href="contact.html"
+                                class="btn btn-accent-outline d-flex flex-row rounded-pill gap-2 px-4 py-2">
+                                <span>Get Started</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
-
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const menuItems = document.querySelectorAll('#mainmenu a');
-    const menuBtn = document.getElementById('menu-btn');
-    
-    menuItems.forEach(function(item) {
-        item.addEventListener('click', function(e) {
-            if (window.innerWidth <= 991) {
-                // Small delay for smooth scrolling to work
-                setTimeout(function() {
-                    menuBtn.click(); // Trigger menu close
-                }, 100);
-            }
-        });
-    });
-});
-</script>
+            </nav>
+        </div>
+    </header>
