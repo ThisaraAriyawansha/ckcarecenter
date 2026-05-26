@@ -3,72 +3,9 @@
 
 
 
-        <!-- Section Counter -->
-        <div class="section pt-0 floating-counter">
-            <div
-                class="r-container d-flex align-items-center mx-auto justify-content-center bg-accent border rounded-5">
-                <div class="row row-cols-xl-3 row-cols-1 w-100 p-5">
-                    <div class="col mb-3 border-end">
-                        <div class="d-flex flex-column align-items-center text-center">
-                            <div class="d-flex">
-                                <h3 class="number accent-color" data-target="127" data-duration="1000">0</h3>
-                                <h3 class="accent-color">+</h3>
-                            </div>
-                            <h5>Professional Staff</h5>
-                            <p>Our team offers reliable, personalized care to help you achieve optimal health outcomes.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col mb-3 border-end">
-                        <div class="d-flex flex-column align-items-center text-center">
-                            <div class="d-flex">
-                                <h3 class="number accent-color" data-target="2" data-duration="1000">0</h3>
-                                <h3 class="accent-color">K</h3>
-                            </div>
-                            <h5>Active Members</h5>
-                            <p>They are committed to providing ongoing support, ensuring the best possible care.</p>
-                        </div>
-                    </div>
-                    <div class="col mb-3">
-                        <div class="d-flex flex-column align-items-center text-center">
-                            <div class="d-flex">
-                                <h3 class="number accent-color" data-target="25" data-duration="1000">0</h3>
-                                <h3 class="accent-color">+</h3>
-                            </div>
-                            <h5>Years Experience</h5>
-                            <p>We leverage our extensive background to deliver accurate advice, trusted medical
-                                services.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Section CTA -->
-        <div class="section position-relative bg-attach-fixed overflow-hidden mx-auto rounded-4"
-            style="background-image: url({{ asset('assets/image/dummy-img-1920x900.jpg') }}); max-width: 1770px;">
-            <div class="cta-overlay"></div>
-            <div class="r-container position-relative py-5" style="z-index: 2;">
-                <div class="row row-cols-xl-2 row-cols-1 align-items-center">
-                    <div class="col mb-3">
-                        <div class="d-flex flex-column text-white gap-3 scrollanimation animated zoomIn">
-                            <h3 class="font-1 text-white">Get Started on Your Health Journey Today</h3>
-                            <p class="text-white">
-                                Our team is here to guide you, answer your questions, and support your wellness
-                                goaals every step of the way. Start now!
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col mb-3 d-flex justify-content-end">
-                        <div class="w-max-content">
-                            <a href="contact.html" class="btn btn-accent rounded-pill d-flex flex-row gap-2 px-5 py-3">
-                                <span>Contact Us</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+
 
         <!-- Section Sevices -->
         <div class="section">

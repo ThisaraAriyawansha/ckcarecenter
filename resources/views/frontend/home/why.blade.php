@@ -1,3 +1,14 @@
+        <style>
+            .why-slide-img {
+                height: 700px;
+            }
+            @media (max-width: 768px) {
+                .why-slide-img {
+                    height: 350px;
+                }
+            }
+        </style>
+
         <!-- Section Why Choose Us -->
         <div class="section bg-accent" style="padding-bottom: 10rem;">
             <div class="r-container">
@@ -8,18 +19,18 @@
                             <div class="swiper swiperCard" style="z-index: 1;">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide p-0 rounded-5 overflow-hidden">
-                                        <div class="d-flex justify-content-center">
-                                            <img src="{{ asset('assets/image/home/photo-1576091160550-2173dba999ef.jpg') }}" class="img-fluid rounded-5 w-100" alt="Compassionate home nursing care">
+                                        <div class="why-slide-img">
+                                            <img src="{{ asset('assets/image/home/photo-1576091160550-2173dba999ef.jpg') }}" class="rounded-5 w-100 h-100" style="object-fit: cover;" alt="Compassionate home nursing care">
                                         </div>
                                     </div>
                                     <div class="swiper-slide p-0 rounded-5 overflow-hidden">
-                                        <div class="d-flex justify-content-center">
-                                            <img src="{{ asset('assets/image/home/african-caregiver-helping-senior-friendly-men-getting-up-wheelchair-33292234.jpg') }}" class="img-fluid rounded-5 w-100" alt="Professional nurse assisting elderly patient">
+                                        <div class="why-slide-img">
+                                            <img src="{{ asset('assets/image/home/african-caregiver-helping-senior-friendly-men-getting-up-wheelchair-33292234.jpg') }}" class="rounded-5 w-100 h-100" style="object-fit: cover;" alt="Professional nurse assisting elderly patient">
                                         </div>
                                     </div>
                                     <div class="swiper-slide p-0 rounded-5 overflow-hidden">
-                                        <div class="d-flex justify-content-center">
-                                            <img src="{{ asset('assets/image/home/default-image-legacy.jpg') }}" class="img-fluid rounded-5 w-100" alt="Dedicated home care team">
+                                        <div class="why-slide-img">
+                                            <img src="{{ asset('assets/image/home/default-image-legacy.jpg') }}" class="rounded-5 w-100 h-100" style="object-fit: cover;" alt="Dedicated home care team">
                                         </div>
                                     </div>
                                 </div>
@@ -36,7 +47,7 @@
                             </div>
                             <h3>Trusted Home Nursing & Care You Can Count On</h3>
                             <p>
-                                At C & K Home Nursing and Care Center, we bring professional medical care directly to your doorstep. Our compassionate team of certified nurses and caregivers ensures your loved ones receive the highest standard of personalised, dignified care — right at home.
+                                At C & K Home Nursing and Care Center, we believe every individual deserves to be cared for with warmth, dignity, and expertise. Our dedicated team of registered nurses and professional caregivers deliver compassionate, round-the-clock home nursing care — tailored to each person's unique needs, in the comfort of their own home.
                             </p>
                             <div class="d-flex flex-column gap-4">
                                 <div class="r-progress w-100" style="--value:95;">
@@ -70,7 +81,7 @@
                                         class="d-flex flex-column gap-1 p-4 bg-accent-color-3 rounded-4 position-relative">
                                         <h5>Book a Home Visit</h5>
                                         <p>Schedule a professional nursing consultation at your home!</p>
-                                        <a href="" class="link fw-semibold">Make Appointment</a>
+                                        <a href="{{ route('lead-form') }}" class="link fw-semibold">Make Appointment</a>
                                         <i class="rtmicon rtmicon-nutritionist position-absolute bottom-0 end-0"
                                             style="font-size: 78px;"></i>
                                     </div>
@@ -79,7 +90,7 @@
                                     <div
                                         class="d-flex flex-column gap-1 p-4 bg-accent-color-3 rounded-4 position-relative">
                                         <h5>Need Urgent Care?</h5>
-                                        <p>Our care team is available 24/7. Call now for immediate assistance!</p>
+                                        <p>Our care team is available 24/7. Call immediately </p>
                                         <a href="tel:+94761852339" class="link fw-semibold">+94 76 185 2339</a>
                                         <i class="rtmicon rtmicon-classic-phone position-absolute bottom-0 end-0"
                                             style="font-size: 78px;"></i>

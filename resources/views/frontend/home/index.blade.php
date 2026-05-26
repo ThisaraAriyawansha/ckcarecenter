@@ -23,6 +23,8 @@
      @include('frontend.home.hero')
      @include('frontend.home.about')
      @include('frontend.home.why')
+     @include('frontend.home.counter')
+     @include('frontend.home.cta')
     {{-- @include('frontend.home.services') --}}
     {{-- @include('frontend.home.carehome') --}}
     {{-- @include('frontend.home.packages') --}}
