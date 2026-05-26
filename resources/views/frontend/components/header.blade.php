@@ -14,19 +14,17 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    About
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ route('about') }}">About Us</a></li>
-                                    <li><a class="dropdown-item" href="#">Team</a></li>
-                                </ul>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{{ route('about') }}">About</a>
                             </li>
+                        
                             
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="{{ route('services') }}">Services</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('contact') }}">Contact Us</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -36,13 +34,10 @@
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="{{ route('faq') }}">FAQs</a></li>
                                     <li><a class="dropdown-item" href="{{ route('blog') }}">Last Article</a></li>
-                                    <li><a class="dropdown-item" href="#">Membership</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('gallery') }}">Gallery</a></li>
                                     <li><a class="dropdown-item" href="{{ route('testimonial') }}">Testimonials</a></li>
                                     
                                 </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('contact') }}">Contact Us</a>
                             </li>
                         </ul>
                         <div class="mb-xl-0 mb-3">

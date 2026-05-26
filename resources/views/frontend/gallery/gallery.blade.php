@@ -20,16 +20,16 @@
                 <div class="gallery-item" data-category="{{ Str::slug($gallery->category_name) }}" style="opacity: 1; transform: scale(1); transition: all 0.3s ease;">
                     <div class="gallery-card" style="position: relative; overflow: hidden; border-radius: 8px; background: white; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); cursor: pointer; border: 1px solid #f3f4f6;">
                         <div class="gallery-img" style="position: relative; overflow: hidden;">
-                            <img 
-                                src="{{ asset('gallery_img/' . $gallery->image_path) }}" 
+                            <img
+                                src="{{ \Storage::disk('gallery_public')->url($gallery->image_path) }}"
                                 alt="{{ $gallery->category_name ?? 'Gallery Image' }}"
                                 loading="lazy"
                                 style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.4s ease;"
                                 onerror="this.onerror=null; this.src='{{ asset('images/no-image-available.jpg') }}'; this.alt='Image not available';"
-                                onclick="openLightbox('{{ asset('gallery_img/' . $gallery->image_path) }}', '{{ $gallery->category_name ?? 'Gallery Image' }}')"
+                                onclick="openLightbox('{{ \Storage::disk('gallery_public')->url($gallery->image_path) }}', '{{ $gallery->category_name ?? 'Gallery Image' }}')"
                             >
-                            @if(file_exists(public_path('gallery_img/' . $gallery->image_path)))
-                                <div class="icon-btnn" onclick="openLightbox('{{ asset('gallery_img/' . $gallery->image_path) }}', '{{ $gallery->category_name ?? 'Gallery Image' }}')" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; opacity: 0; transition: all 0.3s ease; z-index: 3; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                            @if(\Storage::disk('gallery_public')->exists($gallery->image_path))
+                                <div class="icon-btnn" onclick="openLightbox('{{ \Storage::disk('gallery_public')->url($gallery->image_path) }}', '{{ $gallery->category_name ?? 'Gallery Image' }}')" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; opacity: 0; transition: all 0.3s ease; z-index: 3; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
                                     <i class="fa-regular fa-magnifying-glass" style="font-size: 18px; color: #1e40af;"></i>
                                 </div>
                             @endif
