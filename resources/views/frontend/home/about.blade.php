@@ -1,237 +1,200 @@
-<section class="pt-0">
-    <div class="container relative">
-        <div class="row g-4 gx-5 align-items-center">
-            <div class="col-lg-6 relative">
-                <div class="relative z-1000">
-                    <div class="subtitle wow fadeInUp" data-wow-delay=".0s">About Care 365</div>
-                    <h2>Compassionate Care for Golden Years</h2>
-                    <p>At Care 365, we provide compassionate and personalized care for seniors in a warm, 
-                        homelike environment. Our dedicated team is committed to enhancing the quality of 
-                        life for our residents, ensuring their comfort, safety, and well-being. We treat every 
-                        resident like family, providing the support and care they need to live life
-                        to the fullest.</p>
-                    <a class="btn-main bg-color-2  mb-3 wow fadeInUp" 
-                    data-wow-delay=".6s" 
-                    href="{{ route('services') }}">
-                        See Our Care Services 
-                    </a>                            
-                </div>
-            </div>
+        <!-- Section About Us -->
+        <style>
+            .about-glow-pink {
+                position: absolute;
+                top: -40px;
+                right: -40px;
+                width: 180px;
+                height: 180px;
+                background: radial-gradient(circle, rgba(230, 0, 126, 0.35) 0%, transparent 70%);
+                border-radius: 50%;
+                z-index: 1;
+                pointer-events: none;
+                animation: aboutGlowFloat 5s ease-in-out infinite;
+            }
 
-            <div class="col-lg-6">
-                <img src="{{ asset('assets/images/about/Landing.webp') }}" 
-                    class="img-fluid rounded-10 wow scaleIn object-fit-cover"
-                    style="width: 100%; max-height: 700px;" 
-                    width="600" height="400" 
-                    alt="Care 365 Senior Care Facility" loading="lazy">
+            .about-glow-teal {
+                position: absolute;
+                bottom: 40px;
+                left: -30px;
+                width: 140px;
+                height: 140px;
+                background: radial-gradient(circle, rgba(1, 137, 142, 0.45) 0%, transparent 70%);
+                border-radius: 50%;
+                z-index: 1;
+                pointer-events: none;
+                animation: aboutGlowFloat 6s ease-in-out infinite reverse;
+            }
+
+            .about-glow-pink-sm {
+                position: absolute;
+                bottom: 80px;
+                right: 30px;
+                width: 80px;
+                height: 80px;
+                background: radial-gradient(circle, rgba(230, 0, 126, 0.25) 0%, transparent 70%);
+                border-radius: 50%;
+                z-index: 1;
+                pointer-events: none;
+                animation: aboutGlowFloat 4s ease-in-out infinite 1s;
+            }
+
+            @keyframes aboutGlowFloat {
+                0%, 100% { transform: translateY(0) scale(1); opacity: 0.75; }
+                50% { transform: translateY(-18px) scale(1.12); opacity: 1; }
+            }
+
+            .about-vision-card {
+                box-shadow: 0 8px 32px rgba(230, 0, 126, 0.18), 0 2px 12px rgba(0, 69, 81, 0.25);
+            }
+
+            .about-stats-overlay {
+                width: max-content;
+            }
+
+            @media (max-width: 1199px) {
+                .about-stats-overlay {
+                    width: 100% !important;
+                    max-width: 100%;
+                    border-top-right-radius: 0 !important;
+                    border-top-left-radius: 16px;
+                    border-top-right-radius: 16px !important;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    gap: 0.75rem;
+                }
+            }
+
+            .about-vision-card .icon-box {
+                animation: iconPulseGlow 2.5s ease-in-out infinite;
+            }
+
+            .btn-about-learn {
+                background: white;
+                color: var(--accent-color);
+                border: 2px solid var(--accent-color);
+                font-weight: 600;
+                transition: all 0.3s ease;
+            }
+
+            .btn-about-learn:hover {
+                background: var(--accent-color);
+                color: white;
+                border-color: var(--accent-color);
+            }
+
+            @keyframes iconPulseGlow {
+                0%, 100% { box-shadow: 0 0 8px rgba(230, 0, 126, 0.5); }
+                50% { box-shadow: 0 0 22px rgba(230, 0, 126, 0.9), 0 0 40px rgba(230, 0, 126, 0.3); }
+            }
+        </style>
+        <div class="section pt-0 " style="margin-top: 5rem;">
+            <div class="r-container d-flex flex-column gap-4">
+                <div class="d-flex flex-column gap-3 align-items-center justify-content-center mx-auto text-center scrollanimation animated zoomIn"
+                    style="max-width: 620px;">
+                    <div class="d-flex flex-row gap-2 align-items-center">
+                        <img src="{{ asset('assets/image/cuida_medicine-outline.png') }}" class="img-fluid" alt="">
+                        <h6 class="accent-color m-0">Who We Are</h6>
+                    </div>
+                    <h3>Compassionate Home Nursing &amp; Care for Your Loved Ones</h3>
+                    <p>
+                        At C &amp; K Home Nursing and Care Center, we are dedicated to providing professional,
+                        compassionate, and personalized nursing care - delivered right to the comfort of your home.
+                    </p>
+                </div>
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div class="col col-xl-5 mb-3 scrollanimation animated fadeInLeft">
+                        <div class="position-relative bg-attach-cover py-5 px-4 rounded-4 overflow-hidden about-vision-card"
+                            style="background-image: url('{{ asset('assets/image/home/56365356.webp') }}');">
+                            <div class="bg-overlay"></div>
+                            <div class="about-glow-pink"></div>
+                            <div class="about-glow-teal"></div>
+                            <div class="about-glow-pink-sm"></div>
+                            <div class="d-flex flex-column position-relative" style="z-index: 2;">
+                                <div
+                                    class="d-flex flex-xl-row flex-column align-items-xl-start align-items-center gap-3">
+                                    <div class="icon-box">
+                                        <i class="rtmicon rtmicon-chemistry fs-1"></i>
+                                    </div>
+                                    <div
+                                        class="d-flex flex-column align-items-xl-start text-white align-items-center gap-2">
+                                        <h4 class="m-0">Our Vision</h4>
+                                        <p class="text-white">To be the most trusted home nursing and care provider,
+                                            ensuring dignity, comfort, and quality of life for every individual we serve.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex flex-xl-row flex-column align-items-xl-start align-items-center gap-3">
+                                    <div class="icon-box">
+                                        <i class="rtmicon rtmicon-pharmacy fs-1"></i>
+                                    </div>
+                                    <div class="d-flex flex-column align-items-xl-start align-items-center gap-2">
+                                        <h4 class="m-0 text-white">Our Mission</h4>
+                                        <p class="text-white">To deliver exceptional, personalized home nursing care
+                                            that enhances well-being and gives complete peace of mind to families.</p>
+                                    </div>
+                                </div>
+                                <hr class="accent-color-primary">
+                                <div class="d-flex flex-xl-row flex-column gap-3 mt-3 text-white">
+                                    <div class="d-flex flex-row gap-2 align-items-center">
+                                        <i class="rtmicon rtmicon-location"></i>
+                                        <span class="font-3">Colombo, Sri lanka</span>
+                                    </div>
+                                    <div class="d-flex flex-row gap-2 align-items-center">
+                                        <i class="rtmicon rtmicon-classic-phone"></i>
+                                        <span class="font-3">0761-8523-398</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-7 mb-3 scrollanimation animated fadeInRight">
+                        <div class="bg-attach-cover rounded-4 overflow-hidden"
+                            style="background-image: url('{{ asset('assets/image/home/premium_photo-1663054397533-2a3fb0cab5de.jpg') }}'); min-height: 400px;">
+                            <div class="d-flex flex-column position-relative h-100" style="z-index: 2;">
+                                <div class="d-flex flex-row gap-3 align-items-center bg-accent p-3 position-absolute bottom-0 start-0 about-stats-overlay"
+                                    style="border-top-right-radius: 20px;">
+                                    <div class="d-flex flex-row customer-container">
+                                        <div class="customer-item">
+                                            <img src="{{ asset('assets/image/home/photo-1580869318757-a6c605b061ed.avif') }}" class="img-fluid" alt="Happy Patient">
+                                        </div>
+                                        <div class="customer-item">
+                                            <img src="{{ asset('assets/image/home/photo-1584515933487-779824d29309.avif') }}" class="img-fluid" alt="Satisfied Family">
+                                        </div>
+                                        <div class="customer-item">
+                                            <img src="{{ asset('assets/image/home/photo-1559234938-b60fff04894d.avif') }}" class="img-fluid" alt="Care Recipient">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column gap-2">
+                                        <div class="flex-row">
+                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                            <i class="fa-solid fa-star" style="color: var(--primary);"></i>
+                                        </div>
+                                        <h6>(1.5k+ Happy Families)</h6>
+                                    </div>
+                                    {{-- Learn More button inside overlay on mobile only --}}
+                                    <a href="{{ route('contact') }}"
+                                        class="btn btn-about-learn rounded-pill px-4 py-2 ms-auto d-xl-none">
+                                        Learn More
+                                    </a>
+                                </div>
+                                {{-- Learn More button as absolute on xl+ only --}}
+                                <div class="position-absolute end-0 bottom-0 d-none d-xl-block"
+                                    style="margin-bottom: 2rem; margin-right: 2rem;">
+                                    <div class="w-max-content align-self-end scrollanimation animated fadeInLeft">
+                                        <a href="{{ route('contact') }}"
+                                            class="btn btn-about-learn rounded-pill d-flex flex-row gap-2 px-5 py-3">
+                                            <span>Learn More</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section class="pt-0">
-    <div class="container">
-        <div class="row g-3">
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card">
-                    <img src="assets/images/icons/white/5456456.png" 
-                        class="service-icon bg-color-2 w-60px p-10 rounded-10 wow scaleIn" 
-                        alt="Medical care icon" loading="lazy">
-                    <div class="service-content wow fadeInUp">
-                        <h5 class="service-title">Medical & Nursing Care</h5>
-                        <p class="service-text">Professional healthcare services and nursing support.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card">
-                    <img src="assets/images/icons/white/45764.png" 
-                        class="service-icon bg-color-2 w-60px p-10 rounded-10 wow scaleIn" 
-                        alt="Medication icon" loading="lazy">
-                    <div class="service-content wow fadeInUp">
-                        <h5 class="service-title">Medication Management</h5>
-                        <p class="service-text">Proper administration and tracking of medications.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card">
-                    <img src="assets/images/icons/white/564646367.png" 
-                        class="service-icon bg-color-2 w-60px p-10 rounded-10 wow scaleIn" 
-                        alt="Personal assistance icon" loading="lazy">
-                    <div class="service-content wow fadeInUp">
-                        <h5 class="service-title">Personal Assistance</h5>
-                        <p class="service-text">Help with daily activities and personal care.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mt-3">
-                <div class="service-card">
-                    <img src="assets/images/icons/white/5634743.png" 
-                        class="service-icon bg-color-2 w-60px p-10 rounded-10 wow scaleIn" 
-                        alt="Nutrition icon" loading="lazy">
-                    <div class="service-content wow fadeInUp">
-                        <h5 class="service-title">Nutritious Meals</h5>
-                        <p class="service-text">Healthy, balanced meals tailored to dietary needs.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mt-3">
-                <div class="service-card">
-                    <img src="assets/images/icons/white/65456467.png" 
-                        class="service-icon bg-color-2 w-60px p-10 rounded-10 wow scaleIn" 
-                        alt="Activities icon" loading="lazy">
-                    <div class="service-content wow fadeInUp">
-                        <h5 class="service-title">Recreational Activities</h5>
-                        <p class="service-text">Engaging social and leisure activities.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6 mt-3">
-                <div class="service-card">
-                    <img src="assets/images/icons/white/56435634.png" 
-                        class="service-icon bg-color-2 w-60px p-10 rounded-10 wow scaleIn" 
-                        alt="Support icon" loading="lazy">
-                    <div class="service-content wow fadeInUp">
-                        <h5 class="service-title">24/7 Support</h5>
-                        <p class="service-text">Round-the-clock care and assistance.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- CTA Section -->
-    <div style="text-align: center; background: #ffffff; padding: 5px 3px; margin-top: 50px;">
-        <h3 style="font-size: 26px; font-weight: 600; color: #0F172A; margin: 0 0 12px 0;">
-            Explore Our Care Services
-        </h3>
-        <p style="font-size: 15px; color: #475569; margin: 0 0 25px 0; margin-left: auto; margin-right: auto; line-height: 1.6;">
-            Discover personalized care solutions designed to support comfort, dignity, and well-being at every stage.
-        </p>
-        <a class="btn-main bg-color-2  mb-3 wow fadeInUp"
-        data-wow-delay=".6s"
-        href="{{ route('services') }}">
-            Learn More About Our Services
-        </a>
-    </div>
-</section>
-
-<style>
-/* Service Card Container */
-.service-card {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    width: 100%;
-    max-width: 100%;
-}
-
-/* Service Icon */
-.service-icon {
-    flex-shrink: 0;
-    object-fit: contain;
-    aspect-ratio: 1 / 1;
-}
-
-/* Service Content Wrapper */
-.service-content {
-    flex: 1;
-    min-width: 0;
-    width: 100%;
-    max-width: calc(100% - 75px);
-}
-
-/* Service Title */
-.service-title {
-    font-size: 16px;
-    margin-bottom: 4px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
-    color: #0F172A; /* Ensure dark color for headings */
-}
-
-/* Service Text - UPDATED FOR ACCESSIBILITY */
-.service-text {
-    font-size: 13px;
-    margin-bottom: 0;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
-    line-height: 1.5;
-    color: #475569; /* Changed from #64748B - Now passes WCAG AA (5.8:1 contrast) */
-}
-
-/* Subtitle - UPDATED FOR ACCESSIBILITY */
-.subtitle {
-    color: #1E293B; /* Darker color for better contrast (11.4:1 contrast ratio) */
-}
-
-/* Main paragraph text */
-p {
-    color: #334155; /* Ensure good contrast for all paragraphs */
-}
-
-/* Mobile Responsive - Below 768px */
-@media (max-width: 767px) {
-    .service-card {
-        gap: 10px;
-    }
-    
-    .service-icon {
-        width: 50px !important;
-        height: 50px !important;
-        padding: 8px !important;
-    }
-    
-    .service-content {
-        max-width: calc(100% - 60px);
-    }
-    
-    .service-title {
-        font-size: 14px !important;
-    }
-    
-    .service-text {
-        font-size: 12px !important;
-        line-height: 1.4;
-    }
-}
-
-/* Extra Small Mobile - Below 576px */
-@media (max-width: 575px) {
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    
-    .service-card {
-        gap: 8px;
-    }
-    
-    .service-icon {
-        width: 45px !important;
-        height: 45px !important;
-    }
-    
-    .service-content {
-        max-width: calc(100% - 55px);
-    }
-    
-    .service-title {
-        font-size: 13px !important;
-        line-height: 1.3;
-    }
-    
-    .service-text {
-        font-size: 11px !important;
-    }
-}
-</style>

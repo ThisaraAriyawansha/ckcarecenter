@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
-    <link rel="icon" type="image/x-icon" href="{{ asset('assets/image/logo.png') }}">
-    <title>Pharmed - Homepage</title>
+    <link rel="icon" type="image/x-icon" href="{{ asset('assets/image/logo/logo_4.webp') }}">
+    <title>C & K Home Nursing and Care Center</title>
 </head>
 
 <body>
