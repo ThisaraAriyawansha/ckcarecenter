@@ -16,7 +16,7 @@
                             <div class="ps-lg-5">
                                 <div class="subtitle wow fadeInUp mb-3">Video Tour</div>
                                 <h2 class="wow fadeInUp">Experience Our Homelike Environment</h2>
-                                <p class="wow fadeInUp">Take a virtual tour of Care 365 and see our warm, comfortable facilities where seniors thrive. Discover our compassionate environment, specialized care areas, and vibrant community spaces designed for comfort, safety, and well-being.</p>
+                                <p class="wow fadeInUp">Take a virtual tour of C & K Home Nursing and Care Center and see our warm, comfortable facilities where seniors thrive. Discover our compassionate environment, specialized care areas, and vibrant community spaces designed for comfort, safety, and well-being.</p>
                                 <div class="spacer-10"></div>
                                 <a class="btn-main btn-line wow fadeInUp" href="{{ route('contact') }}">Book Service Now</a>
                             </div>

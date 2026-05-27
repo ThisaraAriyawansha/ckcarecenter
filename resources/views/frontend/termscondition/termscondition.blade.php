@@ -16,7 +16,7 @@
                 <h2 style="font-size: 36px; font-weight: 700; color: #1e3a8a; margin: 0 0 50px 0; padding-bottom: 20px; border-bottom: 2px solid #fbbf24; letter-spacing: -0.5px;">2. Services Provided</h2>
                 
                 <h3 style="font-size: 22px; font-weight: 600; color: #3b82f6; margin: 50px 0 20px 0;">2.1 Elder Care Services</h3>
-                <p style="margin: 0 0 25px 0; color: #4a5568; font-size: 16px;">Care365 provides comprehensive elder care services including:</p>
+                <p style="margin: 0 0 25px 0; color: #4a5568; font-size: 16px;">C & K Home Nursing and Care Center provides comprehensive elder care services including:</p>
                 <ul style="list-style: none; margin: 30px 0; padding: 0;">
                     <li style="padding: 15px 0 15px 30px; color: #4a5568; position: relative; font-size: 16px;">
                         <span style="position: absolute; left: 0; top: 24px; width: 6px; height: 6px; background-color: #3b82f6; border-radius: 50%;"></span>
@@ -250,7 +250,7 @@
                 <h2 style="font-size: 36px; font-weight: 700; color: #1e3a8a; margin: 0 0 50px 0; padding-bottom: 20px; border-bottom: 2px solid #fbbf24; letter-spacing: -0.5px;">9. Liability and Insurance</h2>
                 
                 <h3 style="font-size: 22px; font-weight: 600; color: #3b82f6; margin: 50px 0 20px 0;">9.1 Limitation of Liability</h3>
-                <p style="margin: 0 0 25px 0; color: #4a5568; font-size: 16px;">While we maintain high standards of care and safety, Care365 is not liable for:</p>
+                <p style="margin: 0 0 25px 0; color: #4a5568; font-size: 16px;">While we maintain high standards of care and safety, C & K Home Nursing and Care Center is not liable for:</p>
                 <ul style="list-style: none; margin: 30px 0; padding: 0;">
                     <li style="padding: 15px 0 15px 30px; color: #4a5568; position: relative; font-size: 16px;">
                         <span style="position: absolute; left: 0; top: 24px; width: 6px; height: 6px; background-color: #3b82f6; border-radius: 50%;"></span>
@@ -271,7 +271,7 @@
                 </ul>
 
                 <h3 style="font-size: 22px; font-weight: 600; color: #3b82f6; margin: 50px 0 20px 0;">9.2 Insurance Coverage</h3>
-                <p style="margin: 0 0 25px 0; color: #4a5568; font-size: 16px;">Care365 maintains appropriate liability insurance as required by Sri Lankan regulations. We recommend that residents and families maintain their own health insurance and personal property insurance for comprehensive protection.</p>
+                <p style="margin: 0 0 25px 0; color: #4a5568; font-size: 16px;">C & K Home Nursing and Care Center maintains appropriate liability insurance as required by Sri Lankan regulations. We recommend that residents and families maintain their own health insurance and personal property insurance for comprehensive protection.</p>
             </div>
 
             <!-- Section 10 -->
@@ -305,7 +305,7 @@
             <!-- Section 11 -->
             <div style="margin-bottom: 60px;">
                 <h2 style="font-size: 36px; font-weight: 700; color: #1e3a8a; margin: 0 0 50px 0; padding-bottom: 20px; border-bottom: 2px solid #fbbf24; letter-spacing: -0.5px;">11. Intellectual Property</h2>
-                <p style="margin: 0 0 25px 0; color: #4a5568; font-size: 16px;">All content on the care36t5.com website, including text, graphics, logos, images, and software, is the property of Care365 or its content suppliers and is protected by Sri Lankan and international copyright laws. You may not reproduce, distribute, or create derivative works without our express written permission.</p>
+                <p style="margin: 0 0 25px 0; color: #4a5568; font-size: 16px;">All content on the care36t5.com website, including text, graphics, logos, images, and software, is the property of C & K Home Nursing and Care Center or its content suppliers and is protected by Sri Lankan and international copyright laws. You may not reproduce, distribute, or create derivative works without our express written permission.</p>
             </div>
 
             <!-- Section 12 -->

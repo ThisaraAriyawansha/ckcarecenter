@@ -19,9 +19,9 @@ return new class extends Migration
             $table->decimal('discount', 12, 2)->default(0);
             $table->decimal('total', 12, 2)->default(0);
             $table->text('remarks')->nullable();
-            $table->string('bank_ac_name')->default('Care 365 Pvt LTD');
-            $table->string('bank_ac_number_lkr')->default('20410016001643 LKR');
-            $table->string('bank_ac_number_usd')->nullable()->default('20440216001643 USD');
+            $table->string('bank_ac_name')->default('C & K Home Nursing and Care Center');
+            $table->string('bank_ac_number_lkr')->default('20510916001642 LKR');
+            $table->string('bank_ac_number_usd')->nullable()->default('20643216401642 USD');
             $table->string('bank_name')->default("People's Bank");
             $table->string('bank_branch')->default('Head Quarters Branch');
             $table->boolean('email_sent')->default(false);

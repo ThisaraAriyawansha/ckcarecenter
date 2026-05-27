@@ -6,7 +6,7 @@
                 <div class="relative z-1000">
                     <div class="subtitle wow fadeInUp" data-wow-delay=".0s">Our Homes</div>
                     <h2>Designed with Modern Comforts and Amenities</h2>
-                    <p style="color: #334155;">Exciting times are ahead as Care365 prepares to open our brand-new, state-of-the-art facility in Sri Lanka.</p>
+                    <p style="color: #334155;">Exciting times are ahead as C & K Home Nursing and Care Center prepares to open our brand-new, state-of-the-art facility in Sri Lanka.</p>
                 </div>
             </div>
             

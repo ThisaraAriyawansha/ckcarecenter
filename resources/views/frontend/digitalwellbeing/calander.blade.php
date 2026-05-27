@@ -75,7 +75,7 @@ Calendar Area
                 <div class="col-lg-8 col-md-4">
                     <div class="calendar-description-box" data-cue="slideInUp" data-delay="200">
                         <div class="description-content">
-                            <p>At Care365, we are committed to creating a nurturing and sustainable 
+                            <p>At C & K Home Nursing and Care Center, we are committed to creating a nurturing and sustainable 
                                 environment for our cherished residents. As part of our ongoing efforts
                                 to integrate Environmental, Social, and Governance (ESG) principles into 
                                 our daily operations, we are excited to share our ESG calendar for the upcoming months!</p>

@@ -1,10 +1,10 @@
 @extends('layouts.frontend')
 
-@section('title', 'How It Works | Care365 Sri Lanka - Luxury Elder Care')
+@section('title', 'How It Works | C & K Home Nursing and Care Center Sri Lanka - Luxury Elder Care')
 
-@section('meta_description', 'Learn how Care365 provides personalized, compassionate, and high-quality elder care in Sri Lanka. Discover our process and commitment to seniors.')
+@section('meta_description', 'Learn how C & K Home Nursing and Care Center provides personalized, compassionate, and high-quality elder care in Sri Lanka. Discover our process and commitment to seniors.')
 
-@section('meta_keywords', 'how it works, elder care process, senior care Sri Lanka, luxury elder care, Care365')
+@section('meta_keywords', 'how it works, elder care process, senior care Sri Lanka, luxury elder care, C & K Home Nursing and Care Center')
 
 @section('og_image', asset('assets/img/logo.png')) {{-- You can replace with a relevant banner image --}}
 

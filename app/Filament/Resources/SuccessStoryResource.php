@@ -31,7 +31,7 @@ class SuccessStoryResource extends Resource
                             ->schema([
                                 Forms\Components\TextInput::make('title')
                                     ->label('Story Title')
-                                    ->placeholder('e.g.,  A Comfortable Life at Care 365')
+                                    ->placeholder('e.g.,  A Comfortable Life at C & K Home Nursing and Care Center')
                                     ->maxLength(255),
                                     
                                 Forms\Components\TextInput::make('image_alt')
