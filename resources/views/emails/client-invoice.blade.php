@@ -21,7 +21,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .header {
-            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            background: linear-gradient(135deg, #1C3F6E 0%, #152e52 100%);
             padding: 40px 30px;
             text-align: center;
         }
@@ -49,7 +49,7 @@
         }
         .info-box {
             background-color: #f0f9ff;
-            border-left: 4px solid #2563eb;
+            border-left: 4px solid #1C3F6E;
             padding: 20px;
             border-radius: 8px;
             margin: 25px 0;
@@ -60,7 +60,7 @@
             color: #374151;
         }
         .info-box p:last-child { margin-bottom: 0; }
-        .info-box strong { color: #1d4ed8; }
+        .info-box strong { color: #1C3F6E; }
         .attachment-notice {
             background-color: #eff6ff;
             border: 2px dashed #93c5fd;
@@ -71,7 +71,7 @@
         }
         .attachment-notice p {
             margin: 0;
-            color: #1d4ed8;
+            color: #1C3F6E;
             font-weight: 600;
             font-size: 14px;
         }
@@ -86,7 +86,7 @@
             font-size: 15px;
         }
         .company-name {
-            color: #2563eb;
+            color: #1C3F6E;
             font-weight: 700;
             font-size: 16px;
         }
@@ -106,7 +106,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>CARE 365</h1>
+            <h1>C & K Home Nursing and Care Center</h1>
             <p>Client Invoice</p>
         </div>
 
@@ -116,7 +116,7 @@
             </div>
 
             <p style="color: #4b5563; font-size: 15px;">
-                Please find attached the invoice for <strong>{{ $client->name }}</strong> from Care 365.
+                Please find attached the invoice for <strong>{{ $client->name }}</strong> from C & K Home Nursing and Care Center.
             </p>
 
             <div class="info-box">
@@ -139,13 +139,13 @@
 
             <div class="signature">
                 <p>Best regards,</p>
-                <p class="company-name">CARE 365 Team</p>
+                <p class="company-name">C & K Home Nursing and Care Center Team</p>
             </div>
         </div>
 
         <div class="footer">
             <p>This is an automated email. Please do not reply to this message.</p>
-            <p>&copy; {{ date('Y') }} CARE 365. All rights reserved.</p>
+            <p>&copy; {{ date('Y') }} C & K Home Nursing and Care Center. All rights reserved.</p>
         </div>
     </div>
 </body>

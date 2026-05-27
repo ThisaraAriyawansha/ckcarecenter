@@ -20,7 +20,7 @@
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         }
         .header { 
-            background: linear-gradient(135deg, #2B6CB0, #1e5a8e);
+            background: linear-gradient(135deg, #1C3F6E, #152e52);
             padding: 25px 30px;
             color: white;
             text-align: center;
@@ -48,7 +48,7 @@
             background: #f8f9fa;
             padding: 16px;
             border-radius: 10px;
-            border-left: 4px solid #2B6CB0;
+            border-left: 4px solid #1C3F6E;
         }
         .info-label {
             display: block;
@@ -76,7 +76,7 @@
         .logo {
             font-size: 18px;
             font-weight: 600;
-            color: #2B6CB0;
+            color: #1C3F6E;
             margin-bottom: 8px;
         }
     </style>
@@ -135,7 +135,7 @@
                 border: 1px solid #BFDBFE;
                 margin-top: 25px;
             ">
-                <p style="margin: 0; color: #1e5a8e; font-size: 13px;">
+                <p style="margin: 0; color: #1C3F6E; font-size: 13px;">
                     <strong>Note:</strong> This lead has requested the Elder Care Planning Guide 
                     and indicated interest in {{ strtolower($care_type) }} with a timeline of 
                     {{ strtolower($timeline) }}.
@@ -144,8 +144,8 @@
         </div>
         
         <div class="footer">
-            <div class="logo">Care 365</div>
-            <p>This is an automated notification from the Care 365 website.<br>
+            <div class="logo">C & K Home Nursing and Care Center</div>
+            <p>This is an automated notification from the C & K Home Nursing and Care Center website.<br>
             Please follow up with this lead within 24 hours.</p>
         </div>
     </div>

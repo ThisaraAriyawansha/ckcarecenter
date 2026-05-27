@@ -19,7 +19,7 @@
 
         /* ── Top brand bar ── */
         .brand-bar {
-            background: #2563eb;
+            background: #1C3F6E;
             padding: 18px 32px;
             display: table;
             width: 100%;
@@ -47,7 +47,7 @@
         }
         .doc-badge {
             display: inline-block;
-            background: #2563eb;
+            background: #1C3F6E;
             color: #ffffff;
             font-size: 11px;
             font-weight: 600;
@@ -60,7 +60,7 @@
         /* ── Blue accent line ── */
         .accent-line {
             height: 4px;
-            background: #3b82f6;
+            background: #2d5f9e;
         }
 
         /* ── Main card ── */
@@ -98,7 +98,7 @@
             overflow: hidden;
         }
         .summary-table thead tr {
-            background: #2563eb;
+            background: #1C3F6E;
         }
         .summary-table thead th {
             padding: 10px 16px;
@@ -125,7 +125,7 @@
             background: #f0f7ff;
             font-weight: 700;
             font-size: 14px;
-            color: #2563eb;
+            color: #1C3F6E;
         }
 
         /* ── Attachment notice ── */
@@ -151,19 +151,19 @@
         .attachment-text strong {
             display: block;
             font-size: 13px;
-            color: #1d4ed8;
+            color: #1C3F6E;
             font-weight: 700;
         }
         .attachment-text span {
             font-size: 12px;
-            color: #3b82f6;
+            color: #2d5f9e;
         }
 
         /* ── Bank details ── */
         .bank-section {
             background: #f8fafc;
             border: 1px solid #e2e8f0;
-            border-left: 4px solid #2563eb;
+            border-left: 4px solid #1C3F6E;
             border-radius: 4px;
             padding: 16px 20px;
             margin-bottom: 24px;
@@ -172,7 +172,7 @@
             font-size: 11px;
             text-transform: uppercase;
             letter-spacing: 1.5px;
-            color: #2563eb;
+            color: #1C3F6E;
             font-weight: 700;
             margin-bottom: 10px;
         }
@@ -215,7 +215,7 @@
             margin-top: 8px;
         }
         .signature p { font-size: 14px; color: #4b5563; margin-bottom: 2px; }
-        .signature .name { font-size: 15px; font-weight: 700; color: #2563eb; }
+        .signature .name { font-size: 15px; font-weight: 700; color: #1C3F6E; }
         .signature .role { font-size: 12px; color: #9ca3af; }
 
         /* ── Footer ── */
@@ -227,7 +227,7 @@
             text-align: center;
         }
         .footer p { font-size: 11px; color: #9ca3af; margin: 2px 0; }
-        .footer a { color: #3b82f6; text-decoration: none; }
+        .footer a { color: #1C3F6E; text-decoration: none; }
     </style>
 </head>
 <body>
@@ -236,7 +236,7 @@
     {{-- ── Brand Bar ── --}}
     <div class="brand-bar">
         <div class="brand-bar-left">
-            <div class="brand-name">CARE 365</div>
+            <div class="brand-name">C & K Home Nursing and Care Center</div>
             <div class="brand-tagline">Professional Care Services</div>
         </div>
         <div class="brand-bar-right">
@@ -352,7 +352,7 @@
             {{-- Signature --}}
             <div class="signature">
                 <p>Best regards,</p>
-                <p class="name">CARE 365 Team</p>
+                <p class="name">C & K Home Nursing and Care Center Team</p>
                 <p class="role">Finance &amp; Administration</p>
             </div>
 
@@ -362,11 +362,11 @@
         <div class="footer">
             <p>This is an automated email — please do not reply directly to this message.</p>
             <p>
-                <a href="http://www.care365.com">www.care365.com</a>
+                <a href="http://www.ckcarecenter.com">www.ckcarecenter.com</a>
                 &nbsp;&bull;&nbsp; +9477 660 40 40
-                &nbsp;&bull;&nbsp; info@care365.com
+                &nbsp;&bull;&nbsp; info@ckcarecenter.com
             </p>
-            <p style="margin-top:6px;">&copy; {{ date('Y') }} CARE 365. All rights reserved.</p>
+            <p style="margin-top:6px;">&copy; {{ date('Y') }} C & K Home Nursing and Care Center. All rights reserved.</p>
         </div>
     </div>
 

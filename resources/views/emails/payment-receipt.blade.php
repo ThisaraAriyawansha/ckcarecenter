@@ -21,7 +21,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .header {
-            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            background: linear-gradient(135deg, #1C3F6E 0%, #152e52 100%);
             padding: 40px 30px;
             text-align: center;
         }
@@ -49,7 +49,7 @@
         }
         .message {
             background-color: #f0f9ff;
-            border-left: 4px solid #2563eb;
+            border-left: 4px solid #1C3F6E;
             padding: 20px;
             border-radius: 8px;
             margin: 25px 0;
@@ -94,7 +94,7 @@
             font-size: 15px;
         }
         .company-name {
-            color: #2563eb;
+            color: #1C3F6E;
             font-weight: 700;
             font-size: 16px;
         }
@@ -126,7 +126,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>CARE 365</h1>
+            <h1>C & K Home Nursing and Care Center</h1>
             <p>Payment Receipt</p>
         </div>
 
@@ -137,7 +137,7 @@
 
             <div class="message">
                 <p>
-                    <svg class="icon" fill="#2563eb" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="icon" fill="#1C3F6E" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                     </svg>
                     Your payment has been successfully received.
@@ -150,20 +150,20 @@
             </div>
 
             <div class="message">
-                <p style="text-align: center; font-size: 16px; color: #2563eb; font-weight: 600;">
+                <p style="text-align: center; font-size: 16px; color: #1C3F6E; font-weight: 600;">
                     Thank you for your payment! 💙
                 </p>
             </div>
 
             <div class="signature">
                 <p>Best regards,</p>
-                <p class="company-name">CARE 365 Team</p>
+                <p class="company-name">C & K Home Nursing and Care Center Team</p>
             </div>
         </div>
 
         <div class="footer">
             <p>This is an automated email. Please do not reply to this message.</p>
-            <p>&copy; {{ date('Y') }} CARE 365. All rights reserved.</p>
+            <p>&copy; {{ date('Y') }} C & K Home Nursing and Care Center. All rights reserved.</p>
         </div>
     </div>
 </body>

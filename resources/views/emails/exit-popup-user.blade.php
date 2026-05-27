@@ -20,7 +20,7 @@
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         }
         .header { 
-            background: linear-gradient(135deg, #2B6CB0, #1e5a8e);
+            background: linear-gradient(135deg, #1C3F6E, #152e52);
             padding: 30px;
             color: white;
             text-align: center;
@@ -89,11 +89,11 @@
             padding: 16px;
             border-radius: 10px;
             margin: 25px 0;
-            border-left: 4px solid #2B6CB0;
+            border-left: 4px solid #1C3F6E;
         }
         .user-info h3 {
             margin: 0 0 12px 0;
-            color: #1e5a8e;
+            color: #1C3F6E;
             font-size: 16px;
             font-weight: 600;
         }
@@ -101,7 +101,7 @@
             display: flex;
             justify-content: space-between;
             padding: 8px 0;
-            border-bottom: 1px solid rgba(43, 108, 176, 0.1);
+            border-bottom: 1px solid rgba(28, 63, 110, 0.1);
         }
         .info-row:last-child {
             border-bottom: none;
@@ -118,8 +118,8 @@
         .cta-button {
             display: inline-block;
             background: white;
-            color: #2B6CB0;
-            border: 2px solid #2B6CB0;
+            color: #1C3F6E;
+            border: 2px solid #1C3F6E;
             padding: 12px 28px;
             font-size: 16px;
             font-weight: 500;
@@ -130,8 +130,8 @@
         }
         .cta-button:hover {
             background: #EFF6FF;
-            color: #1e5a8e;
-            border-color: #1e5a8e;
+            color: #152e52;
+            border-color: #152e52;
         }
         .footer {
             background: #f5f5f7;
@@ -142,7 +142,7 @@
         .footer-brand {
             font-size: 16px;
             font-weight: 600;
-            color: #2B6CB0;
+            color: #1C3F6E;
         }
         .footer-contacts {
             margin: 6px 0;
@@ -159,7 +159,7 @@
             margin: 0 6px;
         }
         .footer-website a {
-            color: #2B6CB0;
+            color: #1C3F6E;
             text-decoration: none;
             font-size: 12px;
         }
@@ -183,7 +183,7 @@
     <div class="container">
         <div class="header">
             <h1>Your Elder Care Planning Guide</h1>
-            <p>Thank you for trusting Care 365</p>
+            <p>Thank you for trusting C & K Home Nursing and Care Center</p>
         </div>
         
         <div class="content">
@@ -235,17 +235,17 @@
         </div>
         
         <div class="footer">
-            <div class="footer-brand">Care 365</div>
+            <div class="footer-brand">C & K Home Nursing and Care Center</div>
             <div class="footer-contacts">
                 <a href="tel:+94776604040">+94 77 660 40 40</a>
                 <span class="footer-separator">|</span>
                 <a href="https://wa.me/94779191818">+94 779 191 818</a>
                 <span class="footer-separator">|</span>
-                <a href="mailto:info@care36t5.com">info@care36t5.com</a>
+                <a href="mailto:info@ckcarecenter.com">info@ckcarecenter.com</a>
                 <br>
-                <span class="footer-website"><a href="https://care36t5.com/">www.care36t5.com</a></span>
+                <span class="footer-website"><a href="https://ckcarecenter.com/">www.ckcarecenter.com</a></span>
             </div>
-            <p class="footer-copyright">&copy; {{ date('Y') }} Care 365. All rights reserved.</p>
+            <p class="footer-copyright">&copy; {{ date('Y') }} C & K Home Nursing and Care Center. All rights reserved.</p>
             <p class="footer-credit">Design &amp; Developed by <a href="https://creatxsoftware.com/" target="_blank">CreatX Software</a></p>
         </div>
     </div>

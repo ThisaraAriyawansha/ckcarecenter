@@ -44,7 +44,7 @@ class ContactController extends Controller
 
             // Send email
             Mail::send('emails.contact-form', ['data' => $data], function ($mail) use ($data) {
-                $mail->to(env('CONTACT_FORM_RECIPIENT', 'carethree65@gmail.com'))
+                $mail->to(env('CONTACT_FORM_RECIPIENT', 'CONTACT_FORM_RECIPIENT'))
                      ->subject('New Contact Form Submission - ' . $data['subject'])
                      ->from(config('mail.from.address'), config('mail.from.name'));
             });

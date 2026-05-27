@@ -24,7 +24,7 @@
         }
         .header {
             background: linear-gradient(135deg, #e0f2fe 0%, #bfdbfe 100%);
-            color: #1e40af;                /* deep blue text */
+            color: #1C3F6E;                /* deep blue text */
             padding: 35px 30px;
             text-align: center;
         }
@@ -46,7 +46,7 @@
         }
         .label {
             font-weight: bold;
-            color: #3b82f6;                /* bright but professional blue */
+            color: #1C3F6E;                /* bright but professional blue */
             font-size: 13px;
             text-transform: uppercase;
             letter-spacing: 0.8px;
@@ -105,7 +105,7 @@
         </div>
         
         <div class="footer">
-            <p>This email was sent from Care 365 contact form</p>
+            <p>This email was sent from C & K Home Nursing and Care Center contact form</p>
             <p>Received on {{ date('F j, Y \a\t g:i A') }}</p>
         </div>
     </div>

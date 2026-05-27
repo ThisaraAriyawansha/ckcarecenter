@@ -14,7 +14,7 @@
             padding: 20px;
         }
         .header {
-            background-color: #2196F3;
+            background-color: #1C3F6E;
             color: white;
             padding: 20px;
             text-align: center;
@@ -54,7 +54,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1 style="margin: 0;">Care365</h1>
+            <h1 style="margin: 0;">C & K Home Nursing and Care Center</h1>
             <p style="margin: 10px 0 0 0;">Monthly Payslip</p>
         </div>
 
@@ -84,7 +84,7 @@
                     <span class="detail-label">Total Deductions:</span>
                     <span>LKR {{ number_format($payslip->total_deductions, 2) }}</span>
                 </div>
-                <div class="detail-row" style="border-bottom: none; font-size: 16px; font-weight: bold; color: #2196F3;">
+                <div class="detail-row" style="border-bottom: none; font-size: 16px; font-weight: bold; color: #1C3F6E;">
                     <span class="detail-label">Net Salary:</span>
                     <span>LKR {{ number_format($payslip->net_salary, 2) }}</span>
                 </div>
@@ -101,11 +101,11 @@
             <p style="margin-top: 30px;">If you have any questions regarding your payslip, please contact the HR department.</p>
 
             <p>Best regards,<br>
-            <strong>Care365 HR Team</strong></p>
+            <strong>C & K Home Nursing and Care Center HR Team</strong></p>
 
             <div class="footer">
                 <p>This is an automated email. Please do not reply to this message.</p>
-                <p>&copy; {{ date('Y') }} Care365. All rights reserved.</p>
+                <p>&copy; {{ date('Y') }} C & K Home Nursing and Care Center. All rights reserved.</p>
             </div>
         </div>
     </div>

@@ -1,76 +1,16 @@
-
-<style>
-    /* Breadcrumb Section Styles */
-    .breadcrumb-area {
-        position: relative;
-        width: 100%;
-        height: 370px;
-        background-image: url('assets/images/breadcrumb/Contact Us.webp');
-        background-size: 100% 100%; /* Forces image to fit exactly */
-        background-position: center center;
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        box-sizing: border-box;
-    }
-
-    /* Background overlay for better text readability */
-    .breadcrumb-area::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-        z-index: 1;
-    }
-
-    /* Content container */
-    .breadcrumb-content {
-        position: relative;
-        z-index: 2;
-        color: white;
-    }
-
-    /* Main heading styles */
-    .breadcrumb-content h1 {
-        font-size: 3.5rem;
-        font-weight: 700;
-        margin-bottom: 10px;
-        color: white;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-        .breadcrumb-area {
-            height: 250px;
-            background-attachment: scroll;
-        }
-        
-        .breadcrumb-content h1 {
-            font-size: 2.5rem;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .breadcrumb-area {
-            height: 200px;
-        }
-        
-        .breadcrumb-content h1 {
-            font-size: 2rem;
-        }
-    }
-</style>
-<br/>
-<!-- Breadcrumb Section -->
-<section class="breadcrumb-area mt-6">
-    <!-- Content -->
-    <div class="breadcrumb-content">
-        <h1 class="wow fadeInUp mb-2" data-wow-delay=".2s">Contact With Us</h1>
-    </div>
-</section>
+        <div class="section position-relative bg-attach-fixed overflow-hidden mx-auto rounded-4"
+            style="background-image: url(assets/image/breadcrumb/GettyImages-2200416451.jpg); background-position: top; height: 70vh; max-width: 1770px;">
+            <div class="cta-overlay"></div>
+            <div class="r-container h-100 position-relative" style="z-index: 2;">
+                <div class="d-flex flex-column w-100 h-100 justify-content-center mx-auto align-items-center text-white gap-3"
+                    style="max-width: 895px;">
+                    <h2 class="m-0 text-white">Contact Us</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
