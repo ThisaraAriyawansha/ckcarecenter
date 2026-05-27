@@ -1,6 +1,6 @@
 @extends('layouts.frontend')
 
-@section('title', '403 - Access Denied | Care365')
+@section('title', '403 - Access Denied | C & K Home Nursing and Care Center')
 @section('meta_description', 'You do not have permission to access this page.')
 
 @section('content')
@@ -18,17 +18,17 @@
                     </p>
 
                     <div class="error-actions">
-                        <a href="{{ route('home') }}" class="btn btn-primary" style="background: #1A4137; border: none; padding: 15px 40px; font-size: 16px; font-weight: 600; border-radius: 50px; text-decoration: none; display: inline-block; margin-right: 15px; color: white; transition: all 0.3s;">
+                        <a href="{{ route('home') }}" class="btn btn-primary" style="background: #1C3F6E; border: none; padding: 15px 40px; font-size: 16px; font-weight: 600; border-radius: 50px; text-decoration: none; display: inline-block; margin-right: 15px; color: white; transition: all 0.3s;">
                             <i class="fas fa-home"></i> Go to Homepage
                         </a>
-                        <a href="javascript:history.back()" class="btn btn-outline" style="background: transparent; border: 2px solid #1A4137; color: #1A4137; padding: 15px 40px; font-size: 16px; font-weight: 600; border-radius: 50px; text-decoration: none; display: inline-block; transition: all 0.3s;">
+                        <a href="javascript:history.back()" class="btn btn-outline" style="background: transparent; border: 2px solid #1C3F6E; color: #1C3F6E; padding: 15px 40px; font-size: 16px; font-weight: 600; border-radius: 50px; text-decoration: none; display: inline-block; transition: all 0.3s;">
                             <i class="fas fa-arrow-left"></i> Go Back
                         </a>
                     </div>
 
                     <div class="helpful-info mt-5 pt-4" style="border-top: 1px solid #eee;">
                         <p style="font-size: 14px; color: #999; margin-bottom: 10px;">Need help or believe this is an error?</p>
-                        <a href="{{ route('contact') }}" style="color: #1A4137; text-decoration: none; font-size: 14px; font-weight: 600;">Contact Us</a>
+                        <a href="{{ route('contact') }}" style="color: #1C3F6E; text-decoration: none; font-size: 14px; font-weight: 600;">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -38,13 +38,13 @@
 
 <style>
     .btn-primary:hover {
-        background: #2a5547 !important;
+        background: #152e52 !important;
         transform: translateY(-2px);
-        box-shadow: 0 10px 20px rgba(26, 65, 55, 0.2);
+        box-shadow: 0 10px 20px rgba(28, 63, 110, 0.2);
     }
 
     .btn-outline:hover {
-        background: #1A4137 !important;
+        background: #1C3F6E !important;
         color: white !important;
         transform: translateY(-2px);
     }

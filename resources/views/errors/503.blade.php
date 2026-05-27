@@ -1,6 +1,6 @@
 @extends('layouts.frontend')
 
-@section('title', '503 - Service Unavailable | Care365')
+@section('title', '503 - Service Unavailable | C & K Home Nursing and Care Center')
 @section('meta_description', 'Our website is currently undergoing maintenance. We will be back shortly.')
 
 @section('content')
@@ -24,15 +24,15 @@
                     </div>
 
                     <div class="error-actions">
-                        <a href="javascript:location.reload()" class="btn btn-primary" style="background: #1A4137; border: none; padding: 15px 40px; font-size: 16px; font-weight: 600; border-radius: 50px; text-decoration: none; display: inline-block; color: white; transition: all 0.3s;">
+                        <a href="javascript:location.reload()" class="btn btn-primary" style="background: #1C3F6E; border: none; padding: 15px 40px; font-size: 16px; font-weight: 600; border-radius: 50px; text-decoration: none; display: inline-block; color: white; transition: all 0.3s;">
                             <i class="fas fa-sync-alt"></i> Refresh Page
                         </a>
                     </div>
 
                     <div class="helpful-info mt-5 pt-4" style="border-top: 1px solid #eee;">
                         <p style="font-size: 14px; color: #999; margin-bottom: 10px;">Need urgent assistance?</p>
-                        <a href="mailto:info@care365.lk" style="color: #1A4137; text-decoration: none; font-size: 14px; font-weight: 600;">
-                            <i class="fas fa-envelope"></i> info@care365.lk
+                        <a href="mailto:info@ckcarecenter.com" style="color: #1C3F6E; text-decoration: none; font-size: 14px; font-weight: 600;">
+                            <i class="fas fa-envelope"></i> info@ckcarecenter.com
                         </a>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
 
 <style>
     .btn-primary:hover {
-        background: #2a5547 !important;
+        background: #152e52 !important;
         transform: translateY(-2px);
         box-shadow: 0 10px 20px rgba(26, 65, 55, 0.2);
     }

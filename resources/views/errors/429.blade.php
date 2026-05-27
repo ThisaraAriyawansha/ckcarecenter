@@ -1,6 +1,6 @@
 @extends('layouts.frontend')
 
-@section('title', '429 - Too Many Requests | Care365')
+@section('title', '429 - Too Many Requests | C & K Home Nursing and Care Center')
 @section('meta_description', 'You have made too many requests. Please slow down and try again.')
 
 @section('content')
@@ -24,13 +24,13 @@
                     </div>
 
                     <div class="error-actions">
-                        <a href="{{ route('home') }}" class="btn btn-primary" style="background: #1A4137; border: none; padding: 15px 40px; font-size: 16px; font-weight: 600; border-radius: 50px; text-decoration: none; display: inline-block; color: white; transition: all 0.3s;">
+                        <a href="{{ route('home') }}" class="btn btn-primary" style="background: #1C3F6E; border: none; padding: 15px 40px; font-size: 16px; font-weight: 600; border-radius: 50px; text-decoration: none; display: inline-block; color: white; transition: all 0.3s;">
                             <i class="fas fa-home"></i> Go to Homepage
                         </a>
                     </div>
 
                     <div class="countdown mt-4" id="countdown" style="font-size: 14px; color: #999;">
-                        <p>You can try again in: <span id="timer" style="font-weight: 600; color: #1A4137;">60</span> seconds</p>
+                        <p>You can try again in: <span id="timer" style="font-weight: 600; color: #1C3F6E;">60</span> seconds</p>
                     </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@
 
 <style>
     .btn-primary:hover {
-        background: #2a5547 !important;
+        background: #152e52 !important;
         transform: translateY(-2px);
         box-shadow: 0 10px 20px rgba(26, 65, 55, 0.2);
     }
