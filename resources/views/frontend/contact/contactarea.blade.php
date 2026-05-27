@@ -7,7 +7,7 @@
                                 <div class="d-flex flex-column gap-3 bg-accent-primary p-4"
                                     style="border-bottom-right-radius: 20px; margin-left: -3rem;">
                                     <div class="d-flex flex-row gap-2 align-items-center">
-                                        <img src="image/cuida_medicine-outline.png" class="img-fluid" alt="">
+                                        <img src="assets/image/cuida_medicine-outline.png" class="img-fluid" alt="">
                                         <h6 class="accent-color m-0">Get In Touch</h6>
                                     </div>
                                     <h3>Our Care Home Team is Here to Help</h3>

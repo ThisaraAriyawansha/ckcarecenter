@@ -19,8 +19,13 @@
 @section('content')
     @include('frontend.about.hero')
     @include('frontend.about.about')
-    
-
+    @include('frontend.about.why_choose_us')
+    @include('frontend.about.services')
+    @include('frontend.about.package')
+    @include('frontend.about.day_package')
+    @include('frontend.about.team')
+    @include('frontend.about.testimonials')
+    @include('frontend.about.faq')
 @endsection
 
 
