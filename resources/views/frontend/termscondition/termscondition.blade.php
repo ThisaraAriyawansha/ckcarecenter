@@ -45,7 +45,7 @@
                 </ul>
 
                 <h3 style="font-size: 22px; font-weight: 600; color: #3b82f6; margin: 50px 0 20px 0;">2.2 Service Availability</h3>
-                <p style="margin: 0 0 25px 0; color: #4a5568; font-size: 16px;">Our services are provided at our facility located at 407 C1, Nomis Weragala Mw, Hokandara South, Thalawathugoda, Sri Lanka. We reserve the right to modify, suspend, or discontinue any service at any time with prior notice to residents and their families.</p>
+                <p style="margin: 0 0 25px 0; color: #4a5568; font-size: 16px;">Our services are provided at our facility located at Colombo, Sri Lanka. We reserve the right to modify, suspend, or discontinue any service at any time with prior notice to residents and their families.</p>
             </div>
 
             <!-- Section 3 -->
@@ -351,7 +351,7 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-top: 50px;">
                 <div style="text-align: center; padding: 30px 20px; background: #ffffff; border-radius: 8px; border: 1px solid #e8eef5;">
                     <div style="font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: #1e3a8a; margin-bottom: 12px;">ADDRESS</div>
-                    <div style="font-size: 15px; color: #2d3748; font-weight: 500; line-height: 1.6;">407 C1, Nomis Weragala Mw<br>Hokandara South, Thalawathugoda<br>Sri Lanka</div>
+                    <div style="font-size: 15px; color: #2d3748; font-weight: 500; line-height: 1.6;">Colombo, Sri Lanka</div>
                 </div>
                 <div style="text-align: center; padding: 30px 20px; background: #ffffff; border-radius: 8px; border: 1px solid #e8eef5;">
                     <div style="font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: #1e3a8a; margin-bottom: 12px;">EMAIL</div>

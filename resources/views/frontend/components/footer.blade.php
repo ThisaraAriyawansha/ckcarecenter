@@ -19,7 +19,7 @@
                                     <h4>Address</h4>
                                     <div class="d-flex flex-row font-2 gap-3" style="max-width: 250px;">
                                         <i class="rtmicon rtmicon-location fs-4"></i>
-                                        <span>No. 45, Peradeniya Road, Kandy 20000, Sri Lanka</span>
+                                        <span>Colombo, Sri Lanka</span>
                                     </div>
                                     <div class="social-container team mb-xl-0 mb-3 gap-2">
                                         <a href="https://www.facebook.com" class="social-item-3">

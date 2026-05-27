@@ -296,7 +296,7 @@
                 <span class="footer-item">info@ckcarecenter.com</span>
             </div>
             <div class="footer-right">
-                <span class="footer-item">407 C1, Nomis Weragala Mw, Hokandara, SL</span>
+                <span class="footer-item">Colombo, Sri Lanka</span>
             </div>
         </div>
 
