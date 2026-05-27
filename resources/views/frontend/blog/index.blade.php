@@ -1,15 +1,13 @@
 @extends('layouts.frontend')
 
 {{-- SEO Meta Tags for Blogs Page --}}
-@section('title', 'Blog - Senior Care Tips & Retirement Living Insights | Care365 Sri Lanka')
+@section('title', 'Blog | Home Nursing & Elder Care Tips | C & K Home Nursing and Care Center')
 
-@section('meta_author', 'Care365')
+@section('meta_description', 'Read expert articles from C & K Home Nursing and Care Center on home nursing, elder care, healthy aging, and patient wellness in Sri Lanka. Helpful tips for families and caregivers.')
 
-@section('meta_description', 'Read the latest blog articles from Care365 on elder care advice, healthy aging, dementia support, retirement lifestyle tips, and senior wellness in Sri Lanka. Stay informed with expert insights.')
+@section('meta_keywords', 'home nursing blog Sri Lanka, elder care tips Sri Lanka, nursing care articles, caregiver tips Sri Lanka, patient care blog, home nursing advice Piliyandala, C&K nursing blog')
 
-@section('meta_keywords', 'Senior care blog Sri Lanka, Elder care tips, Retirement living articles, Dementia care blog, Senior health insights, Care365 blog')
-
-@section('og_image', asset('assets/img/logo.png'))
+@section('og_image', asset('assets/image/logo/og_image.webp'))
 
 @section('og_type', 'website')
 

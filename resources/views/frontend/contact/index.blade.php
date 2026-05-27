@@ -1,15 +1,13 @@
 @extends('layouts.frontend')
 
 {{-- SEO Meta Tags for Contact Page --}}
-@section('title', 'Contact Care365 - Elder Care Home Inquiries | Call 0779191818')
+@section('title', 'Contact Us | C & K Home Nursing and Care Center - Call 077 376 8767')
 
-@section('meta_author', 'Care365')
+@section('meta_description', 'Contact C & K Home Nursing and Care Center in Piliyandala, Sri Lanka. Call 077 376 8767 or email candkhomenursing17@gmail.com. Located at No 50, Kudamaduwa Road, Siddamull, Piliyandala, Kesbewa.')
 
-@section('meta_description', 'Get in touch with Care365 for inquiries about our luxury elder care services in Sri Lanka. Call 0779191818 or visit us to learn how we can provide the best care for your loved ones.')
+@section('meta_keywords', 'contact C&K home nursing, home nursing Piliyandala contact, nursing care Kesbewa phone, C&K care center address, home nursing Sri Lanka contact, elder care inquiries Sri Lanka')
 
-@section('meta_keywords', 'Contact Care365, Elder care inquiries Sri Lanka, Retirement home contact, Senior care consultation, Care365 phone number, Elder care services Sri Lanka')
-
-@section('og_image', asset('assets/img/logo.png'))
+@section('og_image', asset('assets/image/logo/og_image.webp'))
 
 @section('og_type', 'website')
 

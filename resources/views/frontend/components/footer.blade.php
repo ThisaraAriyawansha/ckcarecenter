@@ -1,6 +1,6 @@
     <footer>
         <div class="section py-5">
-            <div class="d-flex flex-column gap-3 p-5 bg-text-color rounded-4 text-white">
+            <div class="d-flex flex-column gap-1 p-3 p-xl-5 bg-text-color rounded-4 text-white">
                 <div class="row row-cols-xl-2 row-cols-1 align-items-center">
                     <div class="col col-xl-8 mb-3">
                         <div class="d-flex flex-column gap-5">
@@ -14,18 +14,18 @@
                     </div>
                     <div class="col col-xl-4 mb-3">
                         <div class="row row-cols-xl-2 row-cols-1">
-                            <div class="co mb-3">
-                                <div class="d-flex flex-column gap-3">
-                                    <h4>Address</h4>
-                                    <div class="d-flex flex-row font-2 gap-3" style="max-width: 250px;">
-                                        <i class="rtmicon rtmicon-location fs-4"></i>
-                                        <span>Colombo, Sri Lanka</span>
+                            <div class="co mb-2 text-start">
+                                <div class="d-flex flex-column gap-1" style="text-align: left !important;">
+                                    <h4 style="text-align: left !important;">Address</h4>
+                                    <div class="d-flex flex-row font-2 gap-2 align-items-start">
+                                        <i class="rtmicon rtmicon-location fs-4 flex-shrink-0 mt-1"></i>
+                                        <span style="text-align: left;">No 50, Kudamaduwa Road, Siddamull, Piliyandala, Kesbewa, Sri Lanka</span>
                                     </div>
-                                    <div class="social-container team mb-xl-0 mb-3 gap-2">
+                                    <div class="social-container team mb-xl-0 mt-1 mb-3 gap-2">
                                         <a href="https://www.facebook.com" class="social-item-3">
                                             <i class="fa-brands fa-xs fa-facebook-f"></i>
                                         </a>
-                                        <a href="https://wa.me/94771234567" class="social-item-3">
+                                        <a href="https://wa.me/94773768767" class="social-item-3">
                                             <i class="fa-brands fa-xs fa-whatsapp"></i>
                                         </a>
                                         <a href="https://www.instagram.com" class="social-item-3">
@@ -37,22 +37,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col mb-3">
-                                <div class="d-flex flex-column gap-3">
-                                    <h4>Contact Us</h4>
-                                    <div class="d-flex flex-column gap-3">
-                                        <div class="d-flex flex-row align-items-center font-2 gap-3">
-                                            <i class="rtmicon rtmicon-classic-phone  fs-4"></i>
-                                            <span>+94 77 123 4567</span>
-                                        </div>
-                                        <div class="d-flex flex-row align-items-center font-2 gap-3">
-                                            <i class="rtmicon rtmicon-classic-phone  fs-4"></i>
-                                            <span>+94 81 234 5678</span>
-                                        </div>
-                                        <div class="d-flex flex-row align-items-center font-2 gap-3">
-                                            <i class="rtmicon rtmicon-envelope fs-4"></i>
-                                            <span>info@ckhomenursing.lk</span>
-                                        </div>
+                            <div class="col mb-2 text-start">
+                                <div class="d-flex flex-column gap-1" style="text-align: left !important;">
+                                    <h4 style="text-align: left !important;">Contact Us</h4>
+                                    <div class="d-flex flex-column gap-1">
+                                        <a href="tel:0773768767" class="d-flex flex-row align-items-center justify-content-start font-2 gap-2 text-white text-decoration-none">
+                                            <i class="rtmicon rtmicon-classic-phone fs-4 flex-shrink-0"></i>
+                                            <span>077 376 8767</span>
+                                        </a>
+                                        <a href="mailto:candkhomenursing17@gmail.com" class="d-flex flex-row align-items-center justify-content-start font-2 gap-2 text-white text-decoration-none">
+                                            <i class="rtmicon rtmicon-envelope fs-4 flex-shrink-0"></i>
+                                            <span style="font-size: 13px;">candkhomenursing17@gmail.com</span>
+                                        </a>
+                                        <a href="https://nursingcare.lk" target="_blank" rel="noopener noreferrer" class="d-flex flex-row align-items-center justify-content-start font-2 gap-2 text-white text-decoration-none">
+                                            <i class="rtmicon rtmicon-globe fs-4 flex-shrink-0"></i>
+                                            <span>nursingcare.lk</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@
                 </div>
                 <hr class="border-1 border-light" style="opacity: 1;">
                 <div class="d-flex flex-xl-row flex-column gap-3 align-items-xl-center align-items-start justify-content-between">
-                    <div class="d-flex flex-xl-row flex-wrap gap-3 gap-xl-5">
+                    <div class="d-flex flex-row flex-wrap gap-3 gap-xl-5">
                         <div>
                             <a href="{{ route('home') }}" class="link d-flex flex-row gap-3 align-items-center">
                                 Home

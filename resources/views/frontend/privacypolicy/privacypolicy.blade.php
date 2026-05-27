@@ -163,7 +163,7 @@
                 
                 <div style="background: #fffbeb; border-left: 4px solid #fbbf24; padding: 30px 40px; margin: 40px 0;">
                     <p style="color: #92400e; font-size: 16px; margin: 0; font-weight: 600;">
-                        To exercise these rights, please contact us at info@care36t5.com
+                        To exercise these rights, please contact us at candkhomenursing17@gmail.com
                     </p>
                 </div>
             </div>
@@ -226,19 +226,19 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-top: 50px;">
                 <div style="text-align: center; padding: 30px 20px; background: #ffffff; border-radius: 8px; border: 1px solid #e8eef5;">
                     <div style="font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: #1e3a8a; margin-bottom: 12px;">COMPANY</div>
-                    <div style="font-size: 16px; color: #2d3748; font-weight: 500;">care36t5.com</div>
+                    <div style="font-size: 16px; color: #2d3748; font-weight: 500;">C &amp; K Home Nursing and Care Center</div>
                 </div>
                 <div style="text-align: center; padding: 30px 20px; background: #ffffff; border-radius: 8px; border: 1px solid #e8eef5;">
                     <div style="font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: #1e3a8a; margin-bottom: 12px;">EMAIL</div>
-                    <div style="font-size: 16px; color: #2d3748; font-weight: 500;">info@care36t5.com</div>
+                    <div style="font-size: 16px; color: #2d3748; font-weight: 500;">candkhomenursing17@gmail.com</div>
                 </div>
                 <div style="text-align: center; padding: 30px 20px; background: #ffffff; border-radius: 8px; border: 1px solid #e8eef5;">
                     <div style="font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: #1e3a8a; margin-bottom: 12px;">PHONE</div>
-                    <div style="font-size: 16px; color: #2d3748; font-weight: 500;">(+94) 77 660 40 40</div>
+                    <div style="font-size: 16px; color: #2d3748; font-weight: 500;">077 376 8767</div>
                 </div>
                 <div style="text-align: center; padding: 30px 20px; background: #ffffff; border-radius: 8px; border: 1px solid #e8eef5;">
                     <div style="font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: #1e3a8a; margin-bottom: 12px;">WEBSITE</div>
-                    <div style="font-size: 16px; color: #2d3748; font-weight: 500;">care36t5.com</div>
+                    <div style="font-size: 16px; color: #2d3748; font-weight: 500;">nursingcare.lk</div>
                 </div>
             </div>
         </div>

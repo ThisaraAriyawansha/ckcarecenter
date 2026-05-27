@@ -2,15 +2,13 @@
 
 
 {{-- SEO Meta Tags for About Page --}}
-@section('title', 'About Care365 - Leading Elder Care Home in Sri Lanka')
+@section('title', 'About Us | C & K Home Nursing and Care Center - Piliyandala, Sri Lanka')
 
-@section('meta_author', 'Care365')
+@section('meta_description', 'Learn about C & K Home Nursing and Care Center — a trusted home nursing and elder care provider based in Piliyandala, Kesbewa, Sri Lanka. We deliver compassionate, professional care to your home.')
 
-@section('meta_description', 'Learn about Care365, Sri Lanka\'s trusted luxury retirement home. Our dedicated team treats every resident like family, providing compassionate care, safety, and well-being. Discover why families trust us for senior living.')
+@section('meta_keywords', 'about C&K home nursing, home nursing Piliyandala, elder care center Sri Lanka, trusted nursing care Sri Lanka, nursing care Kesbewa, home care providers Sri Lanka, professional home nurses Sri Lanka')
 
-@section('meta_keywords', 'About Care365, Elder care homes Sri Lanka, Best retirement homes Sri Lanka, Senior care facilities, Luxury elder care Sri Lanka, Trusted elderly care, Quality senior living')
-
-@section('og_image', asset('assets/img/logo.png'))
+@section('og_image', asset('assets/image/logo/og_image.webp'))
 
 @section('og_type', 'website')
 

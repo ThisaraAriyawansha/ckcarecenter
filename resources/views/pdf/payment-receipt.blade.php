@@ -287,16 +287,16 @@
 
         <div class="footer-bar">
             <div class="footer-left">
-                <span class="footer-item">www.ckcarecenter.com</span>
+                <span class="footer-item">nursingcare.lk</span>
                 <span class="footer-sep">|</span>
                 <span class="footer-item">C & K Home Nursing and Care Center</span>
                 <span class="footer-sep">|</span>
-                <span class="footer-item">+9477 660 40 40</span>
+                <span class="footer-item">077 376 8767</span>
                 <span class="footer-sep">|</span>
-                <span class="footer-item">info@ckcarecenter.com</span>
+                <span class="footer-item">candkhomenursing17@gmail.com</span>
             </div>
             <div class="footer-right">
-                <span class="footer-item">Colombo, Sri Lanka</span>
+                <span class="footer-item">Piliyandala, Kesbewa, Sri Lanka</span>
             </div>
         </div>
 

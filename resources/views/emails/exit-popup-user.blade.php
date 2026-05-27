@@ -237,13 +237,11 @@
         <div class="footer">
             <div class="footer-brand">C & K Home Nursing and Care Center</div>
             <div class="footer-contacts">
-                <a href="tel:+94776604040">+94 77 660 40 40</a>
+                <a href="tel:0773768767">077 376 8767</a>
                 <span class="footer-separator">|</span>
-                <a href="https://wa.me/94779191818">+94 779 191 818</a>
-                <span class="footer-separator">|</span>
-                <a href="mailto:info@ckcarecenter.com">info@ckcarecenter.com</a>
+                <a href="mailto:candkhomenursing17@gmail.com">candkhomenursing17@gmail.com</a>
                 <br>
-                <span class="footer-website"><a href="https://ckcarecenter.com/">www.ckcarecenter.com</a></span>
+                <span class="footer-website"><a href="https://nursingcare.lk">nursingcare.lk</a></span>
             </div>
             <p class="footer-copyright">&copy; {{ date('Y') }} C & K Home Nursing and Care Center. All rights reserved.</p>
             <p class="footer-credit">Design &amp; Developed by <a href="https://creatxsoftware.com/" target="_blank">CreatX Software</a></p>

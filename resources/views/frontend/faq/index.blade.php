@@ -1,15 +1,13 @@
 @extends('layouts.frontend')
 
 {{-- SEO Meta Tags for FAQs Page --}}
-@section('title', 'FAQs - Frequently Asked Questions About Care365 Elder Care Sri Lanka')
+@section('title', 'FAQs | C & K Home Nursing and Care Center - Home Nursing Questions Answered')
 
-@section('meta_author', 'Care365')
+@section('meta_description', 'Have questions about home nursing or elder care in Sri Lanka? Find answers to frequently asked questions about C & K Home Nursing and Care Center services, costs, and how to get started.')
 
-@section('meta_description', 'Find answers to common questions about Care365 luxury retirement homes: admission process, services, costs, amenities, visiting rules, and senior care in Sri Lanka. Your questions answered clearly.')
+@section('meta_keywords', 'home nursing FAQ Sri Lanka, elder care questions Sri Lanka, C&K nursing FAQs, home nursing cost Sri Lanka, nursing care services questions, home care Piliyandala FAQ')
 
-@section('meta_keywords', 'Care365 FAQs, Elder care questions Sri Lanka, Senior living FAQ, Retirement home frequently asked questions, Assisted living queries')
-
-@section('og_image', asset('assets/img/logo.png'))
+@section('og_image', asset('assets/image/logo/og_image.webp'))
 
 @section('og_type', 'website')
 

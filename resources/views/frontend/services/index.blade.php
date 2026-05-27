@@ -1,15 +1,13 @@
 @extends('layouts.frontend')
 
 {{-- SEO Meta Tags for Services Page --}}
-@section('title', 'Our Services - Luxury Elder Care & Senior Living in Sri Lanka | Care365')
+@section('title', 'Our Services | C & K Home Nursing and Care Center - Home Nursing Sri Lanka')
 
-@section('meta_author', 'Care365')
+@section('meta_description', 'Explore professional home nursing and elder care services offered by C & K Home Nursing and Care Center in Piliyandala, Sri Lanka. From 24/7 nursing care to post-surgery recovery and elderly support — care delivered to your home.')
 
-@section('meta_description', 'Explore premium services at Care365: assisted living, 24/7 nursing care, memory support, personalized elder care, and luxury amenities for seniors in Sri Lanka. Discover compassionate retirement living tailored to your loved ones.')
+@section('meta_keywords', 'home nursing services Sri Lanka, elder care services Piliyandala, 24/7 nursing care Sri Lanka, post surgery nursing care Sri Lanka, elderly care at home Sri Lanka, C&K nursing services, professional home nurses Kesbewa')
 
-@section('meta_keywords', 'Elder care services Sri Lanka, Assisted living Sri Lanka, Luxury senior living services, Memory care Sri Lanka, 24/7 elder care, Retirement home amenities, Personalized senior care')
-
-@section('og_image', asset('assets/img/logo.png'))
+@section('og_image', asset('assets/image/logo/og_image.webp'))
 
 @section('og_type', 'website')
 

@@ -5,11 +5,11 @@
                     <h3>Our Location</h3>
                     <div class="d-flex flex-row align-items-center font-2 gap-3">
                         <i class="rtmicon rtmicon-location fs-4"></i>
-                        <span>CK Care Center, Colombo, Sri Lanka</span>
+                        <span>No 50, Kudamaduwa Road, Siddamull, Piliyandala, Kesbewa, Sri Lanka</span>
                     </div>
                 </div>
                 <iframe loading="lazy" class="maps overflow-hidden"
-                src="https://maps.google.com/maps?q=Colombo%2C+Sri+Lanka&t=m&z=14&output=embed&iwloc=near"
-                title="CK Care Center, Colombo, Sri Lanka" aria-label="CK Care Center, Colombo, Sri Lanka"></iframe>
+                src="https://maps.google.com/maps?q=No+50+Kudamaduwa+Road+Siddamull+Piliyandala+Kesbewa+Sri+Lanka&t=m&z=15&output=embed&iwloc=near"
+                title="C & K Home Nursing and Care Center, Piliyandala, Sri Lanka" aria-label="C & K Home Nursing and Care Center, Piliyandala, Sri Lanka"></iframe>
             </div>
         </div>

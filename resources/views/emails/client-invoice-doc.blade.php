@@ -362,9 +362,9 @@
         <div class="footer">
             <p>This is an automated email — please do not reply directly to this message.</p>
             <p>
-                <a href="http://www.ckcarecenter.com">www.ckcarecenter.com</a>
-                &nbsp;&bull;&nbsp; +9477 660 40 40
-                &nbsp;&bull;&nbsp; info@ckcarecenter.com
+                <a href="https://nursingcare.lk">nursingcare.lk</a>
+                &nbsp;&bull;&nbsp; 077 376 8767
+                &nbsp;&bull;&nbsp; candkhomenursing17@gmail.com
             </p>
             <p style="margin-top:6px;">&copy; {{ date('Y') }} C & K Home Nursing and Care Center. All rights reserved.</p>
         </div>

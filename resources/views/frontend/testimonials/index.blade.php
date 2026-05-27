@@ -1,15 +1,13 @@
 @extends('layouts.frontend')
 
 {{-- SEO Meta Tags for Testimonials Page --}}
-@section('title', 'Testimonials - What Families Say About Care365 Elder Care Sri Lanka')
+@section('title', 'Testimonials | C & K Home Nursing and Care Center - What Our Patients Say')
 
-@section('meta_author', 'Care365')
+@section('meta_description', 'Read real reviews and testimonials from patients and families who have experienced home nursing and elder care from C & K Home Nursing and Care Center in Piliyandala, Sri Lanka.')
 
-@section('meta_description', 'Hear from happy families and residents about their experience at Care365 luxury retirement homes in Sri Lanka. Real stories of compassionate care, independence, joy, and exceptional senior living services.')
+@section('meta_keywords', 'C&K home nursing reviews, home nursing testimonials Sri Lanka, elder care reviews Piliyandala, nursing care feedback Sri Lanka, trusted home nursing Sri Lanka, patient reviews C&K')
 
-@section('meta_keywords', 'Care365 testimonials, Elder care reviews Sri Lanka, Senior living feedback, Retirement home testimonials, Family reviews elder care, Trusted senior care Sri Lanka')
-
-@section('og_image', asset('assets/img/logo.png'))
+@section('og_image', asset('assets/image/logo/og_image.webp'))
 
 @section('og_type', 'website')
 

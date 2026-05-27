@@ -138,11 +138,11 @@
                                 <div class="d-flex flex-xl-row flex-column gap-3 mt-3 text-white">
                                     <div class="d-flex flex-row gap-2 align-items-center">
                                         <i class="rtmicon rtmicon-location"></i>
-                                        <span class="font-3">Colombo, Sri lanka</span>
+                                        <span class="font-3">Piliyandala, Kesbewa, Sri Lanka</span>
                                     </div>
                                     <div class="d-flex flex-row gap-2 align-items-center">
                                         <i class="rtmicon rtmicon-classic-phone"></i>
-                                        <span class="font-3">0761-8523-398</span>
+                                        <span class="font-3">077 376 8767</span>
                                     </div>
                                 </div>
                             </div>

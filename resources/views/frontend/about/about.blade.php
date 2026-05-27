@@ -72,7 +72,7 @@
                                     <div class="d-flex flex-xl-row flex-column gap-3 mt-3 text-white">
                                         <div class="d-flex flex-row gap-2 align-items-center">
                                             <i class="rtmicon rtmicon-location"></i>
-                                            <span class="font-3">C &amp; K Home Nursing &amp; Care Center, Sri Lanka</span>
+                                            <span class="font-3">Piliyandala, Kesbewa, Sri Lanka</span>
                                         </div>
                                     </div>
                                 </div>

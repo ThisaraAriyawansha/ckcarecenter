@@ -77,7 +77,6 @@
                 <div class="d-flex flex-column gap-3 text-center mx-auto align-items-center scrollanimation animated zoomIn"
                     style="max-width: 620px;">
                     <div class="d-flex flex-row gap-2 align-items-center">
-                        <img src="{{ asset('assets/image/cuida_medicine-outline.png') }}" class="img-fluid" alt="">
                         <h6 class="accent-color m-0">Our Care Services</h6>
                     </div>
                     <h3>Browse All Our Care Services</h3>

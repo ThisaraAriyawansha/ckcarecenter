@@ -10,7 +10,7 @@
                                         <h6 class="accent-color m-0">Get In Touch</h6>
                                     </div>
                                     <h3>Our Care Home Team is Here to Help</h3>
-                                    <p>Whether you are enquiring about residential care, respite care, or visiting a loved one, our dedicated team in Colombo is ready to assist you every step of the way.
+                                    <p>Whether you are enquiring about residential care, respite care, or visiting a loved one, our dedicated team in Piliyandala is ready to assist you every step of the way.
                                     </p>
                                 </div>
                             </div>
@@ -93,15 +93,19 @@
                             <div class="d-flex flex-column gap-3">
                                 <div class="d-flex flex-row align-items-center font-2 gap-3">
                                     <i class="rtmicon rtmicon-location fs-4"></i>
-                                    <span>CK Care Center, Colombo, Sri Lanka</span>
+                                    <span>No 50, Kudamaduwa Road, Siddamull, Piliyandala, Kesbewa, Sri Lanka</span>
                                 </div>
                                 <div class="d-flex flex-row align-items-center font-2 gap-3">
                                     <i class="rtmicon rtmicon-classic-phone  fs-4"></i>
-                                    <span>+94 11 234 5678</span>
+                                    <a href="tel:0773768767" class="text-decoration-none" style="color: inherit !important;">077 376 8767</a>
                                 </div>
                                 <div class="d-flex flex-row align-items-center font-2 gap-3">
                                     <i class="rtmicon rtmicon-envelope fs-4"></i>
-                                    <span>info@ckcarecenter.lk</span>
+                                    <a href="mailto:candkhomenursing17@gmail.com" class="text-decoration-none" style="color: inherit !important;">candkhomenursing17@gmail.com</a>
+                                </div>
+                                <div class="d-flex flex-row align-items-center font-2 gap-3">
+                                    <i class="rtmicon rtmicon-globe fs-4"></i>
+                                    <a href="https://nursingcare.lk" target="_blank" rel="noopener noreferrer" class="text-decoration-none" style="color: inherit !important;">nursingcare.lk</a>
                                 </div>
                                 <div class="social-container team mb-xl-0 mb-3 gap-2">
                                     <a href="https://www.facebook.com" class="social-item-2">

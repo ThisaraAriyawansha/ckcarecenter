@@ -31,8 +31,8 @@
 
                     <div class="helpful-info mt-5 pt-4" style="border-top: 1px solid #eee;">
                         <p style="font-size: 14px; color: #999; margin-bottom: 10px;">Need urgent assistance?</p>
-                        <a href="mailto:info@ckcarecenter.com" style="color: #1C3F6E; text-decoration: none; font-size: 14px; font-weight: 600;">
-                            <i class="fas fa-envelope"></i> info@ckcarecenter.com
+                        <a href="mailto:candkhomenursing17@gmail.com" style="color: #1C3F6E; text-decoration: none; font-size: 14px; font-weight: 600;">
+                            <i class="fas fa-envelope"></i> candkhomenursing17@gmail.com
                         </a>
                     </div>
                 </div>
