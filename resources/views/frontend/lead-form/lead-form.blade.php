@@ -1,357 +1,92 @@
 <style>
-    /* ── Lead Form Hero Section ── */
     .lf-hero {
-        background: linear-gradient(135deg, #0A3F87 0%, #1a5bb5 100%);
+        background: #1C3F6E;
         padding: 120px 0 60px;
         text-align: center;
         color: #fff;
     }
+    .lf-hero h1 { font-size: 36px; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.5px; color: #fff; }
+    .lf-hero p { font-size: 15px; color: rgba(255,255,255,0.85); max-width: 500px; margin: 0 auto; line-height: 1.6; }
 
-    .lf-hero h1 {
-        font-size: 38px;
-        font-weight: 700;
-        margin-bottom: 12px;
-        letter-spacing: -0.5px;
-        color: #ffffff;
-    }
+    .lf-section {  padding: 80px 0 100px; }
 
-    .lf-hero p {
-        font-size: 16px;
-        color: rgba(255, 255, 255, 0.9);
-        max-width: 520px;
-        margin: 0 auto;
-        line-height: 1.6;
-    }
+    .lf-wrapper { max-width: 1100px; margin: 0 auto; display: flex; gap: 50px; align-items: flex-start; padding: 0 20px; }
 
-    /* ── Form Section ── */
-    .lf-section {
-        background: #f8fafc;
-        padding: 80px 0 100px;
-    }
+    .lf-info { flex: 1; padding-top: 10px; }
+    .lf-info h2 { font-size: 26px; font-weight: 700; color: #1C3F6E; margin-bottom: 14px; line-height: 1.3; }
+    .lf-info p { font-size: 14px; color: #6b7280; line-height: 1.7; margin-bottom: 28px; }
 
-    .lf-wrapper {
-        max-width: 1100px;
-        margin: 0 auto;
-        display: flex;
-        gap: 50px;
-        align-items: flex-start;
-        padding: 0 20px;
-    }
+    .lf-features { list-style: none; padding: 0; margin: 0; }
+    .lf-features li { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 20px; font-size: 14px; color: #374151; line-height: 1.5; }
+    .lf-features li .lf-icon { flex-shrink: 0; width: 40px; height: 40px; background: #EEF2F8; border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+    .lf-features li .lf-icon svg { width: 18px; height: 18px; stroke: #1C3F6E; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .lf-features li strong { display: block; color: #111827; font-weight: 600; margin-bottom: 2px; }
 
-    /* Left info panel */
-    .lf-info {
-        flex: 1;
-        padding-top: 10px;
-    }
+    .lf-card { flex: 1; max-width: 500px; background: #fff; border-radius: 14px; padding: 40px 36px; border: 1px solid #e5e7eb; position: relative; margin-top: -120px; }
 
-    .lf-info h2 {
-        font-size: 28px;
-        font-weight: 700;
-        color: #0A3F87;
-        margin-bottom: 16px;
-        line-height: 1.3;
-    }
+    .lf-card-title { font-size: 18px; font-weight: 700; color: #111827; margin-bottom: 4px; }
+    .lf-card-sub { font-size: 13px; color: #9ca3af; margin-bottom: 24px; }
 
-    .lf-info p {
-        font-size: 15px;
-        color: #6b7280;
-        line-height: 1.7;
-        margin-bottom: 32px;
-    }
+    .lf-field { margin-bottom: 18px; }
+    .lf-field label { display: block; font-size: 12px; font-weight: 600; color: #374151; margin-bottom: 6px; letter-spacing: 0.2px; text-transform: uppercase; }
+    .lf-field input, .lf-field select { width: 100%; padding: 11px 14px; font-size: 14px; font-family: inherit; color: #1f2937; background: #f9fafb; border: 1.5px solid #e5e7eb; border-radius: 8px; outline: none; transition: border-color .2s; box-sizing: border-box; -webkit-appearance: none; appearance: none; }
+    .lf-field select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 8L1 3h10z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 38px; cursor: pointer; color: #6b7280; }
+    .lf-field select:valid { color: #1f2937; }
+    .lf-field input:focus, .lf-field select:focus { border-color: #1C3F6E; background: #fff; box-shadow: 0 0 0 3px rgba(28,63,110,0.08); }
+    .lf-field input::placeholder { color: #b0b7c3; }
 
-    .lf-features {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
+    .lf-row { display: flex; gap: 12px; }
+    .lf-row .lf-field { flex: 1; }
 
-    .lf-features li {
-        display: flex;
-        align-items: flex-start;
-        gap: 14px;
-        margin-bottom: 22px;
-        font-size: 15px;
-        color: #374151;
-        line-height: 1.5;
-    }
-
-    .lf-features li .lf-icon {
-        flex-shrink: 0;
-        width: 40px;
-        height: 40px;
-        background: rgba(10, 63, 135, 0.08);
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .lf-features li .lf-icon svg {
-        width: 20px;
-        height: 20px;
-        stroke: #0A3F87;
-        fill: none;
-        stroke-width: 2;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-    }
-
-    .lf-features li strong {
-        display: block;
-        color: #1a1a2e;
-        font-weight: 600;
-        margin-bottom: 2px;
-    }
-
-    /* Right form card */
-    .lf-card {
-        flex: 1;
-        max-width: 500px;
-        background: #ffffff;
-        border-radius: 16px;
-        padding: 44px 40px;
-        box-shadow: 0 8px 40px rgba(10, 63, 135, 0.08);
-        border: 1px solid rgba(10, 63, 135, 0.06);
-        position: relative;
-        margin-top: -120px;
-    }
-
-    .lf-card-title {
-        font-size: 20px;
-        font-weight: 700;
-        color: #1a1a2e;
-        margin-bottom: 4px;
-    }
-
-    .lf-card-sub {
-        font-size: 13px;
-        color: #9ca3af;
-        margin-bottom: 28px;
-    }
-
-    /* Form fields */
-    .lf-field {
-        margin-bottom: 20px;
-    }
-
-    .lf-field label {
-        display: block;
-        font-size: 13px;
-        font-weight: 600;
-        color: #374151;
-        margin-bottom: 7px;
-        letter-spacing: 0.2px;
-    }
-
-    .lf-field input,
-    .lf-field select {
-        width: 100%;
-        padding: 13px 16px;
-        font-size: 14px;
-        font-family: inherit;
-        color: #1f2937;
-        background: #f9fafb;
-        border: 1.5px solid #e5e7eb;
-        border-radius: 10px;
-        outline: none;
-        transition: all 0.25s ease;
-        box-sizing: border-box;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-    }
-
-    .lf-field select {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
-        background-repeat: no-repeat;
-        background-position: right 16px center;
-        padding-right: 40px;
-        cursor: pointer;
-        color: #6b7280;
-    }
-
-    .lf-field select:valid {
-        color: #1f2937;
-    }
-
-    .lf-field input:focus,
-    .lf-field select:focus {
-        border-color: #48b1fb;
-        background: #fff;
-        box-shadow: 0 0 0 3px rgba(72, 177, 251, 0.12);
-    }
-
-    .lf-field input::placeholder {
-        color: #b0b7c3;
-    }
-
-    .lf-row {
-        display: flex;
-        gap: 14px;
-    }
-
-    .lf-row .lf-field {
-        flex: 1;
-    }
-
-    /* Submit button */
-    .lf-btn {
-        width: 100%;
-        padding: 15px;
-        font-size: 15px;
-        font-weight: 600;
-        font-family: inherit;
-        letter-spacing: 0.3px;
-        color: #ffffff;
-        background: #0A3F87;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        margin-top: 6px;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 14px rgba(10, 63, 135, 0.25);
-        position: relative;
-        overflow: hidden;
-    }
-
-    .lf-btn:hover {
-        background: #48b1fb;
-        box-shadow: 0 6px 20px rgba(72, 177, 251, 0.35);
-        transform: translateY(-1px);
-    }
-
-    .lf-btn:active {
-        transform: translateY(0);
-    }
-
-    .lf-btn:disabled {
-        opacity: 0.7;
-        cursor: not-allowed;
-        transform: none;
-    }
-
+    .lf-btn { width: 100%; padding: 13px; font-size: 14px; font-weight: 600; font-family: inherit; color: #fff; background: #1C3F6E; border: 1.5px solid #1C3F6E; border-radius: 8px; cursor: pointer; margin-top: 4px; transition: all .2s; }
+    .lf-btn:hover { background: transparent; color: #1C3F6E; }
+    .lf-btn:disabled { opacity: 0.7; cursor: not-allowed; }
     .lf-btn .btn-text { display: inline; }
     .lf-btn .btn-loader { display: none; align-items: center; justify-content: center; gap: 8px; }
-
     .lf-btn:disabled .btn-text { display: none; }
     .lf-btn:disabled .btn-loader { display: inline-flex; }
 
-    .lf-secure {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 6px;
-        margin-top: 14px;
-        font-size: 12px;
-        color: #9ca3af;
-    }
+    .lf-secure { display: flex; align-items: center; justify-content: center; gap: 6px; margin-top: 12px; font-size: 12px; color: #9ca3af; }
+    .lf-secure svg { width: 13px; height: 13px; stroke: #9ca3af; fill: none; stroke-width: 2; }
 
-    .lf-secure svg {
-        width: 14px;
-        height: 14px;
-        stroke: #9ca3af;
-        fill: none;
-        stroke-width: 2;
-    }
+    .lf-msg { padding: 12px 16px; border-radius: 8px; font-size: 13px; margin-bottom: 18px; display: none; line-height: 1.5; }
+    .lf-msg.success { background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; }
+    .lf-msg.error { background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
+    .lf-field-error { font-size: 12px; color: #dc2626; margin-top: 4px; }
 
-    /* Messages */
-    .lf-msg {
-        padding: 14px 16px;
-        border-radius: 10px;
-        font-size: 14px;
-        margin-bottom: 20px;
-        display: none;
-        line-height: 1.5;
-    }
-
-    .lf-msg.success {
-        background: #ecfdf5;
-        color: #065f46;
-        border: 1px solid #a7f3d0;
-    }
-
-    .lf-msg.error {
-        background: #fef2f2;
-        color: #991b1b;
-        border: 1px solid #fecaca;
-    }
-
-    .lf-field-error {
-        font-size: 12px;
-        color: #dc2626;
-        margin-top: 5px;
-    }
-
-    /* ── Responsive ── */
     @media (max-width: 900px) {
-        .lf-wrapper {
-            flex-direction: column;
-            max-width: 540px;
-        }
-
-        .lf-card {
-            max-width: 100%;
-            margin-top: 0;
-        }
-
-        .lf-info {
-            text-align: center;
-        }
-
-        .lf-features li {
-            justify-content: center;
-            text-align: left;
-        }
-
-        .lf-hero h1 {
-            font-size: 30px;
-        }
+        .lf-wrapper { flex-direction: column; max-width: 540px; }
+        .lf-card { max-width: 100%; margin-top: 0; }
+        .lf-info { text-align: center; }
+        .lf-features li { justify-content: center; text-align: left; }
+        .lf-hero h1 { font-size: 28px; }
     }
-
     @media (max-width: 540px) {
-        .lf-hero {
-            padding: 80px 20px 50px;
-        }
-
-        .lf-hero h1 {
-            font-size: 26px;
-        }
-
-        .lf-section {
-            padding: 50px 0 70px;
-        }
-
-        .lf-card {
-            padding: 32px 24px;
-        }
-
-        .lf-row {
-            flex-direction: column;
-            gap: 0;
-        }
-
-        .lf-info h2 {
-            font-size: 22px;
-        }
+        .lf-hero { padding: 80px 20px 50px; }
+        .lf-hero h1 { font-size: 24px; }
+        .lf-section { padding: 50px 0 70px; }
+        .lf-card { padding: 28px 20px; }
+        .lf-row { flex-direction: column; gap: 0; }
+        .lf-info h2 { font-size: 20px; }
     }
 </style>
 
-{{-- ── Hero Banner ── --}}
+{{-- Hero --}}
 <section class="lf-hero">
     <div class="container">
         <h1>Find the Right Care for Your Loved One</h1>
-        <p>Fill out a quick enquiry and our care specialists will reach out with a personalised plan.</p>
+        <p>Fill out a quick enquiry and our care specialists at C &amp; K Home Nursing and Care Center will reach out with a personalised plan.</p>
     </div>
 </section>
 
-{{-- ── Form + Info Section ── --}}
+{{-- Form + Info --}}
 <section class="lf-section">
     <div class="lf-wrapper">
 
-        {{-- Left: Info --}}
+        {{-- Left Info --}}
         <div class="lf-info">
-            <h2>Why Families Choose Care&nbsp;365</h2>
-            <p>We provide compassionate, personalised elder care in a safe and luxurious environment across Sri&nbsp;Lanka.</p>
+            <h2>Why Families Choose C &amp; K Home Nursing and Care Center</h2>
+            <p>We provide compassionate, personalised elder care in a safe and nurturing environment across Sri&nbsp;Lanka.</p>
 
             <ul class="lf-features">
                 <li>
@@ -393,8 +128,7 @@
             </ul>
         </div>
 
-        {{-- Right: Form Card --}}    
-
+        {{-- Right Form Card --}}
         <div class="lf-card">
             <div class="lf-card-title">Not Sure Which Care Option Is Right?</div>
             <div class="lf-card-sub">Get our free Elder Care Planning Guide</div>
@@ -456,7 +190,7 @@
                 <button type="submit" class="lf-btn" id="leadBtn">
                     <span class="btn-text">Get My Free Care Plan</span>
                     <span class="btn-loader">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                             <circle cx="12" cy="12" r="10" opacity="0.25"/>
                             <path d="M12 2a10 10 0 0 1 10 10" opacity="0.75">
                                 <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="0.8s" repeatCount="indefinite"/>
@@ -479,17 +213,12 @@
 <script>
 document.getElementById('leadForm').addEventListener('submit', function (e) {
     e.preventDefault();
-
-    // Clear errors
     document.querySelectorAll('.lf-field-error').forEach(function(el) { el.textContent = ''; });
     var msg = document.getElementById('leadMsg');
     msg.style.display = 'none';
-
     var btn = document.getElementById('leadBtn');
     btn.disabled = true;
-
     var params = new URLSearchParams(new FormData(this)).toString();
-
     fetch("{{ route('lead-form.submit') }}?" + params, {
         method: 'GET',
         headers: { 'Accept': 'application/json' }
@@ -517,8 +246,6 @@ document.getElementById('leadForm').addEventListener('submit', function (e) {
         msg.textContent = 'Network error. Please try again.';
         msg.style.display = 'block';
     })
-    .finally(function() {
-        btn.disabled = false;
-    });
+    .finally(function() { btn.disabled = false; });
 });
 </script>

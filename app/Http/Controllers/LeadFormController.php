@@ -89,7 +89,7 @@ class LeadFormController extends Controller
             ];
 
             // Get admin email
-            $adminEmail = env('CONTACT_FORM_RECIPIENT', 'carethree65@gmail.com');
+            $adminEmail = env('CONTACT_FORM_RECIPIENT', 'CONTACT_FORM_RECIPIENT');
             
             Log::info('Attempting to send ADMIN email', ['to' => $adminEmail]);
             
