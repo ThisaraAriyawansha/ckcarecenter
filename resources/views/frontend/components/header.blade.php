@@ -12,31 +12,30 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-4 gap-1">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
+                                <a class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}" aria-current="page" href="{{ route('home') }}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="{{ route('about') }}">About</a>
+                                <a class="nav-link {{ request()->routeIs('about') ? 'active' : '' }}" aria-current="page" href="{{ route('about') }}">About</a>
                             </li>
-                        
-                            
+
+
                             <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="{{ route('services') }}">Services</a>
+                                <a class="nav-link {{ request()->routeIs('services') ? 'active' : '' }}" aria-current="page" href="{{ route('services') }}">Services</a>
                             </li>
-                            
+
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('contact') }}">Contact Us</a>
+                                <a class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link dropdown-toggle {{ request()->routeIs('faq', 'blog', 'gallery', 'testimonial') ? 'active' : '' }}" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     More
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ route('faq') }}">FAQs</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('blog') }}">Last Article</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('gallery') }}">Gallery</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('testimonial') }}">Testimonials</a></li>
-                                    
+                                    <li><a class="dropdown-item {{ request()->routeIs('faq') ? 'active' : '' }}" href="{{ route('faq') }}">FAQs</a></li>
+                                    <li><a class="dropdown-item {{ request()->routeIs('blog') ? 'active' : '' }}" href="{{ route('blog') }}">Last Article</a></li>
+                                    <li><a class="dropdown-item {{ request()->routeIs('gallery') ? 'active' : '' }}" href="{{ route('gallery') }}">Gallery</a></li>
+                                    <li><a class="dropdown-item {{ request()->routeIs('testimonial') ? 'active' : '' }}" href="{{ route('testimonial') }}">Testimonials</a></li>
                                 </ul>
                             </li>
                         </ul>
