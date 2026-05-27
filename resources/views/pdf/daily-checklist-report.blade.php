@@ -84,7 +84,7 @@
 </head>
 <body>
     <div class="header">
-        <img src="{{ public_path('logo/care365.svg') }}" alt="C & K Home Nursing and Care Center Logo" class="logo">
+        <img src="{{ public_path('logo/logo_2.png') }}" alt="C & K Home Nursing and Care Center Logo" class="logo">
         <h1>C & K Home Nursing and Care Center - Daily Checklist Report</h1>
         <p>Generated on: {{ $generated_at }}</p>
         @if($records->count() > 0)

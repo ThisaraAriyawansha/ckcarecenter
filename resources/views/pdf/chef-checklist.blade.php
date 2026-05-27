@@ -202,9 +202,9 @@
 </head>
 <body>
     <div class="header">
-        @if(file_exists(public_path('logo/care365.svg')))
+        @if(file_exists(public_path('logo/logo_2.png')))
         <div style="margin-bottom: 15px;">
-            <img src="{{ public_path('logo/care365.svg') }}" alt="C & K Home Nursing and Care Center Logo" style="height: 60px; width: auto;">
+            <img src="{{ public_path('logo/logo_2.png') }}" alt="C & K Home Nursing and Care Center Logo" style="height: 60px; width: auto;">
         </div>
         @endif
         <h1>COOKING ASSISTANT CHECKLIST</h1>
