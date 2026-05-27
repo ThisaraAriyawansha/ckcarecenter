@@ -18,11 +18,8 @@
 
 @section('content')
     @include('frontend.about.hero')
-    @include('frontend.about.journey')
     @include('frontend.about.about')
-    @include('frontend.about.care')
-    @include('frontend.about.team')
-    @include('frontend.about.careers')
+    
 
 @endsection
 
