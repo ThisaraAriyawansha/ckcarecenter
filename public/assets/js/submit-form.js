@@ -7,55 +7,81 @@ $(function () {
         }
     });
 
-    const forms = $('.needs-validation');
+    // --- Success modal ---
+    var $modal = $('#ckSuccessModal');
 
-    forms.on('submit', function (event) {
+    function showSuccessModal() {
+        $modal.addClass('ck-show');
+        $('body').css('overflow', 'hidden');
+    }
+
+    function hideSuccessModal() {
+        $modal.removeClass('ck-show');
+        $('body').css('overflow', '');
+    }
+
+    $('#ckModalClose').on('click', hideSuccessModal);
+
+    $modal.on('click', function (e) {
+        if ($(e.target).is($modal)) hideSuccessModal();
+    });
+
+    $(document).on('keydown', function (e) {
+        if (e.key === 'Escape') hideSuccessModal();
+    });
+
+    // --- Form submit ---
+    var $forms = $('.needs-validation');
+
+    $forms.on('submit', function (event) {
         event.preventDefault();
-        const form = $(this);
+        var $form = $(this);
 
-        if (!form[0].checkValidity()) {
-            form.addClass('was-validated');
+        if (!$form[0].checkValidity()) {
+            $form.addClass('was-validated');
             return;
         }
 
-        form.addClass('was-validated');
+        $form.addClass('was-validated');
 
-        var actionInput = form.find("input[name='action']");
-        $('.submit_form').html('Sending...');
-        $('.submit_subscribe').html('Sending...');
+        var $submitBtn = $form.find('.submit_form');
+        var $subscribeBtn = $form.find('.submit_subscribe');
+        var actionInput = $form.find("input[name='action']");
 
-        const toast = new bootstrap.Toast($('.success_msg')[0]);
-        const errtoast = new bootstrap.Toast($('.error_msg')[0]);
+        // Disable button + show spinner
+        $submitBtn.prop('disabled', true)
+            .html('<span class="ck-spinner"></span>&nbsp; Sending...');
+        $subscribeBtn.prop('disabled', true).html('Sending...');
 
-        var formUrl = form.attr('action') || 'php/form_process.php';
-        var formData = form.serialize();
+        var errtoast = new bootstrap.Toast($('.error_msg')[0]);
+        var formUrl  = $form.attr('action') || 'php/form_process.php';
 
         $.ajax({
             type: 'POST',
             url: formUrl,
-            data: formData,
+            data: $form.serialize(),
             success: function (response) {
                 if (response.success) {
                     if (actionInput.length > 0 && actionInput.val() === 'subscribe') {
-                        $('.submit_subscribe').html('Subscribe');
-                        const toast_comment = new bootstrap.Toast($('.success_msg_subscribe')[0]);
+                        $subscribeBtn.prop('disabled', false).html('Subscribe');
+                        var toast_comment = new bootstrap.Toast($('.success_msg_subscribe')[0]);
                         toast_comment.show();
                     } else {
-                        form[0].reset();
-                        form.removeClass('was-validated');
-                        toast.show();
-                        $('.submit_form').html('Send Message');
+                        $form[0].reset();
+                        $form.removeClass('was-validated');
+                        $submitBtn.prop('disabled', false).html('Send Message');
+                        showSuccessModal();
                     }
                 } else {
+                    $submitBtn.prop('disabled', false).html('Send Message');
+                    $subscribeBtn.prop('disabled', false).html('Subscribe');
                     errtoast.show();
-                    $('.submit_form').html('Send Message');
-                    $('.submit_subscribe').html('Subscribe');
                 }
             },
-            error: function (xhr) {
+            error: function () {
+                $submitBtn.prop('disabled', false).html('Send Message');
+                $subscribeBtn.prop('disabled', false).html('Subscribe');
                 errtoast.show();
-                $('.submit_form').html('Send Message');
-                $('.submit_subscribe').html('Subscribe');
             }
         });
     });

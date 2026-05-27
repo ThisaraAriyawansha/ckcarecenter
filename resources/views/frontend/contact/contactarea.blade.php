@@ -15,19 +15,6 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="success_msg toast align-items-center w-100 shadow-none mb-3 border border-success rounded-pill my-4"
-                                role="alert" aria-live="assertive" aria-atomic="true">
-                                <div class="d-flex p-2">
-                                    <div class="toast-body f-18 d-flex flex-row gap-3 align-items-center text-success">
-                                        <i class="fa-solid fa-check f-36 text-success"></i>
-                                        Your Message Successfully Sent.
-                                    </div>
-                                    <button type="button"
-                                        class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-success"
-                                        data-bs-dismiss="toast" aria-label="Close"><i
-                                            class="fa-solid fa-xmark"></i></button>
-                                </div>
-                            </div>
                             <div class="error_msg toast align-items-center w-100 shadow-none border-danger mb-3 my-4 border rounded-pill"
                                 role="alert" aria-live="assertive" aria-atomic="true">
                                 <div class="d-flex p-2">
@@ -92,12 +79,13 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <button type="submit"
+                                    <button type="submit" id="contactSubmitBtn"
                                         class="btn submit_form py-3 w-100 d-flex flex-row gap-3 justify-content-center gap-2 rounded-pill">
                                         Send Message
                                     </button>
                                 </div>
                             </form>
+                            <br/>
                         </div>
                     </div>
                     <div class="col col-xl-5 mb-3 scrollanimation animated fadeInRight">
@@ -136,3 +124,15 @@
                 </div>
             </div>
         </div>
+
+<!-- Contact Success Modal -->
+<div class="ck-modal-overlay" id="ckSuccessModal">
+    <div class="ck-modal">
+        <div class="ck-modal-icon">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <h4 class="ck-modal-title">Message Sent!</h4>
+        <p class="ck-modal-text">Thank you for reaching out. Our team will get back to you as soon as possible.</p>
+        <button class="ck-modal-btn" id="ckModalClose">Done</button>
+    </div>
+</div>
