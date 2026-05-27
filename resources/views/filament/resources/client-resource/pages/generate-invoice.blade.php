@@ -8,7 +8,7 @@
             <div style="border-radius:12px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,0.08); border:1px solid rgba(0,0,0,0.06);">
 
                 {{-- Blue header banner --}}
-                <div style="background:linear-gradient(135deg,#2563eb,#3b82f6); padding:20px 20px 32px;">
+                <div style="background:linear-gradient(135deg,#1C3F6E,#2d5f9e); padding:20px 20px 32px;">
                     <div style="font-size:10px; font-weight:600; letter-spacing:2px; color:#bfdbfe; text-transform:uppercase; margin-bottom:6px;">Client</div>
                     <div style="color:#fff; font-size:18px; font-weight:700; line-height:1.2;">{{ $record->name }}</div>
                     <div style="color:#bfdbfe; font-size:12px; margin-top:3px;">{{ $record->reg_number }}</div>
@@ -23,12 +23,12 @@
                             <img src="{{ asset('storage/' . $record->image) }}"
                                  style="width:60px; height:60px; border-radius:50%; object-fit:cover; border:3px solid #fff; box-shadow:0 2px 8px rgba(0,0,0,0.15); flex-shrink:0;" />
                         @else
-                            <div style="width:60px; height:60px; border-radius:50%; background:#2563eb; border:3px solid #fff; box-shadow:0 2px 8px rgba(0,0,0,0.15); display:flex; align-items:center; justify-content:center; color:#fff; font-size:20px; font-weight:700; flex-shrink:0;">
+                            <div style="width:60px; height:60px; border-radius:50%; background:#1C3F6E; border:3px solid #fff; box-shadow:0 2px 8px rgba(0,0,0,0.15); display:flex; align-items:center; justify-content:center; color:#fff; font-size:20px; font-weight:700; flex-shrink:0;">
                                 {{ strtoupper(substr($record->name, 0, 2)) }}
                             </div>
                         @endif
                         @if($record->branch)
-                            <span style="margin-bottom:4px; display:inline-flex; align-items:center; padding:3px 10px; border-radius:999px; font-size:11px; font-weight:600; background:#eff6ff; color:#1d4ed8; white-space:nowrap;">
+                            <span style="margin-bottom:4px; display:inline-flex; align-items:center; padding:3px 10px; border-radius:999px; font-size:11px; font-weight:600; background:#eff6ff; color:#1C3F6E; white-space:nowrap;">
                                 {{ $record->branch->name }}
                             </span>
                         @endif
@@ -65,7 +65,7 @@
                             </div>
                             @foreach($record->guardians as $g)
                                 <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
-                                    <div style="width:30px; height:30px; border-radius:50%; background:#eff6ff; display:flex; align-items:center; justify-content:center; color:#2563eb; font-size:12px; font-weight:700; flex-shrink:0;">
+                                    <div style="width:30px; height:30px; border-radius:50%; background:#eff6ff; display:flex; align-items:center; justify-content:center; color:#1C3F6E; font-size:12px; font-weight:700; flex-shrink:0;">
                                         {{ strtoupper(substr($g->name, 0, 1)) }}
                                     </div>
                                     <div style="min-width:0;">

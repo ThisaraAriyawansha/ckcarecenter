@@ -107,7 +107,7 @@ class LeadFormController extends Controller
             // 2. Send confirmation email to user
             Mail::send('emails.exit-popup-user', $userEmailData, function($message) use ($validated) {
                 $message->to($validated['email'])
-                        ->subject('Your Elder Care Planning Guide - Care 365')
+                        ->subject('Your Elder Care Planning Guide - C & K Home Nursing and Care Center')
                         ->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'));
             });
 

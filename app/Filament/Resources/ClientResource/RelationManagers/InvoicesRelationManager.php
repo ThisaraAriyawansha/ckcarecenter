@@ -121,7 +121,7 @@ class InvoicesRelationManager extends RelationManager
                     ->schema([
                         Forms\Components\TextInput::make('bank_ac_name')
                             ->label('Account Name')
-                            ->default('Care 365 Pvt LTD')
+                            ->default('C & K Home Nursing and Care Center')
                             ->required(),
 
                         Forms\Components\TextInput::make('bank_ac_number_lkr')

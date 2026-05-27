@@ -324,7 +324,7 @@ class PaymentsRelationManager extends RelationManager
             try {
                 Mail::send([], [], function ($message) use ($email, $emailBody, $pdfOutput, $filename, $client) {
                     $message->to($email)
-                        ->subject('Payment Receipt — ' . $client->name . ' | CARE 365')
+                        ->subject('Payment Receipt — ' . $client->name . ' | C & K Home Nursing and Care Center')
                         ->html($emailBody)
                         ->attachData($pdfOutput, $filename, ['mime' => 'application/pdf']);
                 });

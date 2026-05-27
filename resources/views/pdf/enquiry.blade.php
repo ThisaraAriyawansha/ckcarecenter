@@ -22,13 +22,13 @@
         .header {
             text-align: center;
             margin-bottom: 30px;
-            border-bottom: 3px solid #2563eb;
+            border-bottom: 3px solid #1C3F6E;
             padding-bottom: 15px;
         }
 
         .header h1 {
             font-size: 24px;
-            color: #2563eb;
+            color: #1C3F6E;
             margin-bottom: 5px;
         }
 
@@ -150,7 +150,7 @@
 <body>
     <div class="header">
         <h1>ENQUIRY DETAILS</h1>
-        <p>Care365 Management System</p>
+        <p>C & K Home Nursing and Care Center Management System</p>
     </div>
 
     <!-- Contact Information Section -->
@@ -269,7 +269,7 @@
     </div>
 
     <div class="footer">
-        <p>Care365 Management System - Confidential Document</p>
+        <p>C & K Home Nursing and Care Center Management System - Confidential Document</p>
         <p>This document contains sensitive information and should be handled accordingly.</p>
     </div>
 </body>

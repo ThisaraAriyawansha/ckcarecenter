@@ -44,13 +44,13 @@
         @if($stats['is_profit'])
         <div style="border-radius:0.75rem; border:1px solid #bfdbfe; background:#eff6ff; padding:1.5rem; box-shadow:0 1px 3px rgba(0,0,0,.08);">
             <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.5rem;">
-                <x-filament::icon icon="heroicon-o-banknotes" style="width:1.5rem;height:1.5rem;color:#2563eb;" />
-                <span style="font-size:0.875rem; font-weight:500; color:#1d4ed8;">Net Profit</span>
+                <x-filament::icon icon="heroicon-o-banknotes" style="width:1.5rem;height:1.5rem;color:#1C3F6E;" />
+                <span style="font-size:0.875rem; font-weight:500; color:#1C3F6E;">Net Profit</span>
             </div>
             <p style="font-size:1.5rem; font-weight:700; color:#1e3a8a;">
                 LKR {{ number_format(abs($stats['profit']), 2) }}
             </p>
-            <p style="font-size:0.75rem; color:#2563eb; margin-top:0.25rem;">{{ $stats['month'] }}</p>
+            <p style="font-size:0.75rem; color:#1C3F6E; margin-top:0.25rem;">{{ $stats['month'] }}</p>
         </div>
         @else
         <div style="border-radius:0.75rem; border:1px solid #fed7aa; background:#fff7ed; padding:1.5rem; box-shadow:0 1px 3px rgba(0,0,0,.08);">

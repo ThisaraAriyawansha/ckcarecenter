@@ -13,7 +13,7 @@
         .header {
             text-align: center;
             margin-bottom: 15px;
-            border-bottom: 2px solid #2563eb;
+            border-bottom: 2px solid #1C3F6E;
             padding-bottom: 10px;
         }
         .header .logo {
@@ -24,7 +24,7 @@
         .header h1 {
             margin: 0;
             font-size: 18px;
-            color: #2563eb;
+            color: #1C3F6E;
             font-weight: bold;
         }
         .header p {
@@ -34,7 +34,7 @@
         }
         .info-section {
             background-color: #f0f9ff;
-            border-left: 4px solid #2563eb;
+            border-left: 4px solid #1C3F6E;
             padding: 10px;
             margin-bottom: 15px;
         }
@@ -53,7 +53,7 @@
             margin-top: 10px;
         }
         th {
-            background-color: #2563eb;
+            background-color: #1C3F6E;
             color: white;
             padding: 8px 6px;
             text-align: left;
@@ -140,7 +140,7 @@
             background-color: #f0f9ff;
             padding: 10px;
             margin-bottom: 15px;
-            border-left: 5px solid #2563eb;
+            border-left: 5px solid #1C3F6E;
             border-radius: 4px;
         }
         .date-title {
@@ -177,7 +177,7 @@
 </head>
 <body>
     <div class="header">
-        <img src="{{ public_path('logo/care365.svg') }}" alt="Care365 Logo" class="logo">
+        <img src="{{ public_path('logo/care365.svg') }}" alt="C & K Home Nursing and Care Center Logo" class="logo">
         <h1>MEDICATION ADMINISTRATION REPORT</h1>
         <p>{{ $report_title }}</p>
         <p>Generated on: {{ $generated_at }}</p>
@@ -321,8 +321,8 @@
     @endif
 
     <div class="footer">
-        <p><strong>CARE 365 Management System</strong> - Medication Administration Report</p>
-        <p>© {{ date('Y') }} CARE 365. All rights reserved.</p>
+        <p><strong>C & K Home Nursing and Care Center Management System</strong> - Medication Administration Report</p>
+        <p>© {{ date('Y') }} C & K Home Nursing and Care Center. All rights reserved.</p>
         <p style="margin-top: 5px;"><em>This report is generated electronically and contains sensitive patient information. Please handle with care.</em></p>
     </div>
 </body>

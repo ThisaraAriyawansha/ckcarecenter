@@ -26,13 +26,13 @@
         .logo-text {
             font-size: 28px;
             font-weight: bold;
-            color: #2563eb;
+            color: #1C3F6E;
             letter-spacing: 3px;
         }
         .doc-type {
             font-size: 38px;
             font-weight: bold;
-            color: #2563eb;
+            color: #1C3F6E;
             letter-spacing: 1px;
         }
         .doc-date {
@@ -43,7 +43,7 @@
 
         /* ── Dividers ── */
         .divider      { border: none; border-top: 1px solid #e5e7eb; margin: 14px 0; }
-        .divider-blue { border: none; border-top: 3px solid #2563eb; margin: 0 0 20px 0; }
+        .divider-blue { border: none; border-top: 3px solid #1C3F6E; margin: 0 0 20px 0; }
 
         /* ── Client section ── */
         .client-section { margin-bottom: 18px; }
@@ -195,7 +195,7 @@
             font-size: 10px;
             text-transform: uppercase;
             letter-spacing: 1.5px;
-            color: #2563eb;
+            color: #1C3F6E;
             font-weight: bold;
             margin-bottom: 3px;
         }
@@ -213,7 +213,7 @@
         .bank-title {
             font-size: 12px;
             font-weight: bold;
-            color: #2563eb;
+            color: #1C3F6E;
             letter-spacing: 1px;
             margin-bottom: 7px;
             text-transform: uppercase;
@@ -239,7 +239,7 @@
         /* ── Footer bar ── */
         .footer-bar {
             background: #ffffff;
-            border-top: 2px solid #2563eb;
+            border-top: 2px solid #1C3F6E;
             padding: 8px 40px;
             display: table;
             width: 100%;
@@ -265,7 +265,7 @@
     {{-- ── Header ── --}}
     <div class="header">
         <div class="header-left">
-            <div class="logo-text">CARE 365</div>
+            <div class="logo-text">C & K Home Nursing and Care Center</div>
         </div>
         <div class="header-right">
             <div class="doc-type">{{ ucfirst($invoice->type) }}</div>
@@ -400,13 +400,13 @@
         {{-- Footer --}}
         <div class="footer-bar">
             <div class="footer-left">
-                <span class="footer-item">www.care365.com</span>
+                <span class="footer-item">www.ckcarecenter.com</span>
                 <span class="footer-sep">|</span>
-                <span class="footer-item">Care 365</span>
+                <span class="footer-item">C & K Home Nursing and Care Center</span>
                 <span class="footer-sep">|</span>
                 <span class="footer-item">+9477 660 40 40</span>
                 <span class="footer-sep">|</span>
-                <span class="footer-item">info@care365.com</span>
+                <span class="footer-item">info@ckcarecenter.com</span>
             </div>
             <div class="footer-right">
                 <span class="footer-item">407 C1, Nomis Weragala Mw, Hokandara, SL</span>

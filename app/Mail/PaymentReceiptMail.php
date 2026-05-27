@@ -38,7 +38,7 @@ class PaymentReceiptMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Payment Receipt - CARE 365',
+            subject: 'Payment Receipt - C & K Home Nursing and Care Center',
         );
     }
 

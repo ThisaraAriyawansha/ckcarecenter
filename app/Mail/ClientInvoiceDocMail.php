@@ -25,7 +25,7 @@ class ClientInvoiceDocMail extends Mailable
     {
         $label = ucfirst($this->invoice->type);
         return new Envelope(
-            subject: $label . ' ' . $this->invoice->invoice_number . ' — ' . $this->invoice->client->name . ' — CARE 365',
+            subject: $label . ' ' . $this->invoice->invoice_number . ' — ' . $this->invoice->client->name . ' — C & K Home Nursing and Care Center',
         );
     }
 

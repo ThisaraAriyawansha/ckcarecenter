@@ -19,14 +19,14 @@
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 3px solid #007bff;
+            border-bottom: 3px solid #1C3F6E;
             padding-bottom: 10px;
         }
 
         .header h1 {
             margin: 0;
             font-size: 24px;
-            color: #007bff;
+            color: #1C3F6E;
         }
 
         .header .subtitle {
@@ -40,7 +40,7 @@
             padding: 10px;
             margin-bottom: 15px;
             border-radius: 5px;
-            border-left: 4px solid #007bff;
+            border-left: 4px solid #1C3F6E;
         }
 
         .info-row {
@@ -60,7 +60,7 @@
         }
 
         .section-title {
-            background-color: #007bff;
+            background-color: #1C3F6E;
             color: white;
             padding: 8px 12px;
             font-size: 13px;
@@ -136,7 +136,7 @@
             font-weight: bold;
             font-size: 12px;
             margin-bottom: 10px;
-            color: #007bff;
+            color: #1C3F6E;
         }
 
         .signature-status {
@@ -204,7 +204,7 @@
     <div class="header">
         @if(file_exists(public_path('logo/care365.svg')))
         <div style="margin-bottom: 15px;">
-            <img src="{{ public_path('logo/care365.svg') }}" alt="Care365 Logo" style="height: 60px; width: auto;">
+            <img src="{{ public_path('logo/care365.svg') }}" alt="C & K Home Nursing and Care Center Logo" style="height: 60px; width: auto;">
         </div>
         @endif
         <h1>COOKING ASSISTANT CHECKLIST</h1>
@@ -368,7 +368,7 @@
     </div>
 
     <div class="footer">
-        Generated on {{ now()->format('F d, Y \a\t H:i') }} | Care365 Management System
+        Generated on {{ now()->format('F d, Y \a\t H:i') }} | C & K Home Nursing and Care Center Management System
     </div>
 </body>
 </html>

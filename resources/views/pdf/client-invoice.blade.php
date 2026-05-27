@@ -32,7 +32,7 @@
         .brand {
             font-size: 22px;
             font-weight: bold;
-            color: #2563eb;
+            color: #1C3F6E;
             letter-spacing: 1px;
         }
         .brand-sub {
@@ -61,7 +61,7 @@
         }
         .divider-blue {
             border: none;
-            border-top: 2px solid #2563eb;
+            border-top: 2px solid #1C3F6E;
             margin: 20px 0;
         }
 
@@ -86,7 +86,7 @@
             font-size: 10px;
             text-transform: uppercase;
             letter-spacing: 1.5px;
-            color: #2563eb;
+            color: #1C3F6E;
             margin-bottom: 8px;
             font-weight: bold;
         }
@@ -107,7 +107,7 @@
             display: inline-block;
             background: #eff6ff;
             border: 1px solid #bfdbfe;
-            color: #1d4ed8;
+            color: #1C3F6E;
             font-size: 11px;
             padding: 5px 12px;
             border-radius: 3px;
@@ -120,7 +120,7 @@
             border-collapse: collapse;
         }
         table.items thead tr {
-            border-bottom: 2px solid #2563eb;
+            border-bottom: 2px solid #1C3F6E;
         }
         table.items thead th {
             padding: 10px 8px;
@@ -128,7 +128,7 @@
             font-size: 10px;
             text-transform: uppercase;
             letter-spacing: 1px;
-            color: #2563eb;
+            color: #1C3F6E;
             font-weight: bold;
         }
         table.items thead th.right {
@@ -176,7 +176,7 @@
         .total-amount {
             font-size: 22px;
             font-weight: bold;
-            color: #2563eb;
+            color: #1C3F6E;
         }
 
         /* Footer */
@@ -203,7 +203,7 @@
     {{-- Header --}}
     <div class="header">
         <div class="header-left">
-            <div class="brand">CARE 365</div>
+            <div class="brand">C & K Home Nursing and Care Center</div>
             <div class="brand-sub">{{ $branch_name ?? 'Care Home' }}</div>
         </div>
         <div class="header-right">
@@ -293,7 +293,7 @@
 
     {{-- Footer --}}
     <div class="footer">
-        System-generated invoice &nbsp;&bull;&nbsp; Care 365 &nbsp;&bull;&nbsp; {{ now()->format('M d, Y \a\t H:i') }}
+        System-generated invoice &nbsp;&bull;&nbsp; C & K Home Nursing and Care Center &nbsp;&bull;&nbsp; {{ now()->format('M d, Y \a\t H:i') }}
     </div>
 
 </body>

@@ -25,7 +25,7 @@ class ClientInvoiceMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Invoice - ' . $this->client->name . ' - CARE 365',
+            subject: 'Invoice - ' . $this->client->name . ' - C & K Home Nursing and Care Center',
         );
     }
 

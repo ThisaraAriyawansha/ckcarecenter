@@ -95,7 +95,7 @@
             padding: 5px;
             margin-top: 8px;
             text-align: center;
-            border: 1px solid #2196F3;
+            border: 1px solid #1C3F6E;
         }
         .net-salary-label {
             font-size: 9px;
@@ -104,7 +104,7 @@
         .net-salary-amount {
             font-size: 14px;
             font-weight: bold;
-            color: #2196F3;
+            color: #1C3F6E;
         }
         .footer {
             margin-top: 8px;
@@ -118,7 +118,7 @@
             margin-top: 5px;
             padding: 5px;
             background-color: #f9f9f9;
-            border-left: 3px solid #2196F3;
+            border-left: 3px solid #1C3F6E;
             font-size: 8px;
         }
         .bank-details {
@@ -130,7 +130,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="company-name">Care365</div>
+            <div class="company-name">C & K Home Nursing and Care Center</div>
             <div class="payslip-title">PAYSLIP - {{ $payslip->payslip_number }}</div>
         </div>
 
