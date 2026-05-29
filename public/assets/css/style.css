@@ -1664,11 +1664,11 @@ a {
 }
 
 .breadcrumb .breadcrumb-item>a {
-    color: var(--accent-color);
+    color: #FEFEFE;
 }
 
 .breadcrumb .breadcrumb-item.active {
-    color: var(--accent-color);
+    color: #FEFEFE;
     font-family: var(--font-2);
 }
 
