@@ -1,5 +1,5 @@
         <div class="section position-relative bg-attach-fixed overflow-hidden mx-auto rounded-4"
-            style="background-image: url({{ asset('assets/image/about/d579de48accc7476e450319a80c2c66f.jpeg') }}); background-position: center; height: 70vh; max-width: 1770px;">
+            style="background-image: url({{ asset('assets/image/about/d579de48accc7476e450319a80c2c66f.jpeg') }}); background-position: center; height: 50vh; max-width: 1770px;">
             <div class="cta-overlay"></div>
             <div class="r-container h-100 position-relative" style="z-index: 2;">
                 <div class="d-flex flex-column w-100 h-100 justify-content-center mx-auto align-items-center text-white gap-3"

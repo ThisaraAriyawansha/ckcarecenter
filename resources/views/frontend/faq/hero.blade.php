@@ -1,5 +1,5 @@
         <div class="section position-relative bg-attach-fixed overflow-hidden mx-auto rounded-4"
-            style="background-image: url(assets/image/breadcrumb/elderly-care-options-blog-3.jpg); background-position: top; height: 70vh; max-width: 1770px;">
+            style="background-image: url(assets/image/breadcrumb/5643564.webp); background-position: top; height: 50vh; max-width: 1770px;">
             <div class="cta-overlay"></div>
             <div class="r-container h-100 position-relative" style="z-index: 2;">
                 <div class="d-flex flex-column w-100 h-100 justify-content-center mx-auto align-items-center text-white gap-3"
