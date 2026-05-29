@@ -835,15 +835,15 @@ a {
 
 .btn-accent {
     background-color: var(--accent-color);
-    color: var(--text-color);
+    color: #FEFEFE;
     transition: all 0.5s;
     border: 1px solid transparent;
 }
 
 .btn-accent:hover {
     background-color: transparent;
-    border-color: var(--text-color);
-    color: var(--text-color);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 .btn-accent.accent:hover {
