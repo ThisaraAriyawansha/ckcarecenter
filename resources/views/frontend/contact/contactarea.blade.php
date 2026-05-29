@@ -128,14 +128,25 @@
             </div>
         </div>
 
-<!-- Contact Success Modal -->
-<div class="ck-modal-overlay" id="ckSuccessModal">
-    <div class="ck-modal">
-        <div class="ck-modal-icon">
-            <i class="fa-solid fa-check"></i>
+        <!-- Contact Success Modal -->
+        <div class="ck-modal-overlay" id="ckSuccessModal">
+            <div class="ck-modal">
+                <div class="ck-modal-icon">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <h4 class="ck-modal-title">Message Sent!</h4>
+                <p class="ck-modal-text">Thank you for reaching out. Our team will get back to you as soon as possible.</p>
+                <button class="ck-modal-btn" id="ckModalClose">Done</button>
+            </div>
         </div>
-        <h4 class="ck-modal-title">Message Sent!</h4>
-        <p class="ck-modal-text">Thank you for reaching out. Our team will get back to you as soon as possible.</p>
-        <button class="ck-modal-btn" id="ckModalClose">Done</button>
-    </div>
-</div>
+
+
+        <style>
+            #contactSubmitBtn{
+                color: #ffffff;
+            }
+
+            #contactSubmitBtn:hover{
+                color: #E6007E;
+            }
+        </style>
