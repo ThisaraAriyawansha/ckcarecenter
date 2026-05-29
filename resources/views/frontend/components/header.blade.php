@@ -24,7 +24,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a>
+                                <a class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact us</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle {{ request()->routeIs('faq', 'blog', 'gallery', 'testimonial') ? 'active' : '' }}" href="#" role="button" data-bs-toggle="dropdown"
