@@ -48,7 +48,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/image/logo/logo_4.webp') }}">
 
     {{-- Stylesheets --}}
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}?v={{ filemtime(public_path('assets/css/style.css')) }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
 
@@ -101,9 +101,9 @@
     <script src="{{ asset('assets/js/vendor/jquery.min.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/js/script.js') }}"></script>
-    <script src="{{ asset('assets/js/swiper-script.js') }}"></script>
-    <script src="{{ asset('assets/js/submit-form.js') }}"></script>
+    <script src="{{ asset('assets/js/script.js') }}?v={{ filemtime(public_path('assets/js/script.js')) }}"></script>
+    <script src="{{ asset('assets/js/swiper-script.js') }}?v={{ filemtime(public_path('assets/js/swiper-script.js')) }}"></script>
+    <script src="{{ asset('assets/js/submit-form.js') }}?v={{ filemtime(public_path('assets/js/submit-form.js')) }}"></script>
     <script src="{{ asset('assets/js/vendor/isotope.pkgd.min.js') }}"></script>
     <script src="{{ asset('assets/js/video_embedded.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/fslightbox.js') }}"></script>
