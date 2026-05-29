@@ -17,7 +17,7 @@
                 @endphp
                 <div class="row row-cols-xl-2 row-cols-1 w-100">
                     <div class="col mb-3">
-                        <div class="d-flex flex-column gap-4 w-100 scrollanimation animated fadeInUp">
+                        <div class="d-flex flex-column gap-4 w-100 ">
                             <div class="accordion mt-3 d-flex flex-column gap-4" id="faqAccordionLeft">
                                 @foreach($leftFaqs as $faq)
                                 @php $faqId = 'faq-left-' . $loop->index; @endphp
@@ -44,7 +44,7 @@
 
                     @if($rightFaqs->isNotEmpty())
                     <div class="col mb-3">
-                        <div class="d-flex flex-column gap-4 w-100 scrollanimation animated fadeInUp">
+                        <div class="d-flex flex-column gap-4 w-100 ">
                             <div class="accordion mt-3 d-flex flex-column gap-4" id="faqAccordionRight">
                                 @foreach($rightFaqs as $faq)
                                 @php $faqId = 'faq-right-' . $loop->index; $offset = $leftFaqs->count(); @endphp
