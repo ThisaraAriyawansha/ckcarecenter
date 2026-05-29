@@ -46,7 +46,7 @@
                             </div>
                             <h3>Trusted Home Nursing & Care You Can Count On</h3>
                             <p>
-                                At C & K Home Nursing and Care Center, we believe every individual deserves to be cared for with warmth, dignity, and expertise. Our dedicated team of registered nurses and professional caregivers deliver compassionate, round-the-clock home nursing care — tailored to each person's unique needs, in the comfort of their own home.
+                                At C & K Home Nursing and Care Center, we believe every individual deserves to be cared for with warmth, dignity, and expertise. Our dedicated team of registered nurses and professional caregivers deliver compassionate, round-the-clock home nursing care - tailored to each person's unique needs, in the comfort of their own home.
                             </p>
                             <div class="d-flex flex-column gap-4">
                                 <div class="r-progress w-100" style="--value:95;">
