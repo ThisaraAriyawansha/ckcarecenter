@@ -13,7 +13,7 @@
         </div>
 
         @if($teamMembers->isNotEmpty())
-        <div class="swiper mySwiper w-100 scrollanimation animated fadeInUp">
+        <div class="swiper mySwiper w-100 ">
             <div class="swiper-wrapper">
                 @foreach($teamMembers as $member)
                 <div class="swiper-slide">

@@ -12,7 +12,7 @@
                 from C &amp; K Home Nursing and Care Center.</p>
         </div>
 
-        <div class="d-flex flex-column gap-4 w-100 scrollanimation animated fadeInUp">
+        <div class="d-flex flex-column gap-4 w-100 ">
             <div class="accordion mt-3 d-flex flex-column gap-4" id="aboutFaqAccordion">
                 @forelse($faqs as $index => $faq)
                 <div class="accordion-item">
