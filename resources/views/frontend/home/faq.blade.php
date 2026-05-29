@@ -10,7 +10,7 @@
                     <p>This FAQ section addresses common questions regarding private nursing and home care services, it
                         covers essential topics</p>
                 </div>
-                <div class="d-flex flex-column gap-4 w-100 scrollanimation animated fadeInUp">
+                <div class="d-flex flex-column gap-4 w-100 ">
                     <div class="accordion mt-3 d-flex flex-column gap-4" id="faqAccordion1">
                         @forelse($faqs as $index => $faq)
                         <div class="accordion-item">
