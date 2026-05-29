@@ -1,11 +1,11 @@
 <style>
     .hero-slider-section {
         position: relative;
-        height: 100vh;
+        height: 88vh;
     }
 
     .heroSwiper {
-        height: 100vh;
+        height: 88vh;
         overflow: hidden;
     }
 
@@ -13,8 +13,32 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 100vh;
+        height: 88vh;
         position: relative;
+    }
+
+    @media (max-width: 991px) {
+        .hero-slider-section,
+        .heroSwiper,
+        .hero-slide {
+            height: 78vh;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .hero-slider-section,
+        .heroSwiper,
+        .hero-slide {
+            height: 82vh;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .hero-slider-section,
+        .heroSwiper,
+        .hero-slide {
+            height: 85vh;
+        }
     }
 
     .hero-overlay {
@@ -35,6 +59,7 @@
         max-width: 680px;
         color: white;
         padding-top: 80px;
+        padding-bottom: 50px;
     }
 
     .hero-badge {
@@ -167,20 +192,34 @@
         50% { transform: translateX(-50%) translateY(8px); opacity: 1; }
     }
 
-    /* Pagination */
-    .heroSwiper .swiper-pagination {
+    /* Pagination — placed outside swiper so z-index works above the wave */
+    .hero-pagination-ext {
+        position: absolute !important;
         bottom: 100px !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        z-index: 20;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        pointer-events: none;
     }
 
-    .heroSwiper .swiper-pagination-bullet {
+    .hero-pagination-ext .swiper-pagination-bullet {
         width: 10px;
         height: 10px;
         background: rgba(255, 255, 255, 0.5);
         opacity: 1;
+        border-radius: 50%;
         transition: all 0.4s ease;
+        pointer-events: all;
+        cursor: pointer;
+        display: inline-block;
     }
 
-    .heroSwiper .swiper-pagination-bullet-active {
+    .hero-pagination-ext .swiper-pagination-bullet-active {
         width: 32px;
         border-radius: 5px;
         background: white;
@@ -197,6 +236,9 @@
         height: 52px;
         border-radius: 50%;
         transition: all 0.3s ease;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: 0;
     }
 
     .heroSwiper .swiper-button-prev {
@@ -224,7 +266,7 @@
         bottom: -1px;
         left: 0;
         width: 100%;
-        z-index: 10;
+        z-index: 5;
         line-height: 0;
         pointer-events: none;
     }
@@ -257,29 +299,49 @@
 
     @media (max-width: 767px) {
         .hero-text {
-            padding-top: 60px;
+            padding-top: 30px;
+            padding-bottom: 0;
             text-align: center;
         }
-        .hero-actions {
-            justify-content: center;
-            margin-bottom: 60px;
+        .hero-badge {
+            margin-bottom: 0.75rem;
+            font-size: 0.72rem;
+            padding: 6px 14px;
         }
-        .btn-hero-primary,
-        .btn-hero-secondary {
-            padding: 11px 28px;
-            font-size: 0.88rem;
+        .hero-title {
+            margin-bottom: 0.75rem;
         }
         .hero-divider {
             margin-left: auto;
             margin-right: auto;
+            margin-bottom: 0.75rem;
+        }
+        .hero-subtitle {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        .hero-actions {
+            justify-content: center;
+            margin-bottom: 0;
+        }
+        .btn-hero-primary,
+        .btn-hero-secondary {
+            padding: 10px 24px;
+            font-size: 0.85rem;
         }
         .heroSwiper .swiper-button-prev,
         .heroSwiper .swiper-button-next {
             display: none;
         }
-        .heroSwiper .swiper-pagination {
-            bottom: 100px !important;
-            z-index: 20 !important;
+        /* On mobile, pagination sits inside the hero image above the wave */
+        .hero-pagination-ext {
+            bottom: 95px !important;
+        }
+        .hero-pagination-ext .swiper-pagination-bullet {
+            background: rgba(255, 255, 255, 0.5);
+        }
+        .hero-pagination-ext .swiper-pagination-bullet-active {
+            background: white;
         }
         .hero-title br {
             display: none;
@@ -409,9 +471,6 @@
 
         </div>
 
-        {{-- Pagination --}}
-        <div class="swiper-pagination"></div>
-
         {{-- Navigation --}}
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
@@ -425,6 +484,8 @@
         </svg>
     </div>
 
+    {{-- Pagination outside swiper so it renders above the wave --}}
+    <div class="hero-pagination-ext"></div>
 
 </section>
 
@@ -440,7 +501,7 @@
             fadeEffect: { crossFade: true },
             loop: true,
             pagination: {
-                el: '.heroSwiper .swiper-pagination',
+                el: '.hero-pagination-ext',
                 clickable: true,
             },
             navigation: {
