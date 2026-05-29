@@ -80,7 +80,9 @@
                                         class="d-flex flex-column gap-1 p-4 bg-accent-color-3 rounded-4 position-relative">
                                         <h5>Book a Home Visit</h5>
                                         <p>Schedule a professional nursing consultation at your home!</p>
-                                        <a href="{{ route('lead-form') }}" class="link fw-semibold">Make Appointment</a>
+                                        <a href="{{ route('lead-form') }}" class="link fw-semibold appointment-link">
+                                            Make Appointment
+                                        </a>
                                         <i class="rtmicon rtmicon-nutritionist position-absolute bottom-0 end-0"
                                             style="font-size: 78px;"></i>
                                     </div>
@@ -90,7 +92,7 @@
                                         class="d-flex flex-column gap-1 p-4 bg-accent-color-3 rounded-4 position-relative">
                                         <h5>Need Urgent Care?</h5>
                                         <p>Our care team is available 24/7. Call immediately </p>
-                                        <a href="tel:0773768767" class="link fw-semibold">077 376 8767</a>
+                                        <a href="tel:0773768767" class="link fw-semibold phone-link">077 376 8767</a>
                                         <i class="rtmicon rtmicon-classic-phone position-absolute bottom-0 end-0"
                                             style="font-size: 78px;"></i>
                                     </div>
@@ -101,3 +103,22 @@
                 </div>
             </div>
         </div>
+
+
+        <style>
+            .phone-link{
+                color: #1C3F6E;
+            }
+
+            .phone-link:hover{
+                color: #E6007E;
+            }
+
+            .appointment-link{
+                color: #1C3F6E;
+            }
+
+            .appointment-link:hover{
+                color: #E6007E;
+            }
+        </style>
