@@ -14,7 +14,7 @@
         </div>
 
         {{-- Value Cards --}}
-        <div class="row row-cols-xl-3 row-cols-md-2 row-cols-1 g-4 scrollanimation animated fadeInUp">
+        <div class="row row-cols-xl-3 row-cols-md-2 row-cols-1 g-4 ">
 
             <div class="col">
                 <div class="d-flex flex-column gap-3 p-4 bg-accent-color-3 rounded-4 h-100">
