@@ -107,8 +107,7 @@
     <script src="{{ asset('assets/js/vendor/isotope.pkgd.min.js') }}"></script>
     <script src="{{ asset('assets/js/video_embedded.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/fslightbox.js') }}"></script>
-    <script
-        src="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.0/oyethemes_onscroll_animation.js"></script>
+    <script src="{{ asset('assets/js/vendor/scroll-animation.js') }}"></script>
 
     @stack('scripts')
 </body>
